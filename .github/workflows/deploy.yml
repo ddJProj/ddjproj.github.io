@@ -30,7 +30,7 @@ jobs:
       - name: Install, build, and upload your site output
         uses: withastro/action@v2
         with:
-          path: pf-pages 
+          path: ./
           node-version: 20 
           package-manager: pnpm@latest
  

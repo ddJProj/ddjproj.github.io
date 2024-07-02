@@ -8,8 +8,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ddjproj.github.io/Portfolio',
-  base: '/Portfolio',
+  site: 'https://ddjproj.github.io,
+  base: '/',
   integrations: [
     mdx(),
     sitemap(),
