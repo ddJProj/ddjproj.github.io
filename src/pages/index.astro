@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/Base.astro';
+
 import PostPreview from "@/components/blog/PostPreviewB";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
 import { getAllPosts, sortMDByDate, sortMDByPinned } from "@/utils";
@@ -84,10 +85,10 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		<h1 class="title">Hello! My name is Edward Johnson</h1>
 		<p class="mb-4 sm:mb-8">
  			I'm a fresh Computer science graduate, based in Florida's capital city, Tallahassee. I am in the process of applying for master's programs in computational science. I am also looking for back-end / full stack software engineering positions, or similar internships. I have a background in biochemistry, and I am a proficient, highly driven, problem solver. I would ideally like to find a position that works closely with material sciences, machine learning, or low-level embedded systems.</p>
-		<div>
-			<span>You can find me on: </span>
-			<SocialMediaLinks/>
-		</div>
+		<!-- <div> -->
+		<!-- 	<span>You can find me on: </span> -->
+		<!-- 	<SocialMediaLinks/> -->
+		<!-- </div> -->
 	</section>
 
 	<section class="mt-8 sm:mt-16">
@@ -97,9 +98,9 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		</ul>
 	</section>
 
-	<section class="mt-16">
+	<section class="mt-8">
 			<h2 class="title">Technologies</h2>
-			<ul class="space-y-4 sm:space-y-2">
+			<ul class="space-y- sm:space-y-2">
 				{
 					tech.map(({ href, title, desc }) => (
 						<li>
@@ -111,10 +112,15 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 							>
 								{title}
 							</a>: 
-							<p class="inline-block sm:mt-2">{desc}</p>
+							<p class="inline-block sm:mt-0">{desc}</p>
 						</li>
 					))
 				}
-			</ul>
+			</ul>	
+		<div class="mt-8 sn:mt-12">
+			<h3 class="title">Find me on: </h3>
+			<SocialMediaLinks/>
+		</div>
+
 		</section>
 </BaseLayout>

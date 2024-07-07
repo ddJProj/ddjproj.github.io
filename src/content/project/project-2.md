@@ -1,17 +1,18 @@
 ---
-title: 'Project 2'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
-pubDate: 'Aug 13 2022'
+title: 'CS300 - Final Project'
+description: 'Data Structures and Algorithms - Project 2 (Final)'
+pubDate: 'Feb 27 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
   alt: 'GitHub wallpaper'
-platform: Web
-stack: ['Astro', 'JS', 'tailwind']
-website: https://github.com/ddJProj/Portfolio
-github: https://github.com/ddJProj
+platform: Command-Line Interface - Text processing tool
+stack: ['Cpp', 'Java']
+website: https://ddjproj.github.io/
+github: https://github.com/ddJProj/CS300
 order: 2
 ---
+## Course Object Handler
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus a tortor at molestie. Sed pellentesque leo auctor, auctor lorem nec, venenatis risus. Vivamus commodo ipsum vitae orci finibus, vel porta nunc viverra. In hac habitasse platea dictumst. Nunc pretium, ligula ultricies consequat sollicitudin, enim ex ullamcorper nisl.
+--- Add more details about how the project functioned ---
 
-## hello
+This project greatly expanded my approach to designing software and applications. I feel much more confident writing generic / template applications in C++, and I very much look forward to building up my own collection of templated structures and algorithms for use in my future coding endeavors.

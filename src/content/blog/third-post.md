@@ -1,7 +1,7 @@
 ---
-title: 'Third post'
+title: 'Template (replace me) - Third post'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 15 2022'
+pubDate: 'Jul 15 2024'
 heroImage: 
   src: '/blog-placeholder-4.jpg'
   alt: 'blog placeholder'

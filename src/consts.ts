@@ -48,11 +48,11 @@ export const socialLinks: Array<SocialLink> = [
 		friendlyName: "email",
 		link: "mailto:edd.f.johnson.work@gmail.com",
 	},
-	{
-		icon: "mdi:rss",
-		friendlyName: "rss",
-		link: "/rss.xml",
-	},
+	// {
+	// 	icon: "mdi:rss",
+	// 	friendlyName: "rss",
+	// 	link: "/rss.xml",
+	// },
 ];
 
 export const NAV_LINKS: Array<{ title: string; path: string }> = [
@@ -72,8 +72,8 @@ export const NAV_LINKS: Array<{ title: string; path: string }> = [
 		title: "Projects",
 		path: "/projects",
 	},
-	{
-		title: "Archive",
-		path: "/archive",
-	},
+	// {
+	// 	title: "Archive",
+	// 	path: "/archive",
+	// },
 ];

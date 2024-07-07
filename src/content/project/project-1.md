@@ -1,14 +1,23 @@
 ---
-title: 'Project 1'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
-pubDate: 'Apr 03 2023'
+title: 'CS410 - Final Project'
+description: 'CS410 - Reverse Engineering - Project 2 '
+pubDate: 'May 20 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
   alt: 'GitHub wallpaper'
-platform: Web
-stack: ['MySQL', 'Cpp']
-website: https://github.com/ddJProj/Portfolio
-github: https://github.com/ddJProj
+platform: Command-Line Interface - Client Service Management Tool
+stack: ['Cpp', 'Assembly']
+website: https://ddjproj.github.io/
+github: https://github.com/ddJProj/CS410
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus a tortor at molestie. Sed pellentesque leo auctor, auctor lorem nec, venenatis risus. Vivamus commodo ipsum vitae orci finibus, vel porta nunc viverra. In hac habitasse platea dictumst. Nunc pretium, ligula ultricies consequat sollicitudin, enim ex ullamcorper nisl.
+## Client management tool
+
+## Prompt: 
+In Project One, you applied for a Software Engineer position at a large investment company called SNHU Investments. Recently, they have been trying to move their legacy code into a cloud-based application. You were selected to participate in a proficiency test as part of the interview process. In the proficiency test, you demonstrated your ability to reverse engineer code.
+
+For the next part of the proficiency test, you have been asked to identify and explain security vulnerabilities within the client management application. You will identify multiple security vulnerabilities within blocks of assembly code, explain the vulnerabilities, and describe recommendations to fix the vulnerabilities.
+
+## Then: 
+Using the C++ (CPP file) that you created in Project One, you will identify multiple security vulnerabilities, explain the vulnerabilities, and describe recommendations to fix the security vulnerabilities.
+
