@@ -1,6 +1,6 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 
-export async function getAllPosts(filterHidden: boolean = true) {
+export async function getAllPosts(filterHidden: boolean = false) {
 	return await getCollection("blog", ({ data }) => {
 		if (import.meta.env.PROD) {
 			if (filterHidden) {
