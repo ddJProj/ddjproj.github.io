@@ -34,4 +34,11 @@ export default defineConfig({
       },
     },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        external: ['sharp'],
+      },
+    },
+  },
 });
