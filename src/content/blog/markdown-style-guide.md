@@ -1,6 +1,6 @@
 ---
 title: 'Template (replace me) - Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+description: 'Here is a sample of Some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jul 01 2022'
 heroImage: 
   src: '/blog-placeholder-1.jpg'
@@ -10,7 +10,7 @@ tags: ["guide"]
 hide: true
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+Here is a sample of Some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
 ## Headings
 
