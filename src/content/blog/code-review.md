@@ -1,12 +1,12 @@
 ---
 title: 'Code Review'
-description: 'A video recording of me conducting a code review'
-pubDate: 'May 22 2024'
+description: 'Conducting a code review for video recording'
+pubDate: 'July 11 2024'
 heroImage: 
   src: '/blog-placeholder-4.jpg'
   alt: ''
 tags: ["journal", "code-review"]
-updatedDate: 'May 25 2024'
+updatedDate: 'July 14 2024'
 series: "journal"
 ---
 
