@@ -4,9 +4,9 @@ description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 15 2024'
 heroImage: 
   src: '/blog-placeholder-4.jpg'
-  alt: 'third-post'
-tags: ["journal",""]
-series: "journal"
+  alt: 'blog placeholder'
+tags: ["test"]
+series: "example"
 hide: true
 ---
 

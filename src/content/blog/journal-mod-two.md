@@ -10,6 +10,14 @@ updatedDate: 'July, 7 2024'
 series: "journal"
 ---
 
+## Provided is recorded video code review of my initial C++ application's code-base:
+
+This video is also provided on the project page containing the initial planning documentation for my Computer Science Capstone project.
+
+The following video is the result of me conducting a code review on the final project written for CS410 - Reverse Engineering. I will walk through the code base, and then cover how I plan to create enhancements to the existing code base in the my final project of my Computer Science - Capstone Course. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E1CH3KFfx1Q?si=WtFmFfg0rW4LCyg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 # Part 1:
 

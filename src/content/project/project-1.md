@@ -9,6 +9,7 @@ platform: Command-Line Interface - Client Service Management Tool
 stack: ['Cpp', 'Assembly']
 website: https://ddjproj.github.io/
 github: https://github.com/ddJProj/CS410
+order: 1
 ---
 
 ## Client management tool

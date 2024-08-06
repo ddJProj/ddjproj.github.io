@@ -8,6 +8,7 @@ heroImage:
 tags: ["journal", "code-review"]
 updatedDate: 'July 14 2024'
 series: "journal"
+hide: true
 ---
 
 ## This will serve as a demonstration / code review:
