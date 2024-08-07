@@ -1,5 +1,55 @@
 ---
 import Layout from '../layouts/Base.astro';
+
+const tech: Array<{ title: string; desc: string; href: string }> = [
+    {
+        title: "C++",
+        desc: "Learn this versatile and powerful programming language.",
+        href: "https://cplusplus.com/",
+    },    
+    {
+        title: "Rust",
+        desc: "A language empowering everyone to build reliable and efficient software.",
+        href: "https://www.rust-lang.org/",
+    },    
+    {
+        title: "Java",
+        desc: "Free-to-use, and a versatile language designed for ease of use.",
+        href: "https://www.java.com/en/",
+    },    
+    {
+        title: "Kotlin",
+        desc: "Concise. Multiplatform. Fun.",
+        href: "https://kotlinlang.org/",
+    },
+    {
+        title: "MySQL",
+        desc: "The world's most popular open source database",
+        href: "https://www.mysql.com/why-mysql/",
+    },
+    {
+        title: "MongoDB",
+        desc: "Built by developers, for developers",
+        href: "https://www.mongodb.com/",
+    },
+    {
+        title: "X86 Assembly",
+        desc: "Machine-specific and low-level, for detailed and time-critical applications.",
+        href: "https://docs.oracle.com/cd/E19641-01/802-1948/802-1948.pdf",
+    },    
+    {
+        title: "Markdown",
+        desc: "Simple and easy-to-use markup language.",
+        href: "https://www.markdownguide.org/",
+    },    
+    {
+        title: "Astro",
+        desc: "Build fast websites, faster.",
+        href: "https://astro.build",
+    },    
+];
+
+
 ---
 
 <Layout
@@ -13,18 +63,42 @@ import Layout from '../layouts/Base.astro';
 
 	</p>
 
-	<h2 class="title mt-8">Education:</h2>
+	<h1 class="title mt-8">Education:</h1>
 	<ul class="list-inside list-disc ml-8">
 		<li>SL Community College : General courses </li>
 		<li>SL University : Dual Major - Biochemistry, Russian Studies</li>
 		<li>SNH University : Major - Computer Science </li>
 	</ul>
-	<h2 class="title mt-6">Employment:</h2>
+	<h1 class="title mt-6">Employment:</h1>
 	<ul class="list-inside list-disc ml-8">
 		<li>FedEX - Lead Production Coordinator - 3 years </li>
 		<li>UPS- Dispatch Supervisor - 3 years  </li>
 		<li>TimeKeep - Web Store Developer & Manager - 6 years:  </li>
 	</ul>
+
+	<!-- Technologies section -->
+	<section class="mt-8">
+			<h1 class="title">Technologies</h1>
+			<ul class="space-y- sm:space-y-1">
+				{
+					tech.map(({ href, title, desc }) => (
+						<li>
+							<a
+								href={href}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="cody-link inline-block"
+							>
+								{title}
+							</a>: 
+							<p class="inline-block sm:mt-0">{desc}</p>
+						</li>
+					))
+				}
+			</ul>	
+
+		</section>
+
 
 	<!-- <p class="mt-4"> -->
 	<!-- 	Clone or fork my  -->

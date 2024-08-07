@@ -22,6 +22,6 @@ const { frontmatter: {title, description}, headings } = Astro.props
 				{description}
 			</p>
 		</div>
-		{!!headings.length && <TOC headings={headings} />}
+		{headings && headings.length > 0 && <TOC headings={headings} />}
 	</aside>
 </Layout>

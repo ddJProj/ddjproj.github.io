@@ -1,22 +1,112 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   :root {
     color-scheme: light;
-    /* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
-    --theme-bg: #efefef;
+    --theme-bg: #e6e9ef;
+    --theme-text: #4c4f69;
+
+    --theme-text-2: #04a5e5;
+    --theme-accent: #dc8a78;
+    --theme-accent-2: #6c7086;
+    --theme-accent-3: #04a5e5;
+    --theme-surface: #e6e9ef;
+    --theme-quote: #d20f39;
+    --theme-highlight: #fe640b;
+    --rosewater: #dc8a78;
+    --flamingo: #dd7878;
+    --pink: #ea76cb;
+    --mauve: #8839ef;
+    --red: #d20f39;
+    --maroon: #e64553;
+    --peach: #fe640b;
+    --yellow: #df8e1d;
+    --green: #40a02b;
+    --teal: #179299;
+    --sky: #04a5e5;
+    --sapphire: #209fb5;
+    --blue: #1e66f5;
+    --lavender: #7287fd;
+    /* https://tailwindcss.com/docs/customizing-colors#using-css-variables     
+*   --theme-bg: #efefef;
     --theme-text: #222222;
     --theme-accent: #dd7878;
     --theme-accent-2: #bcc0cd;
     --theme-surface: #e6e6e6;
     --theme-quote: #dd7878;
     --theme-highlight: #dd7878;
+*/
+  h1 {
+    @apply text-[#cba6f7];
+  }
+  h2 {
+    @apply text-[#74c7ec];
+  }
+  h3 {
+    @apply text-[#f2cdcd];
+  }
+  h4 {
+    @apply text-[#fab387];
+  }
+  strong {
+    @apply text-[#f5e0dc] font-bold;
+  }
+  p {
+    @apply text-[#bac2de] mb-4;
+  }
+  em {
+    @apply text-[#f2cdcd] italic;
+  }
+
+
   }
 
   :root.dark {
     color-scheme: dark;
+    --theme-bg: #181825;
+    --theme-text: #cdd6f4;
+    --theme-text-2: #94e2d5;
+    --theme-accent: #74c7ec;
+    --theme-accent-2: #94e2d5;
+    --theme-accent-3: #f9e2af;
+    --theme-surface: #313244;
+    --theme-quote: #f38ba8;
+    --theme-highlight: #f9e2af;
+    /* Additional Mocha colors */
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --yellow: #f9e2af;
+    --green: #a6e3a1;
+    --teal: #94e2d5;
+    --sky: #89dceb;
+    --sapphire: #74c7ec;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    /*
     --theme-bg: #1d1d1d;
     --theme-text: #ededed;
     --theme-accent: #93e1d4;
@@ -24,20 +114,51 @@
     --theme-surface: #2f2f2f;
     --theme-quote: #93e1d4;
     --theme-highlight: #93e1d4;
+*/
+  h1 {
+    @apply text-[#74c7ec];
   }
+  h2 {
+    @apply text-[#fab387];
+  }
+  h3 {
+    @apply text-[#74c7ec];
+  }
+  h4 {
+    @apply text-[#94e2d5];
+  }
+  strong {
+    @apply text-[#fab387] font-bold;
+  }
+  p {
+    @apply text-[#cdd6f4] mb-4;
+  }
+  em {
+    @apply text-[#f2cdcd] italic;
+  }
+
+  }
+
+
+
+
+  
 
   html {
     @apply scroll-smooth;
   }
 
+  /*
+  * max-w-9xl ADJUST HERE FOR BG/ MAIN CONTAINER SIZE
+  */
   html body {
-    @apply mx-auto flex min-h-screen max-w-4xl flex-col px-4 pt-4 md:pt-8 font-mono text-sm font-normal antialiased bg-bgColor text-textColor;
+    @apply mx-auto flex min-h-screen max-w-7xl flex-col px-4 pt-4 md:pt-8 font-mono text-sm font-normal antialiased bg-bgColor text-textColor overflow-x-hidden;
   }
 
   /*
   * CSS for markdown and MDX blog posts
   */
-
+.prose-cody {
   .prose-cody blockquote {
     @apply text-quote border-l-0;
   }
@@ -118,8 +239,35 @@
     overflow-x: auto;
     white-space: nowrap;
   }
+  /* Add your new header styles here 
+  h1, :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-[#cba6f7];
+  }
 
-  /*
+  h2, :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-[#74c7ec];
+  }
+
+  h3, :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-[#89b4fa];
+  }
+    h4, :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-[#f9e2af];
+  }
+  strong, :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-[#a6e3a1] font-bold;
+  }
+
+  p, :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-[#b4befe] mb-4;
+  }
+
+  em, :where(em):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    @apply text-[#fab387] italic;
+  }
+*/
+  }
+    /*
   * ===== END =====
   */
 
@@ -137,8 +285,8 @@
     background-image: linear-gradient(
       transparent,
       transparent 5px,
-      var(--theme-text) 5px,
-      var(--theme-text)
+      var(--theme-text-2) 5px,
+      var(--theme-text-2)
     );
   }
 
@@ -146,8 +294,8 @@
     background-image: linear-gradient(
       transparent,
       transparent 4px,
-      var(--theme-accent) 4px,
-      var(--theme-accent)
+      var(--theme-accent-2) 4px,
+      var(--theme-accent-2)
     );
   }
 

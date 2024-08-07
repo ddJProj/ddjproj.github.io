@@ -1,6 +1,6 @@
 ---
 title: 'Artifact Enhancement # 2 - Data structures and Algorithms'
-description: 'This listing includes a formal write-up for the following project. Completed for Computer Science Capstone final project in last semester before graduation. This is the second of three enhancement stages to satisfy the competency criteria for Data Structures and Algorithms.'
+description: 'This is the second of three enhancement stages to satisfy the competency criteria for Data Structures and Algorithms.'
 pubDate: 'July 20, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
@@ -9,13 +9,16 @@ platform: Console/Terminal Emulator
 stack: ['Rust', 'MySQL']
 website: https://ddjproj.github.io/
 github:  https://github.com/ddJProj/CS499-Capstone-Project_Artifact-Enhancements
-order: 5 
+order: 2 
 ---
+
+
+This project listing includes a formal write-up for the second stage of enhancements for the completed Computer Science Capstone project. Project was finished during last semester before graduation. 
 
 
 # Artifact 2: Enhancements write-up: 
 
-The following is my entire planned list of stage 2, Data Structures & Algorithms, enhancements for this artifact project. These were previously included in the updated version of my formal planning document for the project.
+The following is my entire planned list of stage 2, **Data Structures & Algorithms**, enhancements for this artifact project. These were previously included in the updated version of my formal planning document for the project.
 
 
 - **Enhancement 13:** Develop an AVL tree data structure for storing and managing Client objects.
@@ -27,7 +30,7 @@ The following is my entire planned list of stage 2, Data Structures & Algorithms
 - **Enhancement 17:** Implement mechanism to handle invalid login attempts (too many / authentication state tracking).
   
 
-## 1. Briefly describe the artifact. What is it? When was it created?
+## Briefly describe the artifact. What is it? When was it created?
 
   
 
@@ -35,7 +38,7 @@ To satisfy the data structures and algorithms component of my degree capstone, I
 
   
 
-## 2. Justify the inclusion of the artifact in your ePortfolio. Why did you select this item?
+## Justify the inclusion of the artifact in your ePortfolio. Why did you select this item?
 
 I believe strongly that the inclusion of these projects, and their contribution towards my second artifact strongly demonstrate a grasp of the core principles of data structures and algorithms. I selected this specific data structure, an AVL tree, due to it's highly desirable, dependable time complexity. I selected the project from CS410, because I believe that by enhancing it as thoroughly as I have, it again demonstrates that I have a strong understanding of relevant computer science principles, and that I can make sound determinations, and rationalizations regarding the use of specific code implementations. I strongly believe that my final projects for CS300, and for CS410 were both some of my best work in the program up to this point, and I spent a rather large amount of time on each of them. As far as specific components that show my abilities in algorithms and data structures, with the AVL tree, it would be the level of care and detail that went into the implementation of the functions that are responsible for tracking and managing the balancing operations for the tree. I remember when I was first reading about how the rotations are used to realign/return the tree to a balanced state, and it took a great deal of effort to make myself comfortable with, and to internalize the process.
 
@@ -91,7 +94,7 @@ To satisfy the remaining hashing / encryption related enhancement, enhancement 1
 
   
 
-## 3. Did you meet the course objectives you planned to meet with this enhancement in Module One? Do you have any updates to your outcome-coverage plans?
+## Did you meet the course objectives you planned to meet with this enhancement in Module One? Do you have any updates to your outcome-coverage plans?
 
   
 
@@ -105,7 +108,7 @@ The second of these outcomes is, demonstrating "an ability to use well-founded a
 
   
 
-## 4. Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
+## Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
 
   
 

@@ -1,7 +1,7 @@
 ---
-title: 'Computer Science Capstone Artifact/Project - Planning the Enhancement stages'
-description: 'This project posting will cover the initial planning stages and documentation write-up. A formal code review was performed and recorded, as well as writing out a detailed planning document.'
-pubDate: 'Jun 30 2024'
+title: 'Computer Science Capstone Project'
+description: 'Planning the project, documenting the enhancements'
+pubDate: 'July 10, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
   alt: 'Planning stage for the application rewrite + enhancements.'
@@ -9,42 +9,41 @@ platform: Console / Terminal application
 stack: ['Cpp', 'Assembly', 'Rust', 'MySQL']
 website: https://ddjproj.github.io/
 github:  https://github.com/ddJProj/
-order: 3 
+order: 1
 ---
 
-# Source Repositories:
+## Source Repositories:
 
-## Original C++ project (Basis of all three enhancements):
+#### Original C++ project (Basis of all three enhancements):
 [Link to the GitHub repository containing the original C++ application's source code](https://github.com/ddJProj/CS410/tree/main/Project-2)
 
-## My original implementation of an AVL Tree in C++ (Used in enhancement stage 2):
+#### My original implementation of an AVL Tree in C++ (Used in enhancement stage 2):
 [Link to the GitHub repository containing the original C++ AVL tree implementation](https://github.com/ddJProj/CS300/tree/main/ABCU_Project-2)
 
-## Completed rewrite of the original C++ project, in Rust:
+#### Completed rewrite of the original C++ project, in Rust:
 [Link to the GitHub repository containing completed, enhanced Rust project & source code](https://github.com/ddJProj/CS499-Capstone-Project_Artifact-Enhancements)
 
 
-# Code review of my initial C++ application's code-base (video recording):
-
-The following video is the result of me conducting a code review on the final project written for CS410 - Reverse Engineering. I will walk through the code base, and then cover how I plan to create enhancements to the existing code base in the my final project of my Computer Science - Capstone Course. 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E1CH3KFfx1Q?si=WtFmFfg0rW4LCyg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-# Computer Science Capstone Project - Full planning documentation for rewrite of C++ application into Rust. 
 
-## Application rewrite will take place in three stages. Each of enhancements stage has the goal of meeting competency criteria for their respective category of Computer Science.
+
+## <h2>Computer Science Capstone Project - Detailed plan documentation for rewrite of C++ application into Rust.</h2> 
+<p>
+This project posting will cover the initial planning stages and documentation write-up. A formal code review was performed and recorded, as well as writing out a detailed planning document.
+
+<b>Application rewrite will take place in three stages. Each of enhancements stage has the goal of meeting competency criteria for their respective category of Computer Science.</b>
 
 The three categories include: 
 - Software Engineering and Design
 - Data Structures and Algorithms
 - Database Design and Implementation
+</p>
+<br></br>
 
+# Self-Introduction:
 
-
-# 1. Self-Introduction:
-
-## 1. What have you learned while in the Computer Science program? List three of the most important concepts or skills you have learned.
+## What have you learned while in the Computer Science program? List three of the most important concepts or skills you have learned.
 
 I have learned a tremendous amount over the past year while studying in this program.
 
@@ -55,11 +54,15 @@ The second important topic I learned in this program, is how applications are co
 Last, I would say that understanding linear algebra was instrumental in developing myself. Specifically I would look to concepts like dot product calculations, orthogonality, how stochastic systems work, also how Markov chains / Markov models can be applied and used in machine learning. Additionally, just generally understanding concepts that involve manipulating matrices, and their usage in different algorithmic computations such as with compression, or cryptographic algorithms.
   
 
-## 2. Discuss the specific skills you aim to demonstrate through your enhancements to reach each of the course outcomes.
+## Discuss the specific skills you aim to demonstrate through your enhancements to reach each of the course outcomes.
 
 For this course, I focused on demonstrating my skills in organization, in designing back-end implementations for secure software applications, as well as quickly adapting to, and then become proficient in new technologies. I  primarily focused on rewriting the C++ client handling application that I turned in for my reverse engineering course.
 
-I sought to clearly demonstrate that I am capable of independently researching, learning, and then implementing new development strategies. This assessment was broken into three segments, **software engineering and design**, **data structures and algorithms**, as well as **database implementation**.
+I sought to clearly demonstrate that I am capable of independently researching, learning, and then implementing new development strategies. This assessment was broken into three enhancement segments:
+- **Software Engineering and Design**, 
+- **Data Structures and Algorithms**, 
+- **database implementation**.
+
 To meet the desired software engineering and design aspects, I will be focused on providing clean code that meets the standards of industry best secure coding practices.
 
 For data structures and algorithms, I focused on both designing, then implementing modular, reusable code, and when necessary implemented appropriate data structures to handle operations within the application. This was done while considering the time-complexity of various implementations.
@@ -67,14 +70,14 @@ For data structures and algorithms, I focused on both designing, then implementi
 For the database component I designed, then implemented a database integration for my application. It was one that handles application authentication, as well as managing client data. I aimed to demonstrate that the database integration focused on providing secure communications / authentication, and again followed best practices.
   
 
-## 3. How do the specific skills you will demonstrate align with your career plans related to your degree?
+## How do the specific skills you will demonstrate align with your career plans related to your degree?
 
 The skills I have mentioned are critical to the work and research of my intended career path. Learning to carefully apply them is what will allow me to develop practical solutions to any problems that I face, whether it be software based, or in solving chemical / material based computations. My career goal is to end up working as computational scientist. This project is significant to me because it allowed me to demonstrate how well I have been able to refine my problem solving capabilities. In this context, this was done through the design and implementation of a program that seek to generate solutions to complex problems.
 
 To reach my career aspirations, I both want, and need to be accustomed working in environments that are challenging, and that may be lacking in guidance. I feel that this project will serve as a valuable contribution towards demonstrating that I am quite capable of thriving under these conditions.
 
 
-## 4. How does this contribute to the specialization you are targeting for your career?
+## How does this contribute to the specialization you are targeting for your career?
 
 I plan to apply for internships and employment positions related to computational programming, low level software engineering, embedded systems, and machine learning. With my background in biochemistry, I also plan to begin applying to masters programs for computational science or data science and computation.
 
@@ -92,7 +95,7 @@ With this capstone project, I hope to be able to demonstrate that I am capable o
 5. _Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources._
 
 
-# 2. Enhancement Plan:
+# Enhancement Plan:
 
 ## Category One: Software Engineering and Design
 ### 1. Select an artifact that is aligned with the software engineering and design category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan.
@@ -106,7 +109,7 @@ I rewrote the entire application, included validation checks and sanitization. I
 [My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CS410/blob/main/Project-2/Mod6_Updated-Security-CPP_E-Johnson.cpp)
 
   
-### 2. Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.
+### Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.
 
 #### Artifact 1 – Software Engineering - Initial Planning:
 
@@ -448,38 +451,37 @@ DECLARE module "Authentication"    {
 
 
 
-### 3. Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.
+### Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.
 
-#### 1. Identify and describe the specific skills you will demonstrate that align with the course outcome
+#### Identify and describe the specific skills you will demonstrate that align with the course outcome
 
-	For category one, I will be translating each of the functions in my C++ application into the respective Rust equivalent. This will include input validation / sanitization, using rust's equivalents of object oriented programming, as well as providing the set up for a password hash function. I have been studying rust in my free time since the new year. Prior to this project, I have yet to find time to dig deeply into writing an application in rust, as I have not had much free time to work on side projects while completing this degree. This will be my first full, hands-on experience with the Rust programming language where I am not just following along with someone else's work. I plan to use this learning experience to demonstrate my proficiency, ability, and organization when learning new concepts / languages. Between this artifact and the third artifact, I will also be focusing on the security of my application, implementing both best practices, and the industry standards for both tools and styling.
+For category one, I will be translating each of the functions in my C++ application into the respective Rust equivalent. This will include input validation / sanitization, using rust's equivalents of object oriented programming, as well as providing the set up for a password hash function. I have been studying rust in my free time since the new year. Prior to this project, I have yet to find time to dig deeply into writing an application in rust, as I have not had much free time to work on side projects while completing this degree. This will be my first full, hands-on experience with the Rust programming language where I am not just following along with someone else's work. I plan to use this learning experience to demonstrate my proficiency, ability, and organization when learning new concepts / languages. Between this artifact and the third artifact, I will also be focusing on the security of my application, implementing both best practices, and the industry standards for both tools and styling.
 
   
 
-#### 2. Select one or more of the course outcomes below that your enhancement will align with.
+#### Select one or more of the course outcomes below that your enhancement will align with.
 
-	The first artifact enhancement primarily aligns with two of the provided course outcomes.
+The first artifact enhancement primarily aligns with two of the provided course outcomes.
 	
-	- The first course outcome that this conversion process aligns with is developing, "a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources." The reason for learning and using the rust language to rewrite this application is due to its built-in safety features, and the way in which it securely handles memory management. Using Rust in this application will allow me to mitigate many of the memory related security issues that arise from implementations using C++.
+- The first course outcome that this conversion process aligns with is developing, "a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources." The reason for learning and using the rust language to rewrite this application is due to its built-in safety features, and the way in which it securely handles memory management. Using Rust in this application will allow me to mitigate many of the memory related security issues that arise from implementations using C++.
 	    
-	- The second outcome this enhancement aligns with is the, "ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals." Through the process of rewriting this application in a language that I am not yet comfortable with, I will showcase my capability to quickly adapt to new technologies while in challenging scenarios, and that I am able to deliver real value, all while meeting industry standards.
+- The second outcome this enhancement aligns with is the, "ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals." Through the process of rewriting this application in a language that I am not yet comfortable with, I will showcase my capability to quickly adapt to new technologies while in challenging scenarios, and that I am able to deliver real value, all while meeting industry standards.
 
   
-
 ## Category Two: Algorithms and Data Structures
 
-### 1. Select an artifact that is aligned with the algorithms and data structures category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan.
+### Select an artifact that is aligned with the algorithms and data structures category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan.
 
-For the second artifact, I will again be using my final project from my CS410 reverse engineering course. In the original C++ code, the list of clients is handled with a singleton class "ClientList" which contains a private vector "clientList" that stores all of the individual clients. The list is accessed through a static accessor method that returns the clientList instead of a public constructor. A second class is used to create Client objects, and a client object can be created by calling the addClient function in the ClientList class. This addClient function then calls the constructor for the Client class, and then pushes the new object instance into the vector of Client objects. For this application, I will plan to implement an AVL tree that stores client instances and balances itself by client id values. For source material, I will be building and basing this AVL tree on the implementation that I first created for my Data Structures and Algorithms final project.
+For the second artifact, I will again be using my final project from my CS410 reverse engineering course. In the original C++ code, the list of clients is handled with a singleton class "ClientList" which contains a private vector "clientList" that stores all of the individual clients. The list is accessed through a static accessor method that returns the clientList instead of a public constructor. A second class is used to create Client objects, and a client object can on into the respective Rust equivalent. This will include input validation / sanitization, using rust's equivalents of object oriented programming, as well as providing tbe created by calling the addClient function in the ClientList class. This addClient function then calls the constructor for the Client class, and then pushes the new object instance into the vector of Client objects. For this application, I will plan to implement an AVL tree that stores client instances and balances itself by client id values. For source material, I will be building and basing this AVL tree on the implementation that I first created for my Data Structures and Algorithms final project.
 
 **Link to C++ source code for project:**  
 [My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CS410/blob/main/Project-2/Mod6_Updated-Security-CPP_E-Johnson.cpp)
 
-**Link to my original C++ AVL tree implementation:**
+**Link to my original C++ AVL tree implementation:**	            		     
 [My AVL_tree C++ implementation:](https://github.com/ddJProj/CS300/tree/main/ABCU_Project-2)
 
 
-### 2. Describe a practical, well-illustrated plan for enhancement in alignment with the category, including pseudocode that illustrates the planned enhancement.
+### Describe a practical, well-illustrated plan for enhancement in alignment with the category, including pseudocode that illustrates the planned enhancement.
 
 #### Artifact 2 – Data Structures and Algorithms - Initial Planning:
 
@@ -729,28 +731,28 @@ IMPLEMENT avl_tree
 
 
 
-### 3. Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.
+### Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.
 
-#### 1. Identify and describe the specific skills you will demonstrate to align with the course outcome.
+#### Identify and describe the specific skills you will demonstrate to align with the course outcome.
 
-	I will be focused on demonstrating my attention to detail in this second artifact. Much of the algorithmic design and implementation in this program will require me to very closely monitor my code for any syntax errors. Failing to properly implement a complex data structure such as an AVL tree can lead to significant, undesirable behaviors. I experienced these undesirable behaviors the first time I attempted to implement a self-balancing tree. Troubleshooting a complex program can be difficult, but I aim to show with this work that I am quite capable of maintaining project scope, all while still being able to move the project forward.
+I will be focused on demonstrating my attention to detail in this second artifact. Much of the algorithmic design and implementation in this program will require me to very closely monitor my code for any syntax errors. Failing to properly implement a complex data structure such as an AVL tree can lead to significant, undesirable behaviors. I experienced these undesirable behaviors the first time I attempted to implement a self-balancing tree. Troubleshooting a complex program can be difficult, but I aim to show with this work that I am quite capable of maintaining project scope, all while still being able to move the project forward.
 
 
   
 
-#### 2. Select one or more of the course outcomes listed under Category One that your enhancement will align with.
+#### Select one or more of the course outcomes listed under Category One that your enhancement will align with.
 
-	The planned enhancements for this artifact will focus on demonstrating two of the provided course outcomes.
+The planned enhancements for this artifact will focus on demonstrating two of the provided course outcomes.
 	
-	The first outcome for this artifact that I will be demonstrating is to, "Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices." By implementing an AVL tree, I will demonstrate my understanding of the performance trade-offs of using various data structures. AVL trees are a form of binary search tree that is self-balancing. This self-balancing process allows the data structure to maintain a known time complexity for it's operations of O(log n). Operations with this time complexity are highly desirable. Seeing as the client list may continue to grow, it is desirable to know that the performance of the system will not vary or degrade significantly performance, as can be seen in cases of O(n) and beyond. This was a determining factor in selecting this data structure for the system.
+The first outcome for this artifact that I will be demonstrating is to, "Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices." By implementing an AVL tree, I will demonstrate my understanding of the performance trade-offs of using various data structures. AVL trees are a form of binary search tree that is self-balancing. This self-balancing process allows the data structure to maintain a known time complexity for it's operations of O(log n). Operations with this time complexity are highly desirable. Seeing as the client list may continue to grow, it is desirable to know that the performance of the system will not vary or degrade significantly performance, as can be seen in cases of O(n) and beyond. This was a determining factor in selecting this data structure for the system.
 	
-	The second outcome that I will demonstrate is, "an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals." I will demonstrate this outcome through my usage of clean, modular algorithms, and proper usage of included data structures. Through my implementations, I will provide a finished software application that is both functional, and that delivers on the expected values for a software application of this type, within its respective industry.
+The second outcome that I will demonstrate is, "an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals." I will demonstrate this outcome through my usage of clean, modular algorithms, and proper usage of included data structures. Through my implementations, I will provide a finished software application that is both functional, and that delivers on the expected values for a software application of this type, within its respective industry.
 
   
 ## Category Three: Databases
   
 
-### 1. Select an artifact that is aligned with the databases category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan. You may choose work from the courses listed under Category One.
+### Select an artifact that is aligned with the databases category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan. You may choose work from the courses listed under Category One.
   
 
 For the database artifact selection, I will again be selecting the client service management application that I rewrote and designed for my final project in CS410, Reverse Engineering. A core aspect of this application system relies on its authentication system. Currently the application only uses a single password hash and user account to validate user login to the system. This data is stored locally within the application, and hard coding credentials into an application, even when hashed, does not follow best, secure coding practices. I noted in my code comments when initially creating the program, that the next step for the application would be to provide a database system that stored user login names and their corresponding password hashes. As I am going to be converting this application to the Rust programming language over the course of completing my first artifact, I will also need to write this database implementation in Rust.
@@ -761,7 +763,7 @@ For the database artifact selection, I will again be selecting the client servic
 [My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CS410/blob/main/Project-2/Mod6_Updated-Security-CPP_E-Johnson.cpp)
 
 
-### 2. Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.
+### Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.
 
 #### Artifact 3 – Database – Initial Planning:
 
@@ -1143,100 +1145,100 @@ IMPLEMENT ClientHandler
 
 
 
-### 3. Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.
+### Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.
     
 
-#### 1. Identify and describe the specific skills you will demonstrate that align with the course outcome.
+#### Identify and describe the specific skills you will demonstrate that align with the course outcome.
 
-	The specific skills that I am demonstrating with this third artifact are my willingness to dig into research topics until I am satisfied that I have determined the best way to approach a problem. With this database implementation specifically, I have searched through the rust foundation documents, through at least a dozen different stack overflow posts reading how others approached their problem that I could relate to, and several tutorials or other descriptive guides for how to implement a SQL relational database in Rust.
+The specific skills that I am demonstrating with this third artifact are my willingness to dig into research topics until I am satisfied that I have determined the best way to approach a problem. With this database implementation specifically, I have searched through the rust foundation documents, through at least a dozen different stack overflow posts reading how others approached their problem that I could relate to, and several tutorials or other descriptive guides for how to implement a SQL relational database in Rust.
 	
 	  
 	
-	My goal and hope is to demonstrate that I am resourceful. Additionally, I enjoy the work that I am doing. I enjoy the challenge, and I very much want to deliver on the best possible product that I can, every time. I am dedicated to maintaining a strong work ethic, and I hope that it is apparent in the product that I deliver on. I feel that these align with my stated outcome for this artifact, in so far as, I do my best to apply the tools that I feel will create a strong, reliable product. I am not omniscient, but I am willing to put the time and effort into attempting to make things work, and to do so the “right” way (Or at least using the current best industry standards). I will take the time to consider why I might choose one implementation over another, and to consider as many edge cases as I am able to. Because I do believe that the effort matters.
+My goal and hope is to demonstrate that I am resourceful. Additionally, I enjoy the work that I am doing. I enjoy the challenge, and I very much want to deliver on the best possible product that I can, every time. I am dedicated to maintaining a strong work ethic, and I hope that it is apparent in the product that I deliver on. I feel that these align with my stated outcome for this artifact, in so far as, I do my best to apply the tools that I feel will create a strong, reliable product. I am not omniscient, but I am willing to put the time and effort into attempting to make things work, and to do so the “right” way (Or at least using the current best industry standards). I will take the time to consider why I might choose one implementation over another, and to consider as many edge cases as I am able to. Because I do believe that the effort matters.
 
   
 
-#### 2. Select one or more of the course outcomes listed under Category One that your enhancement will align with.
+#### Select one or more of the course outcomes listed under Category One that your enhancement will align with.
 	
-	My database implementation for the third artifact selection will demonstrate primarily the following course outcome, "an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals."
+My database implementation for the third artifact selection will demonstrate primarily the following course outcome, "an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals."
 	
-	With my tool implementations and styling, I will also look to meet the secondary outcome of, "a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources."
+With my tool implementations and styling, I will also look to meet the secondary outcome of, "a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources."
 	
-	I am aiming to provide a database implementation that provides stable performance, and that meets the standards of industry best practices. I see this artifact enhancement as an opportunity to meet the same standards that I would be held to if I were a senior engineer doing this job. I don’t yet have the experience of a senior engineer, but I am more than willing to put in the time and work to get there.
+I am aiming to provide a database implementation that provides stable performance, and that meets the standards of industry best practices. I see this artifact enhancement as an opportunity to meet the same standards that I would be held to if I were a senior engineer doing this job. I don’t yet have the experience of a senior engineer, but I am more than willing to put in the time and work to get there.
 	
-	Prior to this project, my only real experience implementing databases was with MongoDB for my CS340, and CS465 courses. CS340 was focused on performing queries and uploading data to the database, and CS465 primarily focused on angular / express js.
+Prior to this project, my only real experience implementing databases was with MongoDB for my CS340, and CS465 courses. CS340 was focused on performing queries and uploading data to the database, and CS465 primarily focused on angular / express js.
 	
-	I have not yet had the opportunity to thoroughly dig into MySQL, but I have read that it is very valuable to have experience with. I have looked through the available database frameworks to find what would be the industry standard, as well as what is most marketable. I noticed that much of FAANG uses MySQL, and that was something I factored into my decision on MySQL. For this database implementation I hoped to build some experience with it, so I would like to use MySQL to handle my database and application’s queries. In doing so, I will further demonstrate that I am capable of picking up, and gaining proficiency in new technologies. I will implement an SQL relational database that will track client data in the first table, and handle employee user login authentication / validation attempts with a second table.
+I have not yet had the opportunity to thoroughly dig into MySQL, but I have read that it is very valuable to have experience with. I have looked through the available database frameworks to find what would be the industry standard, as well as what is most marketable. I noticed that much of FAANG uses MySQL, and that was something I factored into my decision on MySQL. For this database implementation I hoped to build some experience with it, so I would like to use MySQL to handle my database and application’s queries. In doing so, I will further demonstrate that I am capable of picking up, and gaining proficiency in new technologies. I will implement an SQL relational database that will track client data in the first table, and handle employee user login authentication / validation attempts with a second table.
 	
-	To meet the secondary outcome, I will ensure that the methods that I implement in my application follow the best known security standards for the technologies / language of my choice. I have already researched into what the best approaches are when it comes to encryption and hashing, including using a secure, updated version of MySQL, and using the relevant, up to date Argon2 crate.
+To meet the secondary outcome, I will ensure that the methods that I implement in my application follow the best known security standards for the technologies / language of my choice. I have already researched into what the best approaches are when it comes to encryption and hashing, including using a secure, updated version of MySQL, and using the relevant, up to date Argon2 crate.
 
   
 
     
 
 
-# 3. Skills and outcomes planned to be illustrated in the code review
+## Skills and outcomes planned to be illustrated in the code review
 
 My selection of a language that I am not as familiar with as others does complicate the code review somewhat. With the code review, I would typically look to demonstrate my knowledge of the language, and it's various implementations. As I am not as well versed in rust yet, my focus will be more on providing functional equivalence to the original C++ code. I will still obviously aim to use industry best standards in regards to the rust implementations that I select for use in my application. I will detail the functionality of choices that I have made in my conversion and code review, and I will also explain why I selected the choices that I did. Showing that I am still capable of producing quality work, even when using a language I am not yet familiar with I feel would be a strong indicator of my skill in adapting to new situations, and to new tools.
 
   
 
-# 4. Skills and outcomes planned to be illustrated in the narratives
+## Skills and outcomes planned to be illustrated in the narratives
 
 The primary skill that I plan to highlight in my narrative essays, is my ability to use language to effectively communicate with others. Being able to effectively communicate complex topics is something that I have been told that I am exceptional at. In a past life, I was a teaching assistant for my college chemistry professor. I am well aware how important it is to synthesize your knowledge into digestible, bite size pieces, especially when dealing with non-technical audiences. In my narratives, I will plan to highlight the reasoning behind my algorithm choices, as well as how I approach problem solving in general. There wasn't a great deal of space for collaborative exercises, or teamwork as far as this degree program goes. That won't likely be the case for most careers. I was employed at different times with both FedEx and UPS in management positions, so I do understand the value and necessity of both working on, and leading a team. I will plan to show how my organization, and work ethic helps me to be an effective leader, even when not filling an active leadership role.
 
   
 
-# 5. Skills and outcomes planned to be illustrated in the professional self-assessment
+## Skills and outcomes planned to be illustrated in the professional self-assessment
 
 I will use the professional assessment of this project to cover following three skill groupings points. These three points are core to understanding who I am, and how I work in. These are the core points that I also would like to demonstrate through my work on this project.
 
 ## My own self-awareness, and focus on growth state:
     
-    - The first is my views of the importance of constant personal growth in relation to this. I often find myself hyper-aware of the faults in my work. This is a definite strength I've found, as it allows me to catch many faults before they become issues, but for a long time it was also problematic for me. I have since grown to become more comfortable with the concept of "good enough". It is not something that I am particularly fond of, but it is something that absolutely is necessary at times if we ever hope to reach a conclusion with our work / projects.
+- The first is my views of the importance of constant personal growth in relation to this. I often find myself hyper-aware of the faults in my work. This is a definite strength I've found, as it allows me to catch many faults before they become issues, but for a long time it was also problematic for me. I have since grown to become more comfortable with the concept of "good enough". It is not something that I am particularly fond of, but it is something that absolutely is necessary at times if we ever hope to reach a conclusion with our work / projects.
 
 
 ## Iterative work, planning, and improvement:
     
-    - I will talk briefly cover how my planning and organization strategies allow me to quickly iterate on the work I produce. This skill provides me with the opportunity to quickly get my work to an acceptable level, and then to progressively sharpen it with additional reviews, critiques, and refactoring. The ability to productively iterate on your work I believe, is an exceptionally useful skill to have in a software development role. It allows the boulder that is our work progress to continue moving forward, and I have found provides the breathing room necessary to make adjustments when needed.
+- I will talk briefly cover how my planning and organization strategies allow me to quickly iterate on the work I produce. This skill provides me with the opportunity to quickly get my work to an acceptable level, and then to progressively sharpen it with additional reviews, critiques, and refactoring. The ability to productively iterate on your work I believe, is an exceptionally useful skill to have in a software development role. It allows the boulder that is our work progress to continue moving forward, and I have found provides the breathing room necessary to make adjustments when needed.
         
-    - I am always looking for ways to improve myself, the work I produce, and my surroundings. I believe it is this quality that has led to me quickly picking up positions of responsibility in the jobs that I have held.
+- I am always looking for ways to improve myself, the work I produce, and my surroundings. I believe it is this quality that has led to me quickly picking up positions of responsibility in the jobs that I have held.
 
 
 ## Radical acceptance, and adaptability:
     
-    - In my artifact outcome statements I mentioned that my openness allows me to rapidly adapt to new technologies, but it is also a trait that I possess socially. All of my adult life, I have found it quite easy to socially adapt to the trends and needs of my environment. I am generally happy to embrace changes, especially when they are adaptations that will improved a former process.
+- In my artifact outcome statements I mentioned that my openness allows me to rapidly adapt to new technologies, but it is also a trait that I possess socially. All of my adult life, I have found it quite easy to socially adapt to the trends and needs of my environment. I am generally happy to embrace changes, especially when they are adaptations that will improved a former process.
         
-    - I have been told a number of times that I am a strong listener who is very receptive to feedback. I have also been told that I am very easy to get along with. I have received similar comments from peers, colleagues and supervisors. I feel that this is generally due to my own openness and awareness of my surroundings in the first case. And having a large capacity for empathy in the second case. I genuinely enjoy seeing my peers succeed, it makes me happy, especially when I have been there to watch their progress.
+- I have been told a number of times that I am a strong listener who is very receptive to feedback. I have also been told that I am very easy to get along with. I have received similar comments from peers, colleagues and supervisors. I feel that this is generally due to my own openness and awareness of my surroundings in the first case. And having a large capacity for empathy in the second case. I genuinely enjoy seeing my peers succeed, it makes me happy, especially when I have been there to watch their progress.
 
 
 ## Moving forward:
     
-    - Looking forward into the future I plan to continue expanding my base of tools of which I am proficient with. I will continue to work on becoming a better software engineer, and I hope to be able to likewise also advance my education.
+- Looking forward into the future I plan to continue expanding my base of tools of which I am proficient with. I will continue to work on becoming a better software engineer, and I hope to be able to likewise also advance my education.
 
   
 
-# 6. If you fulfill your enhancement plans, what specific skills or knowledge will your work demonstrate?
+## If you fulfill your enhancement plans, what specific skills or knowledge will your work demonstrate?
 
-	There are several core skills that I hope to demonstrate with my enhancement work this semester. The first of these skills is in my work ethic, and my motivation to provide the best quality of product that I can in any given time-frame. The next set of skills I hope my work demonstrates are both my attention to detail, and level of detail in my work provided. As I have previously mentioned, I always aim to deliver the highest quality of work, even with code that I expect no one else will ever see. I am a perfectionist that understands that there is no such thing as perfection. What this means, is I am fully aware that the code I write, and work I provide can never be "perfect", but I don't think that should ever stop us from always looking for the next improvement that we can make, both in ourselves, and in our work. Going through the process of analyzing your work from different perspectives is how we progress and become better over time, and I plan to continue doing so as long as I am able.
+There are several core skills that I hope to demonstrate with my enhancement work this semester. The first of these skills is in my work ethic, and my motivation to provide the best quality of product that I can in any given time-frame. The next set of skills I hope my work demonstrates are both my attention to detail, and level of detail in my work provided. As I have previously mentioned, I always aim to deliver the highest quality of work, even with code that I expect no one else will ever see. I am a perfectionist that understands that there is no such thing as perfection. What this means, is I am fully aware that the code I write, and work I provide can never be "perfect", but I don't think that should ever stop us from always looking for the next improvement that we can make, both in ourselves, and in our work. Going through the process of analyzing your work from different perspectives is how we progress and become better over time, and I plan to continue doing so as long as I am able.
 	  
 	
-	As far as additional skills go, one of my main goals with this project was to demonstrate that I am very capable of adapting to new technologies or frameworks. The quality of my work obviously won't be on the same level as an expert would be with those technologies, but it won't take me long to become very competent with a new skill-set. I believe that this ties back into my attention to detail, and my ability to recognize patterns. It allows me to be able to competently, and quickly become proficient with new skills.
+As far as additional skills go, one of my main goals with this project was to demonstrate that I am very capable of adapting to new technologies or frameworks. The quality of my work obviously won't be on the same level as an expert would be with those technologies, but it won't take me long to become very competent with a new skill-set. I believe that this ties back into my attention to detail, and my ability to recognize patterns. It allows me to be able to competently, and quickly become proficient with new skills.
 
   
 
-# 7. Are there any gaps relative to the course outcomes?
+## Are there any gaps relative to the course outcomes?
 
-	There are gaps relative to the course outcomes primarily in the first two outcomes from the list. The first of the two course outcomes for which my work contains gaps, is to "employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science". My focus in completing this project, and in displaying my work through my ePortfolio, is to provide display the quality of work that I am capable of delivering. In the past, I have excelled at team related collaboration, both for education related projects, and in my employment. I am a very capable, team player, and while I may not be displaying the fact that I am inclusive of diverse groups in this specific project, I do hope to show that I am very well organized.
+There are gaps relative to the course outcomes primarily in the first two outcomes from the list. The first of the two course outcomes for which my work contains gaps, is to "employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science". My focus in completing this project, and in displaying my work through my ePortfolio, is to provide display the quality of work that I am capable of delivering. In the past, I have excelled at team related collaboration, both for education related projects, and in my employment. I am a very capable, team player, and while I may not be displaying the fact that I am inclusive of diverse groups in this specific project, I do hope to show that I am very well organized.
 	
-	The second of these gaps stems can be found in the course outcome, "Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts." As my work for this project is primarily in the form of code, those forms of communication would not meet the oral or visual communications requirements. I will be providing brief but descriptive documentation in the form of inline and function comments where possible. I will also be providing my written statements in regards to what I am looking to demonstrate with my work on this project. If the opportunity presents itself, I would have no problem providing oral or visual communications, but in the context of this project I am unsure of where those would be included. 
-	
-	I did not have plans to specifically address the outcome initially, that I have been able to meet the outcome, "Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts." But I ended up being able to meet thing outcome with the conclusion of my project enhancements. I do feel that through providing my detailed documentation write-ups, as well as the recorded code walk-through videos I have been able to meet this outcome.
+The second of these gaps stems can be found in the course outcome, "Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts." As my work for this project is primarily in the form of code, those forms of communication would not meet the oral or visual communications requirements. I will be providing brief but descriptive documentation in the form of inline and function comments where possible. I will also be providing my written statements in regards to what I am looking to demonstrate with my work on this project. If the opportunity presents itself, I would have no problem providing oral or visual communications, but in the context of this project I am unsure of where those would be included. 
+
+I did not have plans to specifically address the outcome initially, that I have been able to meet the outcome, "Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts." But I ended up being able to meet thing outcome with the conclusion of my project enhancements. I do feel that through providing my detailed documentation write-ups, as well as the recorded code walk-through videos I have been able to meet this outcome.
 	
 
-# 8. Are there remaining limitations or weaknesses you may need to address?
+## Are there remaining limitations or weaknesses you may need to address?
   
-	Most of my remaining limitations or weaknesses that I am aware of at least, stem from my lack of experience. The fact that I haven't had nearly as much time as I would like to write code outside of my coursework, to me at least, feels apparent. I finished four year CS program in a half the expected time, but I still have a great deal of practical learning that I know I need to continue to work on. I am able to come to strong conclusions, and I approach problems using the best methods that I can find, but I often find myself discovering new approaches after I have finished working on something. I would very much like to have the opportunity to both gain exposure to other’s code, and to write more code in general. I do feel that with more time spent coding, I will learn to smooth out the initial hurdle I often face when trying to determine the best approach to a specific problem. I also would like to spend more time analyzing and reading through the existing systems built by other developers so that I can perhaps discover approaches and conclusions that I may not have come to myself.
+Most of my remaining limitations or weaknesses that I am aware of at least, stem from my lack of experience. The fact that I haven't had nearly as much time as I would like to write code outside of my coursework, to me at least, feels apparent. I finished my four year CS program in a half the expected time, but I still have a great deal of practical learning that I know I need to continue to work on. I do have a background in computer science related fields, both through work experience, and through prior courses taken earlier in my life. I am able to come to strong conclusions, and I approach problems using the best methods that I can find, but still I often find myself discovering new approaches after I have finished working on something. I would very much like to have the opportunity to both gain exposure to other’s code, and to write more code in general. I do feel that with more time spent coding, I will learn to smooth out the initial hurdle I often face when trying to determine the best approach to a specific problem. I also would like to spend more time analyzing and reading through the existing systems built by other developers so that I can perhaps discover approaches and conclusions that I may not have come to myself.
 
 
 

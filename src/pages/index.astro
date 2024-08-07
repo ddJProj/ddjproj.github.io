@@ -17,7 +17,11 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		desc: "Learn this versatile and powerful programming language.",
 		href: "https://cplusplus.com/",
 	},	
-
+	{
+		title: "Rust",
+		desc: "A language empowering everyone to build reliable and efficient software.",
+		href: "https://www.rust-lang.org/",
+	},	
 	{
 		title: "Java",
 		desc: "Free-to-use, and a versatile language designed for ease of use.",
@@ -82,25 +86,33 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 
 <BaseLayout title="Home">
 	<section>
-		<h1 class="title">Hello! My name is Edward Johnson</h1>
+		<h1 class="title">Hello! I'm Edd.</h1>
 		<p class="mb-4 sm:mb-8">
- 			I'm a fresh Computer science graduate, based in Florida's capital city, Tallahassee. I am in the process of applying for master's programs in computational science. I am also looking for back-end / full stack software engineering positions, or similar internships. I have a background in biochemistry, and I am a proficient, highly driven, problem solver. I would ideally like to find a position that works closely with material sciences, machine learning, or low-level embedded systems.</p>
+			<strong>I'm a recent Computer science graduate, based in Florida's capital city, Tallahassee. </strong>
+			<ul class="list-disc pl-5 space-y-2">
+			<li>I am in the process of applying for master's programs in computational science. </li>
+			<li>I am also looking for back-end / full stack software engineering positions, or similar internships. </li>
+			<li>I have a background in biochemistry, and I am a proficient, highly driven, problem solver. </li>
+			<li>I would ideally like to find a position that works closely with material sciences, machine learning, or low-level embedded systems.</li>
+			</ul>
+		</p>
 		<!-- <div> -->
 		<!-- 	<span>You can find me on: </span> -->
 		<!-- 	<SocialMediaLinks/> -->
 		<!-- </div> -->
 	</section>
 
-	<section class="mt-8 sm:mt-16">
-		<h2 class="title">Posts</h2>
+	<section class="mt-8 sm:mt-10">
+		<h1 class="title">Recent Posts:</h1>
 		<ul class="space-y-4 sm:space-y-2">
 			{allPostsByPinned.map(p => <PostPreview post={p}/>)}
 		</ul>
 	</section>
-
 	<section class="mt-8">
-			<h2 class="title">Technologies</h2>
-			<ul class="space-y- sm:space-y-2">
+	<!-- 
+
+			<h1 class="title">Technologies</h1>
+			<ul class="space-y- sm:space-y-1">
 				{
 					tech.map(({ href, title, desc }) => (
 						<li>
@@ -117,6 +129,7 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 					))
 				}
 			</ul>	
+	-->
 		<div class="mt-8 sn:mt-12">
 			<h3 class="title">Find me on: </h3>
 			<SocialMediaLinks/>

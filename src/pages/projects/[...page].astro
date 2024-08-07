@@ -34,8 +34,8 @@ const { page } = Astro.props;
 ---
 <BaseLayout title="Projects">
 	<section>
-		<h2 class="title">Projects</h2>
-		<ul role="list" class="space-y-2 sm:space-y-4">
+		<h1 class="title">Projects</h1>
+		<ul role="list" class="space-y-2 sm:space-y-8">
 			{page.data.map((p) => (
 				<PostPreview post={p} withDesc/>
 			))}

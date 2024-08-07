@@ -26,10 +26,11 @@ const {
 	</head>
 	<body>
 		<Header/>
-		<main class="grid grid-cols-1 gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-4">
-			<slot/>
-			<slot name="sidebar"/>
-		</main>
+<main class="grid grid-cols-1 gap-y-4 lg:grid-cols-[minmax(0,1fr)_300px] sm:gap-x-4 max-w-7xl mx-auto">
+
+  <slot/>
+  <slot name="sidebar"/>
+</main>
 		<Footer/>
 	</body>
 </html

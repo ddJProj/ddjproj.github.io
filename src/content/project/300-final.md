@@ -4,12 +4,12 @@ description: 'Data Structures and Algorithms - Project 2 (Final)'
 pubDate: 'Feb 27 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
-  alt: 'GitHub wallpaper'
+  alt: 'Data Structures and Algorithms'
 platform: Command-Line Interface - Text processing tool
 stack: ['Cpp', 'Java']
 website: https://ddjproj.github.io/
 github: https://github.com/ddJProj/CS300
-order: 2
+order: 3
 ---
 ## Course Object Handler
 

@@ -34,7 +34,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 ---
 
 <Layout title={title} description={description} image={socialImage} articleDate={articleDate}>
-  <article class="cody-bg prose dark:prose-invert prose-cody text-textColor max-w-4xl">
+  <article class="cody-bg prose prose-cody dark:prose-invert prose-cody text-textColor max-w-4xl">
     <header class="space-y-2">
       {
         heroImage && (
@@ -89,7 +89,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
     </header>
     <hr class="my-4" />
     <main
-      class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent"
+      class="prose-sm prose-headings:font-semibold prose-headings:ml-0 prose-headings:before:absolute prose-headings:before:-ms-0 prose-headings:before:text-accent prose-headings:before:content prose-th:before:content-none prose-a:text-accent"
     >
       <slot />
     </main>

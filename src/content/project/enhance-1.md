@@ -1,6 +1,6 @@
 ---
 title: 'Artifact Enhancement # 1 - Software Engineering and Design'
-description: 'This listing includes a formal write-up for the following project. Completed for Computer Science Capstone final project in last semester before graduation. This is the first of three enhancement stages to satisfy the competency criteria for Software Engineering and Design.'
+description: 'This is the first of three enhancement stages to satisfy the competency criteria for Software Engineering and Design.'
 pubDate: 'July 15, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
@@ -9,16 +9,18 @@ platform: Console/Terminal Emulator
 stack: ['Rust', 'MySQL']
 website: https://ddjproj.github.io/
 github:  https://github.com/ddJProj/CS499-Capstone-Project_Artifact-Enhancements
-order: 4 
+order: 2 
 ---
 
-# Recorded video summary of Artifact 1: Enhancements
+This project listing includes a formal write-up for the completed Computer Science Capstone project. Project was finished during last semester before graduation. 
 
-<iframe width="1177" height="662" src="https://www.youtube.com/embed/xMMnRk9Zxp0" title="Computer Science Capstone - Artifact Enhancements: Stage 1 - Code walk-through" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Recorded video summary of Artifact 1: Enhancements
+<iframe width="640" height="360" src="https://www.youtube.com/embed/xMMnRk9Zxp0" title="Computer Science Capstone - Artifact Enhancements: Stage 1 - Code walk-through" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br></br>
 
 # Artifact 1: Enhancements write-up: 
 
-The following is my entire planned list of stage 1, Software Engineering & Design, enhancements for this artifact project. These were previously included in the updated version of my formal planning document for the project.
+The following is my entire planned list of stage 1 enhancements for this artifact project in the category, Software Engineering & Design. These were previously included in the updated version of my formal planning document for the project.
 
 
 - **Enhancement 1:** Implement Rust's error handling using Result<data T, Err> types. Use the the ? operator to manage propagation.
@@ -35,14 +37,14 @@ The following is my entire planned list of stage 1, Software Engineering & Desig
 - **Enhancement 12:** Implement proper memory management techniques for manually defined lifetime definitions.
 
   
-## 1. Briefly describe the artifact. What is it? When was it created?
+## Briefly describe the artifact. What is it? When was it created?
 
   
 The first artifact started out as my final project for CS410, Reverse engineering. It is a client management system for "SNHU Financial Investment Firm". Our job in creating this project was to take the original code which had no form of exception handling or validation of any type. We were then told to implement security checks into the application that would fix all of the vulnerabilities that were in the original code. It started out as a binary executable which I disassembled into assembly instructions. I then decompiled / reassembled the instructions into C++, and implemented various design overhauls to remove the prior vulnerable implementations. I finished this project in June of this year, 2024. Since that time, I have rewritten the application entirely in rust. In doing so, I have also significantly improved on the security of the applications, all while demonstrating that I have grown and understand core software engineering principles.
 
   
 
-## 2. Justify the inclusion of the artifact in your ePortfolio. Why did you select this item?
+## Justify the inclusion of the artifact in your ePortfolio. Why did you select this item?
 
 I selected this project for my first artifact for several reasons. The first of these reasons is that it is the culmination of my software engineering education. It was my second to last semester of courses, and simultaneously was the point where a number of the concepts and data structures that I have been learning about during my program had been given enough time to sink in. Additionally, I had read and written about how memory works, and how computers perform operations. But I hadn't yet seen the low level instructions that they use to perform their work. I have always been fascinated with taking things apart, and figuring out how they work. This project both demonstrated my understanding of low level instructions, as well as key software engineering principles such as design patterns and data structures. And as such, I am now more capable than ever of conceptualizing and generalizing on that knowledge, and I will continue using it to become a better software engineer.
 
@@ -119,13 +121,13 @@ I believe that together, these points all tie into the greater picture, and show
 
   
 
-## 3. Did you meet the course objectives you planned to meet with this enhancement in Module One? Do you have any updates to your outcome-coverage plans?
+## Did you meet the course objectives you planned to meet with this enhancement in Module One? Do you have any updates to your outcome-coverage plans?
 
 There were two course objectives that I set out to meet with the completion of the first artifact and these enhancements. The first was to “display a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.” The second was an "ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.” I do feel that I have been able to meet both of these outcomes with my design patterns and implementations for the first artifact. I have thoroughly documented the code modules that I wrote for this artifact, along with including a detailed error handling system that can very easily be modified in the future to handle additional error types. I have spent a large amount of time working on this project, but I am very aware of the fact that there is a tremendous amount that I can still learn. My implementations are not perfect, and while I have made my best attempts to follow the documentation, and use best practices, I am sure that a well seasoned software engineer could very quickly locate areas for improvement. That being said, I do believe that I was able to deliver on the outcomes that I set out to reach. Additionally, I do believe that I am on track to fulfill the outcomes that I previously mentioned coverage for.
 
   
 
-## 4. Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
+## Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
 
 The process of working on and enhancing this artifact has been the most challenging project that I have yet undertaken during my career in programming. I thought that I was fairly comfortable with rust concepts prior to this project, but working with the compiler for this project has taught me a tremendous amount about how the borrow checker handles the lifetimes of data, and just how specific it is when it comes to type definitions. The borrow checker is not something that I am yet overly familiar with, so there have been a number of times where I found myself needing to rethink details about my implementations. The majority of the challenges that I have faced in working with the compiler have been involving my definitions of error types. Specifically, when I started out writing this application, I was intending to mostly use generic error types provided by the standard library. As I began adding additional modules to the project, I quickly realized that solely relying on the standard library implementation would not best serve my uses. So I spent two days reading documentation, code examples, and watching videos, and during that time I wrote, and then again rewrote my own custom error handling for the application. For each instance in the application where I had non-optional results being produced, I needed to add both the appropriate error type, and handling for it. For some of these results, I was able to rely on my more general ApplicationError, but for others with specific causes, I used a more descriptive custom error type. I used best practices of error propagation via inclusion of the question mark '?' operator. Use of this operator in a function allows us to say to the compiler "if the result from this operation produces an error, immediately return this error type back up the call chain for handling". This provides a very convenient error handling process, as well as a level of detail and control over function flow that I hadn't yet experienced with any other language. I have also learned more about how amazing the rust compiler is. The rust compiler provides a level of detail that I didn't realize was possible with how well it describes the causes of compilation issues. It provides suggestions for changes of code to best practices, accompanied by links to the appropriate documentation pages. It is hyper-specific about what in your code is causing each of the issues, and while I have found that the amount of effort required is greater from writing in rust, the reward when you have worked through your compiler errors and the code finally runs, to me at least, feels much greater.
 

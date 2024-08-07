@@ -24,7 +24,7 @@ const articleDate = pubDate.toISOString();
 
     {
       heroImage && (
-        <div class="aspect-h-9 aspect-w-16 mb-6 w-full">
+        <div class="aspect-h-9 aspect-w-6 mb-6 w-full">
           <img src={heroImage.url} alt={heroImage.alt} />
         </div>
       )
@@ -82,14 +82,15 @@ const articleDate = pubDate.toISOString();
 
     <hr />
 
+ <!-- ADDING  prose-cody scales the body to content-->
     <div
-      class="prose dark:prose-invert prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none"
+      class="prose dark:prose-invert prose-sm prose-headings:font-semibold prose-headings:ml-0 prose-headings:before:absolute prose-headings:before:-ms-0 prose-headings:before:text-accent prose-headings:before:content prose-th:before:content-none max-w-none"
     >
       <slot />
     </div>
   </section>
   <aside slot="sidebar">
-    <div class="flex flex-col space-y-2">
+    <div class="flex flex-col space-y-4">
       <h2 class="font-semibold text-lg text-textColor">{siteConfig.profile.author}</h2>
       {siteConfig.profile.description && <p>{siteConfig.profile.description}</p>}
       <SocialMediaLinks />
@@ -98,7 +99,7 @@ const articleDate = pubDate.toISOString();
         {description}
       </p>
     </div>
-    {!!headings.length && <TOC headings={headings} />}
+  {headings && headings.length > 0 && <TOC headings={headings} />}
   </aside>
 </SidebarLayout>
 

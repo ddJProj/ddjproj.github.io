@@ -1,32 +1,75 @@
 ---
-// TableOfContentsHeading.astro
 import type { MarkdownHeading } from "astro";
-const { heading } = Astro.props;
+const { heading, index } = Astro.props;
+export interface TocItem extends MarkdownHeading {
+	subheadings: Array<TocItem>;
+}
+const getPrefix = (depth: number) => {
+  return "  ".repeat(depth - 1) + "•";
+};
 ---
 
-<li>
-  <a href={'#' + heading.slug} id={`toc-${heading.slug}`}>
-    {heading.text}
+<li class={`toc-item depth-${heading.depth}`}>
+  <a href={'#' + heading.slug} id={`toc-${heading.slug}`} title={heading.text}>
+    <span class="toc-prefix">{getPrefix(heading.depth)}</span>
+    <span class="toc-number">{index}.</span>
+    <span class="toc-text">{heading.text}</span>
   </a>
-  {
-  heading.subheadings.length > 0 && (
+  {heading.subheadings.length > 0 && (
     <ul class="ml-2">
-      {heading.subheadings.map((subheading: MarkdownHeading[]) => (
-        <Astro.self heading={subheading} />
+      {heading.subheadings.map((subheading: MarkdownHeading, subIndex: number) => (
+        <Astro.self heading={subheading} index={`${index}.${subIndex + 1}`} />
       ))}
     </ul>
-  )
-  }
+  )}
 </li>
 
 <style>
-  li:before {
-    content: "#";
-    @apply -mr-2 text-accent;
+  .toc-item {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.35rem;
   }
-
+  li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 2px 0;
+  }
+  .toc-prefix {
+    margin-right: 0.5em;
+    color: var(--accent-color, #888);
+    font-size: 0.7em;
+  }
+  .toc-number {
+    margin-right: 0.5em;
+    color: var(--text-color);
+    font-size: 0.7em;
+  }
+  .toc-text {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .depth-1 > a {
+    font-weight: bold;
+  }
+  .depth-2 > a {
+    padding-left: 1em;
+  }
+  .depth-3 > a {
+    padding-left: 1em;
+  }
+  .depth-4 > a,
+  .depth-5 > a,
+  .depth-6 > a {
+    padding-left: 1em;
+  }
   .active-toc {
-    @apply text-accent;
+    color: var(--accent-color);
   }
 </style>
-

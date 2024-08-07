@@ -1,7 +1,7 @@
 ---
 title: 'Artifact Enhancement # 3 - Database'
-description: 'This listing includes a formal write-up for the following project. Completed for Computer Science Capstone final project in last semester before graduation. This is the third of three enhancement stages to satisfy the competency criteria for Database design and implementation.'
-pubDate: 'July 20, 2024'
+description: 'This is the third of three enhancement stages to satisfy the competency criteria for Database design and implementation.'
+pubDate: 'July 25, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
   alt: 'Artifact Enhancement # 3'
@@ -9,47 +9,51 @@ platform: Console/Terminal Emulator
 stack: ['Rust', 'MySQL']
 website: https://ddjproj.github.io/
 github:  https://github.com/ddJProj/CS499-Capstone-Project_Artifact-Enhancements
-order: 6 
+order: 2
 ---
 
-# Recorded video summary of Artifact 3: Enhancements
+
+This project listing includes a formal write-up for the third stage of enhancements for the completed Computer Science Capstone project. Project was finished during last semester before graduation. 
+
+
+## Recorded video summary of Artifact 3: Enhancements
 
 This video recording is a summarization of the formal write-up that is provided below. 
 
-<iframe width="1177" height="662" src="https://www.youtube.com/embed/3MI9H7UKeNs" title="Computer Science Capstone - Artifact Enhancements: Stage 3 - Code walk-through" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/3MI9H7UKeNs" title="Computer Science Capstone - Artifact Enhancements: Stage 3 - Code walk-through" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br></br>
 
 # Artifact 3: Enhancements write-up: 
 
 The following is my entire planned list of stage 3, Database, enhancements for this artifact project. These were previously included in the updated version of my formal planning document for the project.
 
-### Artifact Enhancements #3 – Database - Enhancement Requirements List:
+Artifact Enhancements #3 – Database - Enhancement Requirements List:
 
-**Enhancement 18:** Create a database with separate tables for Client and Employee data.
-**Enhancement 19:** Develop a database manager trait with needed CRUD operations for both Client and Employee tables.
-**Enhancement 20:** Develop a client manager trait to handle client-related operations both locally and in the database.
-**Enhancement 21:** Develop an employee manager trait to handle employee-related operations both locally and in the database.
-**Enhancement 22:** Implement functionality to update employee-client pairings both in the database and local storage.
-**Enhancement 23:** Add capability to update client service selections in both the database and local storage.
-**Enhancement 24:** Implement methods to retrieve single client objects by client_id (pull from local AVL tree).
-**Enhancement 25:** Develop functionality to retrieve client lists by employee_id (using the local hash map).
-**Enhancement 26:** Create a method to retrieve all Clients.
-**Enhancement 27:** Implement a transaction system to manage local and remote system operations. Utilize it to encapsulate client & employee operations to ensure that data remains consistent between remote & local storage.
+- **Enhancement 18:** Create a database with separate tables for Client and Employee data.
+- **Enhancement 19:** Develop a database manager trait with needed CRUD operations for both Client and Employee tables.
+- **Enhancement 20:** Develop a client manager trait to handle client-related operations both locally and in the database.
+- **Enhancement 21:** Develop an employee manager trait to handle employee-related operations both locally and in the database.
+- **Enhancement 22:** Implement functionality to update employee-client pairings both in the database and local storage.
+- **Enhancement 23:** Add capability to update client service selections in both the database and local storage.
+- **Enhancement 24:** Implement methods to retrieve single client objects by client_id (pull from local AVL tree).
+- **Enhancement 25:** Develop functionality to retrieve client lists by employee_id (using the local hash map).
+- **Enhancement 26:** Create a method to retrieve all Clients.
+- **Enhancement 27:** Implement a transaction system to manage local and remote system operations. Utilize it to encapsulate client & employee operations to ensure that data remains consistent between remote & local storage.
 
   
 
-## 1. Briefly describe the artifact. What is it? When was it created?
+## Briefly describe the artifact. What is it? When was it created?
 
 The artifact selected for this project is the same artifact that I used for my artifact 1 and 2 enhancements. This was the final project from my CS410: Reverse engineering course. It is a client management application that I was asked to build for SNHU Financial Investing Firm. We were asked to take the provided binary executable, disassemble it into assembly, then decompile it back into C++. We were then told to use our knowledge of security to rewrite the application using industry standard best practices. I originally rewrote and submitted the application in June of 2024 for my final project in the course.
 
   
 
-## 2. Justify the inclusion of the artifact in your ePortfolio. Why did you select this item?
+## Justify the inclusion of the artifact in your ePortfolio. Why did you select this item?
 
 My reasoning for selecting this artifact is primarily the same as for the previous enhancements. This project was written at a point when my knowledge of computer science I feel, was at it’s greatest within the program. My time spent in CS410 was incredibly rewarding, and I feel strongly that my final project for this course displayed a strong understanding of computer science principles, and that it was some of my best work in the program. In the initial project, were given the freedom to redesign the application as we saw fit, we were just asked to ensure that we removed any security flaws from it. The application that I was left with after CS410 was in a good position, but there were a number of features that I noted at the time that I would like to get around to implementing. With these artifact enhancements, I have had the opportunity to really dig deeply into the application that I wanted to turn it into, and I am happy so far with how everything turned out.
 
-  
 
 ## What specific components of the artifact showcase your skills and abilities in software development?
 
@@ -57,7 +61,7 @@ There are several noteworthy components within the third stage of artifact enhan
 
   
 
-## How was the artifact improved?
+##  How was the artifact improved?
 
 In my original application, there was a single hashed password that was used to provide access to the system. There were not multiple accounts for different employees. The application processes were structured similarly for the operations that could be performed on instances of the Client class objects, via a client management class instance. In my final version, all operations for the client struct are managed with a similar **ClientHandler** implementation. Instances of my Employee struct are similarly managed with the **EmployeeHandler** implementation. A great deal of added functionality was created in the system with the inclusion of the Employee data model, and its dependency / operations handler.
 
@@ -166,9 +170,8 @@ The method for retrieving all clients is first added into the database.rs module
 
 Implemented in the `operation_handlers.rs` file, used in the *employee*/*client* handlers to add, modify, or remove data from both the local data structures, and the remote database. The transaction is written as a struct, one that contains a boolean member that represents the state of the transaction, whether or not it is completed. The second member of the transaction struct is a lifetime reference to the DatabaseManager implementation used for the application. The database trait implements a begin_transaction method that utilizes the MySQL query "`START TRANSACTION`". It also contains a function for committing the transaction, and for rolling back the transaction, using the "`COMMIT`" and "`ROLLBACK`" query respectively. The transaction implementation constructor calls the begin_transaction function to initiate the transaction whenever an operation is performed within the application that would need CRUD related functions. If the transaction operations are successful, then the commit function of the transaction is called. If an operation fails, and/or an error is generated from the process, then the we allow the drop function to be called, which rolls the changes back. The drop functionality is handled separately by implementing the Drop trait for the Transaction struct. The conditions for calling drop also include instances where the transaction is no longer in scope. To illustrate how this might happen, I will reference the update_client function of the ClientHandler implementation. Each individual instruction / operation features the question mark operator at the end of the operation. This is so that when / if an error occurs, the error is back-propagated from the function immediately. The first operation is to create the transaction with the new keyword, assigning the transaction to "transaction". We then use the transaction, which contains the mutable database reference, to call the update_client method with the provided Client object. Then, using the ClientHandler self reference, we remove the existing client object that matches the provided Client's id from local storage. We then insert the updated Client into the local storage structure. The last operation is to use the transaction created within the scope of the function to call the commit function to commit the changes. If at any point during this function, an error is generated, and an operation fails, the function call will end, and the transaction will no longer be in scope, which results in the drop implementation being used. The transaction is then rolled back.
 
-  
 
-## 3. Did you meet the course objectives you planned to meet with this enhancement in Module One? Do you have any updates to your outcome-coverage plans?
+## Did you meet the course objectives you planned to meet with this enhancement in Module One? Do you have any updates to your outcome-coverage plans?
 
 There were two course objectives that I was initially setting out to meet with this stage of artifact enhancements.
 
@@ -178,13 +181,10 @@ The second objective was to display, "a security mindset that anticipates advers
 
 The outcomes that I have mentioned accomplishing above are not new outcomes, but I believe that I have again met them with additional criteria over the course of completing my Artifact enhancement 3 assignment. I do however believe that with the addition of an explanation video, that I would be able to satisfy the criteria of additional outcomes, specifically the outcome, “design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.” Using my written documentation, along with visually presenting my the enhancements to my application, I will provide quality oral communications that highlight on the enhancements that I have made.
 
-  
-
-## 4. Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
+## Reflect on the process of enhancing and modifying the artifact. What did you learn as you were creating it and improving it? What challenges did you face?
 
 With the conclusion of the final enhancement component of my artifact, I am feeling more confident in myself, and in my ability to solve problems through coding. I think that it is safe to say that working on this project has challenged me in ways that I have yet to experience during my time learning programming and Computer Science principles thus far. I don't think I can overstate how much time and effort it took to actually get the database component of this application functioning in the desired way. I faced a number of challenges that required me to essentially completely change the way direction I was approaching the problem from. I had previously wondered what the process of authenticating and connecting to a database remotely would look like in an application, as my prior experience with them was limited to locally running databases. It was a significant undertaking to need to figure out how to handle secrets files, the various steps I needed to follow to ensure that I was not exposing them, committing them to git, or into remotely run docker images. I ended up with the application having two approaches to building from source successfully. The first was through my inclusion of a dockerfile that would correctly build the application and run it within a container. The second is using rust's own cargo build / cargo run commands. I also began the steps of hosting the application itself remotely on an application platform, and I was able to eventually get the application compiling on the application platform that I rented for it. As I did not provide the application with an interface by which to be accessed through that remote platform, it ends up just reloading the login / authorization prompt until it crashes. This remote platform would rely on the environment variables set with the host to establish the database connection instead of needing to provide a secrets file. The locally built options both rely on using the provided config.toml file in order to establish a database connection.
 
-  
 
 ## Challenges faced:
 
@@ -210,7 +210,7 @@ The majority of the other challenges that I faced involved the process of proper
 - _C - Derivable traits - the Rust programming language. (n.d.)._ [_https://doc.rust-lang.org/book/appendix-03-derivable-traits.html_](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
 
   
-## Enhancement 3 Specific:
+### Enhancement 3 Specific:
 
 - _Transaction in mysql - Rust. (n.d.)._ [_https://docs.rs/mysql/latest/mysql/struct.Transaction.html_](https://docs.rs/mysql/latest/mysql/struct.Transaction.html)
 - _OptsBuilder in mysql - Rust. (n.d.)._ [_https://docs.rs/mysql/latest/mysql/struct.OptsBuilder.html_](https://docs.rs/mysql/latest/mysql/struct.OptsBuilder.html)

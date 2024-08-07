@@ -40,5 +40,37 @@ export default defineConfig({
         external: ['sharp'],
       },
     },
+    plugins: [
+      {
+        name: 'preload-fonts',
+        transformIndexHtml(html) {
+          return {
+            html,
+            tags: [
+              {
+                tag: 'link',
+                attrs: {
+                  rel: 'preload',
+                  href: '/fonts/JetBrainsMono-Regular.woff2',
+                  as: 'font',
+                  type: 'font/woff2',
+                  crossorigin: 'anonymous',
+                },
+              },
+              {
+                tag: 'link',
+                attrs: {
+                  rel: 'preload',
+                  href: '/fonts/JetBrainsMono-Bold.woff2',
+                  as: 'font',
+                  type: 'font/woff2',
+                  crossorigin: 'anonymous',
+                },
+              },
+            ],
+          };
+        },
+      },
+    ],
   },
 });

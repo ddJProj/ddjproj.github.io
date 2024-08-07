@@ -16,12 +16,12 @@ This video is also provided on the project page containing the initial planning 
 
 The following video is the result of me conducting a code review on the final project written for CS410 - Reverse Engineering. I will walk through the code base, and then cover how I plan to create enhancements to the existing code base in the my final project of my Computer Science - Capstone Course. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E1CH3KFfx1Q?si=WtFmFfg0rW4LCyg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/E1CH3KFfx1Q?si=WtFmFfg0rW4LCyg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
+<br></br>
 # Part 1:
 
-## 1. Defining a code review
+## Defining a code review
 
 **What is code review?**
 
@@ -30,7 +30,7 @@ A code review is a process in which, generally, "Someone other than the author(s
 	 
 These types of checks are also effectively utilized as a means to perform security audits into a code-base, "Secure code review is probably the single-most effective technique for identifying security bugs early in the system development lifecycle. When used together with automated and manual penetration testing, code review can significantly increase the cost effectiveness of an application security verification effort." (OWASP, n.d.). 
 
-## 2. Why code reviews are important
+## Why code reviews are important
 
 **Why is it an important practice for computer science professionals?**
 
@@ -55,9 +55,10 @@ The practice of performing code reviews is important for a number of reasons, bu
 
 
 
-## 3. Code Review Best Practices
+## Code Review Best Practices
 
-**What are Some code review best practices that you read about in the resources that are crucial to include in a code review? Include when a code review should occur in the development process with a rationale as to why.**
+**What are Some code review best practices that you read about in the resources that are crucial to include in a code review?**
+**Include when a code review should occur in the development process with a rationale as to why.**
 	
 I summarized many of the best practices in the previous section, but this can be further synthesized into the following practices. Code reviews are an effective means by which to maintain compliance within your code-base. This includes performance optimizations, checking that documentation, naming conventions, general readability, and maintainability of the code base is up to standards set for the company and/or industry. The code segments should also be vetted to ensure that it meets security standards for the technologies in use by the company. The following are Some beneficial, best practices that can keep your reviews productive, and keep operations moving forward. The first of these, is to place a limitation on the lines of code, and/or the time spent for a particular code review session. It is also beneficial to include both new and senior members in the review, to fairly distribute the review sessions between the team members, and to make sure that everyone is comfortable asking questions when they need context,  (GitLab, 2023).
 		
@@ -66,13 +67,13 @@ Code reviews should generally focus on a relatively small portion segment of the
 # Part 2:
 
 
-## 4. Software used for my code review
+## Software used for my code review
 
 **What software have you chosen to use to record your code review?** 
 
 To document my code review, I will be using OBS studio to record my session and comments. It is reliable, easy to use, and I have used it for other courses. This means that it is already set up on my computer and ready to record both my screen, and microphone / audio.
 
-## 5. Outlining a code review
+## Outlining a code review
 
 **Describe your approach to creating an outline or writing a script for your code review for each of the three categories that you will be reviewing based on the rubric as well as the code review checklist.**
 
@@ -81,7 +82,7 @@ My approach to writing the outline will follow a similar procedure to how I gene
 This review is going to start off with me going through the code review checklist and using it to analyze my code base. I will then plan to get into the each of the required points from the rubric for each of the artifacts. I will perform the review this way so that I am able to ensure proper, thorough coverage of the various functional areas of the application.
 
 
-## Sources:
+# Sources:
 
 **Defining the code review:**
 - "Introduction to Code review". Google Engineering Practices Documentation. (n.d.) https://google.github.io/eng-practices/review/
