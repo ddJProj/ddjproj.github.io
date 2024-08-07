@@ -31,10 +31,10 @@ const urlBasePath = post.collection === 'project' ? 'projects' : post.collection
       )
     }
   </span>
-  <p class="date pr-2 mt-1">
+  <p class="date pr-2 mt-2">
     <FormattedDate date={postDate} />
   </p>
-  {withDesc && <p class="italic">{post.data.description}</p>}
+  {withDesc && <em class="transform -skew-x-1">{post.data.description}</em>}
 </li>
 <style>
   .post-item:before {

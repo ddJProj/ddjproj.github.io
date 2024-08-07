@@ -22,14 +22,14 @@
 @layer base {
   :root {
     color-scheme: light;
-    --theme-bg: #e6e9ef;
+    --theme-bg: #45475a;
     --theme-text: #4c4f69;
 
-    --theme-text-2: #04a5e5;
-    --theme-accent: #dc8a78;
-    --theme-accent-2: #6c7086;
-    --theme-accent-3: #04a5e5;
-    --theme-surface: #e6e9ef;
+    --theme-text-2: #cdd6f4;
+    --theme-accent: #74c7ec;
+    --theme-accent-2: #fab387;
+    --theme-accent-3: #94e2d5;
+    --theme-surface: #313244;
     --theme-quote: #d20f39;
     --theme-highlight: #fe640b;
     --rosewater: #dc8a78;
@@ -56,22 +56,22 @@
     --theme-highlight: #dd7878;
 */
   h1 {
-    @apply text-[#cba6f7];
-  }
-  h2 {
     @apply text-[#74c7ec];
   }
+  h2 {
+    @apply text-[#94e2d5];
+  }
   h3 {
-    @apply text-[#f2cdcd];
+    @apply text-[#b4befe];
   }
   h4 {
     @apply text-[#fab387];
   }
   strong {
-    @apply text-[#f5e0dc] font-bold;
+    @apply text-[#a6e3a1] font-bold;
   }
   p {
-    @apply text-[#bac2de] mb-4;
+    @apply text-[#cdd6f4] mb-4;
   }
   em {
     @apply text-[#f2cdcd] italic;
@@ -84,12 +84,12 @@
     color-scheme: dark;
     --theme-bg: #181825;
     --theme-text: #cdd6f4;
-    --theme-text-2: #94e2d5;
+    --theme-text-2: #74c7ec;
     --theme-accent: #74c7ec;
-    --theme-accent-2: #94e2d5;
-    --theme-accent-3: #f9e2af;
+    --theme-accent-2: #fab387;
+    --theme-accent-3: #fab387;
     --theme-surface: #313244;
-    --theme-quote: #f38ba8;
+    --theme-quote: #eba0ac;
     --theme-highlight: #f9e2af;
     /* Additional Mocha colors */
     --rosewater: #f5e0dc;
@@ -116,16 +116,16 @@
     --theme-highlight: #93e1d4;
 */
   h1 {
-    @apply text-[#74c7ec];
+    @apply text-[#f9e2af];
   }
   h2 {
-    @apply text-[#fab387];
+    @apply text-[#94e2d5];
   }
   h3 {
-    @apply text-[#74c7ec];
+    @apply text-[#b4befe];
   }
   h4 {
-    @apply text-[#94e2d5];
+    @apply text-[#74c7ec];
   }
   strong {
     @apply text-[#fab387] font-bold;
@@ -294,8 +294,8 @@
     background-image: linear-gradient(
       transparent,
       transparent 4px,
-      var(--theme-accent-2) 4px,
-      var(--theme-accent-2)
+      var(--theme-accent-3) 4px,
+      var(--theme-accent-3)
     );
   }
 
