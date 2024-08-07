@@ -4,9 +4,9 @@ description: 'How my career plans have changed during my time studying Computer 
 pubDate: 'Jul 15 2024'
 heroImage: 
   src: '/blog-placeholder-4.jpg'
-  alt: 'blog placeholder'
-tags: ["test"]
-series: "example"
+  alt: 'Career plans & education goals'
+tags: ["journal", "career"]
+series: "journal"
 hide: false
 ---
 

@@ -5,8 +5,8 @@ pubDate: 'Jul 15 2024'
 heroImage: 
   src: '/blog-placeholder-4.jpg'
   alt: 'blog placeholder'
-tags: ["test"]
-series: "example"
+tags: ["journal"]
+series: "journal"
 hide: true
 ---
 

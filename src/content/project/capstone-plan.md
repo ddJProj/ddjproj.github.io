@@ -26,7 +26,7 @@ order: 1
 
 
 
-
+<!-- -->
 
 ## <h2>Computer Science Capstone Project - Detailed plan documentation for rewrite of C++ application into Rust.</h2> 
 <p>
