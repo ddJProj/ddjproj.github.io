@@ -1,6 +1,6 @@
 ---
-title: 'Artifact Enhancement # 1 - Software Engineering and Design'
-description: 'This is the first of three enhancement stages to satisfy the competency criteria for Software Engineering and Design.'
+title: 'C.S. Capstone Project - Enhancement #1 - Software Engineering and Design'
+description: 'This is the first of three enhancement stages to satisfy my C.S. degree, capstone competency criteria for Software Engineering and Design.'
 pubDate: 'July 15, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'

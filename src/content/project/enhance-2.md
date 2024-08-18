@@ -1,6 +1,6 @@
 ---
-title: 'Artifact Enhancement # 2 - Data structures and Algorithms'
-description: 'This is the second of three enhancement stages to satisfy the competency criteria for Data Structures and Algorithms.'
+title: 'C.S. Capstone Project - Enhancement #2 - Data structures and Algorithms'
+description: 'This is the second of three enhancement stages to satisfy the satisfy my C.S. degree, capstone competency for Data Structures and Algorithms.'
 pubDate: 'July 20, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'

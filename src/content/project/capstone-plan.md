@@ -1,6 +1,6 @@
 ---
-title: 'Computer Science Capstone Project'
-description: 'Planning the project, documenting the enhancements'
+title: 'C.S. Capstone Project - Planning Documentation'
+description: 'Planning the final project of my degree program, documenting the enhancements'
 pubDate: 'July 10, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
@@ -23,12 +23,13 @@ order: 1
 #### Completed rewrite of the original C++ project, in Rust:
 [Link to the GitHub repository containing completed, enhanced Rust project & source code](https://github.com/ddJProj/CS499-Capstone-Project_Artifact-Enhancements)
 
-
-
+<br></br>
 
 <!-- -->
 
-## <h2>Computer Science Capstone Project - Detailed plan documentation for rewrite of C++ application into Rust.</h2> 
+# Computer Science Capstone Project Plan 
+
+<h2>Detailed plan documentation for rewrite of C++ application into Rust.</h2> 
 <p>
 This project posting will cover the initial planning stages and documentation write-up. A formal code review was performed and recorded, as well as writing out a detailed planning document.
 
@@ -39,7 +40,7 @@ The three categories include:
 - Data Structures and Algorithms
 - Database Design and Implementation
 </p>
-<br></br>
+<h2>
 
 # Self-Introduction:
 
