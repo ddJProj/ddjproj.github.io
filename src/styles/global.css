@@ -58,10 +58,10 @@
     @apply text-[#74c7ec];
   }
   h2 {
-    @apply text-[#94e2d5];
+    @apply text-[#f9e2af];
   }
   h3 {
-    @apply text-[#b4befe];
+    @apply text-[#cba6f7];
   }
   h4 {
     @apply text-[#fab387];
@@ -73,7 +73,7 @@
     @apply text-[#cdd6f4] mb-4;
   }
   em {
-    @apply text-[#f2cdcd] italic;
+    @apply text-[#89b4fa] italic;
   }
 
 
@@ -115,25 +115,25 @@
     --theme-highlight: #93e1d4;
 */
   h1 {
-    @apply text-[#f9e2af];
-  }
-  h2 {
-    @apply text-[#94e2d5];
-  }
-  h3 {
-    @apply text-[#89b4fa];
-  }
-  h4 {
     @apply text-[#74c7ec];
   }
+  h2 {
+    @apply text-[#f9e2af];
+  }
+  h3 {
+    @apply text-[#cba6f7];
+  }
+  h4 {
+    @apply text-[#fab387];
+  }
   strong {
-    @apply text-[#fab387] font-bold;
+    @apply text-[#a6e3a1] font-bold;
   }
   p {
     @apply text-[#cdd6f4] mb-4;
   }
   em {
-    @apply text-[#f2cdcd] italic;
+    @apply text-[#89b4fa] italic;
   }
 
   }

@@ -33,15 +33,18 @@ order: 1
 <p>
 This project posting will cover the initial planning stages and documentation write-up. A formal code review was performed and recorded, as well as writing out a detailed planning document.
 
-<b>Application rewrite will take place in three stages. Each of enhancements stage has the goal of meeting competency criteria for their respective category of Computer Science.</b>
+<h4>Application rewrite will take place in three stages. Each of enhancements stage has the goal of meeting competency criteria for their respective category of Computer Science.</h4>
 
 The three categories include: 
-- Software Engineering and Design
-- Data Structures and Algorithms
-- Database Design and Implementation
-</p>
-<h2>
 
+- <strong>Software Engineering and Design</strong>
+- <strong>Data Structures and Algorithms</strong>
+- <strong>Database Design and Implementation</strong>
+
+</strong>
+</p>
+
+<br></br>
 # Self-Introduction:
 
 ## What have you learned while in the Computer Science program? List three of the most important concepts or skills you have learned.
@@ -96,10 +99,11 @@ With this capstone project, I hope to be able to demonstrate that I am capable o
 5. _Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources._
 
 
+<br></br>
 # Enhancement Plan:
 
 ## Category One: Software Engineering and Design
-### 1. Select an artifact that is aligned with the software engineering and design category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan.
+###  Select an artifact that is aligned with the software engineering and design category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan.
 
 
 For the first artifact, I will be enhancing the final project for my CS410 – Software Reverse Engineering course. The purpose of this project was to take the original, poorly written binary executable, to decompile the executable into X86 assembly, to rebuild the application in it's original C++ form, and finally to refactor the application, removing any security vulnerabilities that it contained in the process. The application contained a login process that had hard-coded authentication data, as well as no input validation checks, or sanitization. It also contained a client management system that allowed the user to modify the services that their clients had selected.
@@ -1196,7 +1200,7 @@ I will use the professional assessment of this project to cover following three 
 
 ## My own self-awareness, and focus on growth state:
     
-- The first is my views of the importance of constant personal growth in relation to this. I often find myself hyper-aware of the faults in my work. This is a definite strength I've found, as it allows me to catch many faults before they become issues, but for a long time it was also problematic for me. I have since grown to become more comfortable with the concept of "good enough". It is not something that I am particularly fond of, but it is something that absolutely is necessary at times if we ever hope to reach a conclusion with our work / projects.
+  The first is my views of the importance of constant personal growth in relation to this. I often find myself hyper-aware of the faults in my work. This is a definite strength I've found, as it allows me to catch many faults before they become issues, but for a long time it was also problematic for me. I have since grown to become more comfortable with the concept of "good enough". It is not something that I am particularly fond of, but it is something that absolutely is necessary at times if we ever hope to reach a conclusion with our work / projects.
 
 
 ## Iterative work, planning, and improvement:
