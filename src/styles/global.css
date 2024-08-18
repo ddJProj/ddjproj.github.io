@@ -23,9 +23,8 @@
   :root {
     color-scheme: light;
     --theme-bg: #45475a;
-    --theme-text: #4c4f69;
-
-    --theme-text-2: #cdd6f4;
+    --theme-text: #cdd6f4;
+    --theme-text-2: #74c7ec;
     --theme-accent: #74c7ec;
     --theme-accent-2: #fab387;
     --theme-accent-3: #94e2d5;
