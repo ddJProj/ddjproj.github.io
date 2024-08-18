@@ -45,8 +45,8 @@ Turning your attention to the related concept of emerging, disruptive, or game-c
 
 
 # Sources: 
-    • Allen, A. E. A., Lubbers, N., Matin, S., Smith, J., Messerly, R., Tretiak, S., & Barros, K. (2024). Learning together: Towards foundation models for machine learning interatomic potentials with meta-learning. Npj Computational Materials, 10(1). https://doi.org/10.1038/s41524-024-01339-x
-    • Quantum computing: the future of quantum chemistry | Merck KGaA, Darmstadt, Germany. (n.d.). https://www.emdgroup.com/en/research/science-space/envisioning-tomorrow/smarter-connected-world/quantum-computing.html
-    • Evangelista, F. A., & Batista, V. S. (2023). Editorial: Quantum Computing for Chemistry. Journal of Chemical Theory and Computation, 19(21), 7435–7436. https://doi.org/10.1021/acs.jctc.3c01043
-    • Quantum gates explained (without the maths) | by Universal Quantum - Freedium. (n.d.). https://freedium.cfd/https://medium.com/@universalquantum/quantum-gates-explained-without-the-maths-1c40e7d79611
+- Allen, A. E. A., Lubbers, N., Matin, S., Smith, J., Messerly, R., Tretiak, S., & Barros, K. (2024). Learning together: Towards foundation models for machine learning interatomic potentials with meta-learning. Npj Computational Materials, 10(1). https://doi.org/10.1038/s41524-024-01339-x
+- Quantum computing: the future of quantum chemistry | Merck KGaA, Darmstadt, Germany. (n.d.). https://www.emdgroup.com/en/research/science-space/envisioning-tomorrow/smarter-connected-world/quantum-computing.html
+- Evangelista, F. A., & Batista, V. S. (2023). Editorial: Quantum Computing for Chemistry. Journal of Chemical Theory and Computation, 19(21), 7435–7436. https://doi.org/10.1021/acs.jctc.3c01043
+- Quantum gates explained (without the maths) | by Universal Quantum - Freedium. (n.d.). https://freedium.cfd/https://medium.com/@universalquantum/quantum-gates-explained-without-the-maths-1c40e7d79611
 
