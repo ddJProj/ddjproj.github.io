@@ -7,6 +7,7 @@ heroImage:
   alt: 'Career & educational self-assessment'
 tags: ["journal", "career"]
 series: "journal"
+updatedDate: 'August, 17 2024'
 hide: false
 ---
 

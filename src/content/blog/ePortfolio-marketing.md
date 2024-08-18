@@ -1,7 +1,7 @@
 ---
 title: 'Importance of Self-Marketing with ePortfolio'
 description: 'A brief journal entry covering the importance of self-marketing with an ePortfolio'
-pubDate: 'Jul 12 2024'
+pubDate: 'Jul 08 2024'
 heroImage: 
   src: '/blog-placeholder-4.jpg'
   alt: 'Self-Marketing'

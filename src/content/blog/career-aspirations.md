@@ -1,7 +1,7 @@
 ---
 title: 'Career Aspirations'
 description: 'How my career plans have changed during my time studying Computer Science.'
-pubDate: 'Jul 15 2024'
+pubDate: 'Jul 09 2024'
 heroImage: 
   src: '/blog-placeholder-4.jpg'
   alt: 'Career plans & education goals'
