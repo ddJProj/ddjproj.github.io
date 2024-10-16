@@ -9,7 +9,7 @@ platform: Console/Terminal Emulator
 stack: ['Rust', 'MySQL']
 website: https://ddjproj.github.io/
 github:  https://github.com/ddJProj/CS499-Capstone-Project_Artifact-Enhancements
-order: 2 
+order: 2
 ---
 
 This project listing includes a formal write-up for the completed Computer Science Capstone project. Project was finished during last semester before graduation. 
@@ -40,7 +40,7 @@ The following is my entire planned list of stage 1 enhancements for this artifac
 ## Briefly describe the artifact. What is it? When was it created?
 
   
-The first artifact started out as my final project for CS410, Reverse engineering. It is a client management system for "SNHU Financial Investment Firm". Our job in creating this project was to take the original code which had no form of exception handling or validation of any type. We were then told to implement security checks into the application that would fix all of the vulnerabilities that were in the original code. It started out as a binary executable which I disassembled into assembly instructions. I then decompiled / reassembled the instructions into C++, and implemented various design overhauls to remove the prior vulnerable implementations. I finished this project in June of this year, 2024. Since that time, I have rewritten the application entirely in rust. In doing so, I have also significantly improved on the security of the applications, all while demonstrating that I have grown and understand core software engineering principles.
+The first artifact started out as my final project for CS410, Reverse engineering. It is a client management system for "SNHU Financial Investment Firm". Our job in creating this project was to secure and improve the original application's code which had no form of exception handling or input validation. We were told to implement security checks into the application that would fix all of the vulnerabilities that were in the original code. It started out as a binary executable which I disassembled into assembly instructions. I then decompiled / reassembled the instructions into C++, and implemented various design overhauls to remove the prior vulnerable implementations. I finished this project in June of this year, 2024. Since that time, I have rewritten the application entirely in rust. In doing so, I have also significantly improved on the security of the applications, all while demonstrating that I have grown and understand core software engineering principles.
 
   
 

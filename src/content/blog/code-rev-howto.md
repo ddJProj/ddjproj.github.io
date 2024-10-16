@@ -6,7 +6,7 @@ heroImage:
   src: '/blog-placeholder-5.jpg'
   alt: 'blog placeholder'
 tags: ["journal", "best-practices", "code-review"]
-updatedDate: 'July, 18 2024'
+updatedDate: 'August, 18 2024'
 series: "journal"
 ---
 

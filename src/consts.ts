@@ -18,7 +18,7 @@ type SocialLink = {
 };
 
 export const siteConfig: Config = {
-	title: "CS-499: Portfolio",
+	title: "Portfolio & Blog",
 	description: "",
 	lang: "en-US",
 	profile: {
@@ -61,7 +61,7 @@ export const NAV_LINKS: Array<{ title: string; path: string }> = [
 		path: "/",
 	},
 	{
-		title: "About",
+		title: "About Me",
 		path: "/about",
 	},
 	{

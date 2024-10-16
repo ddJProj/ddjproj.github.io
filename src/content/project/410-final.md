@@ -1,6 +1,6 @@
 ---
-title: 'CS410 - Final Project'
-description: 'CS410 - Reverse Engineering - Project 2 (Final) '
+title: 'CS410 - Reverse Engineering - Final Project'
+description: 'CS410 - Financial Investment Firm - Security analysis an application rewrite.'
 pubDate: 'May 20 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
@@ -9,8 +9,7 @@ platform: Command-Line Interface - Client Service Management Tool
 stack: ['Cpp', 'Assembly']
 website: https://ddjproj.github.io/
 github: https://github.com/ddJProj/CS410/blob/main/Project-2/Mod6_Updated-Security-CPP_E-Johnson.cpp
-order: 2 
-
+order: 3
 ---
 
 ## Financial Investment Firm: Client Management Software Application 
@@ -26,7 +25,7 @@ Using the C++ (CPP file) that you created in Project One, you will identify mult
 
 
 
-<br></br>
+<br>
 
 # Discovered Vulnerabilities:
 
@@ -41,7 +40,8 @@ Using the C++ (CPP file) that you created in Project One, you will identify mult
 
 
 
-### Covered code segment: 
+
+### Affected code 1: 
 
 ```c++
 int32_t num1 = 1;
@@ -56,7 +56,7 @@ std::string name3 = "Amy Friendly";
 std::string name4 = "Johnny Smith";
 std::string name5 = "Carol Spears";
 ```
-<br></br>
+<br>
 
 ## Vulnerability 2: 
 
@@ -68,7 +68,7 @@ std::string name5 = "Carol Spears";
 
 
 
-### Affected code: 
+### Affected code 2: 
 
 ```c++
   std::string username;
@@ -79,7 +79,8 @@ std::string name5 = "Carol Spears";
 ```
 
 
-<br></br>
+<br>
+
 ## Vulnerability 3: 
 
 ### Description of vulnerabilities:
@@ -89,7 +90,7 @@ std::string name5 = "Carol Spears";
 - In this application we will implement an openssl hash function using SHA256, and this function will be used to validate entered passwords by comparing the input password to the stored hash for the original password of the application “123”. For the purpose of this application, we will store the valid password hash within the constructor of the singleton authentication class.
 
 
-### Affected code: 
+### Affected code 3: 
 
 ```c++
   if (password == "123") {
@@ -103,7 +104,8 @@ std::string name5 = "Carol Spears";
 
 
 
-<br></br>
+<br>
+
 ## Vulnerability 4: 
 
 ### Description of vulnerabilities:
@@ -115,7 +117,7 @@ std::string name5 = "Carol Spears";
 - For this system specifically, it would  be helpful to implement a limit to the quantity of valid connection attempts that can be made to the system. This would be straight forward to implement using an authentication class object that handles providing connections to users. A straightforward implementation of this would be to create an authentication class that handles authentication attempts with a private member variable. It will increment the attemptsMade variable whenever the user provides a valid authentication request but fails to connect due to invalid password etc. For the purpose of this application it will be a singleton method. But for a networked version of the application, instances and connection attempts should be assigned by user account (per username/password). 
 
 
-### Affected code: 
+### Affected code 4: 
 
 ```c++
   do { // authentication loop
@@ -131,7 +133,8 @@ std::string name5 = "Carol Spears";
 
 
 
-<br></br>
+<br>
+
 ## Vulnerability 5: 
 
 ### Description of vulnerabilities:
@@ -142,7 +145,7 @@ std::string name5 = "Carol Spears";
 
 
 
-### Affected code: 
+### Affected code 5: 
 
 ```c++
     if (answer != 1) {
@@ -155,7 +158,8 @@ std::string name5 = "Carol Spears";
 
 
 
-<br></br>
+<br>
+
 ## Vulnerability 6: 
 
 ### Description of vulnerabilities:
@@ -166,7 +170,7 @@ std::string name5 = "Carol Spears";
 - Currently, the authentication method is very simple, and is performed below the main method within the program file. This is not best secure coding practices, as the variables are open and accessible, and the method itself is public. To correct this implementation, we will be implementing a public authenticate method within the authentication class. This authenticate method will be what takes the input password, calls the private hashing function to create a hash of the input password, and then calls the private constant time comparison function with the stored hash value and the input password hash value to determine if the passwords match. This will encapsulate all of the inner functions and variables of the authentication process within private member methods and variables, and will provide a modular interface for the authentication process to be called from. 
 
 
-### Affected code: 
+### Affected code 6: 
 
 ```c++
   do { // authentication loop
@@ -183,7 +187,8 @@ std::string name5 = "Carol Spears";
 
 
 
-<br></br>
+<br>
+
 ## Vulnerability 7: 
 
 ### Description of vulnerabilities:
@@ -195,7 +200,7 @@ std::string name5 = "Carol Spears";
 
 
 
-### Affected code: 
+### Affected code 7: 
 
 ```c++
   if (password == "123") {
@@ -208,11 +213,12 @@ std::string name5 = "Carol Spears";
 
 
 
+<br>
 
-<br></br>
-# Vulnerability 8: 
 
-## Description of vulnerabilities:
+## Vulnerability 8: 
+
+### Description of vulnerabilities:
 
 #### Using “magic numbers” for program control instead of const values (read only), calculated at compile time. Values that don’t need to change should not be able to change.
 
@@ -222,7 +228,7 @@ std::string name5 = "Carol Spears";
 
 
 
-## Affected code: 
+### Affected code 8: 
 
 ```c++
   if (password == "123") {
@@ -236,10 +242,12 @@ std::string name5 = "Carol Spears";
 
 
 
-<br></br>
-# Vulnerability 9: 
+<br>
 
-## Description of vulnerabilities:
+
+## Vulnerability 9: 
+
+### Description of vulnerabilities:
 
 #### No input validation here, no sanitization of inputs.
 
@@ -248,7 +256,7 @@ std::string name5 = "Carol Spears";
 
 
 
-## Affected code: 
+### Affected code 9: 
 
 ```c++
   std::cout << "Enter your username: \n";
@@ -261,8 +269,9 @@ std::string name5 = "Carol Spears";
 
 
 
+<br>
 
-<br></br>
+
 ## Vulnerability 10: 
 
 ### Description of vulnerabilities:
@@ -275,7 +284,7 @@ std::string name5 = "Carol Spears";
 
 
 
-### Affected code: 
+### Affected code 10: 
 
 ```c++
 void DisplayInfo() {
@@ -294,8 +303,9 @@ void DisplayInfo() {
 
 
 
+<br>
 
-<br></br>
+
 ## Vulnerability 11: 
 
 ### Description of vulnerabilities:
@@ -304,7 +314,7 @@ void DisplayInfo() {
 
 - Bad coding practice to have this much duplicate code. This is an extension of the previous code problem, `#10`. This is another area where code is being duplicated without the need to. This could very easily be contained within a class object, and a single accessor function that iterates over  a list of the objects. Best coding practices would not be to continue adding cases to a switch statement indefinitely. The application should be designed in a way that supports maintainability and stability. The values should be defined once, within the class object, and then if a matching object is found in the list of objects, the value can be modified. This way we are not rewriting the same code multiple times throughout the application, and it is easy to find and maintain into the future.
 
-### Affected code: 
+### Affected code 11: 
 
 ```c++
  switch (changechoice) {
@@ -331,8 +341,9 @@ void DisplayInfo() {
 
 
 
+<br>
 
-<br></br>
+
 ## Vulnerability 12: 
 
 ### Description of vulnerabilities:
@@ -343,7 +354,7 @@ void DisplayInfo() {
 - It is not best, secure coding practices to allow inputs or operations within your program to cause an unexpected exception, or to result in the program failure / a crash. We should use exception blocks to account for all states that might allow the program to fail. If an operation fails and there is not exception handling in place it could cause undefined behavior and potentially expose vulnerable areas of the application. Branching should handle all expected edge-cases, and exception handling along with a robust logging system should catch the remaining errors.
 - Exception handling will be used for reading input, and for attempting operations within the application that could fail.  The current program will not handle invalid type in a graceful manner, and there is no handling or checks for the process of assigning a new service value to a client. 
 
-### Affected code: 
+### Affected code 12: 
 
 ```c++
   std::cin >> newservice;
@@ -355,8 +366,8 @@ void DisplayInfo() {
 
 
 
+<br>
 
-<br></br>
 ## Vulnerability 13: 
 
 ### Description of vulnerabilities:
@@ -364,7 +375,7 @@ void DisplayInfo() {
 #### No input validation here, no sanitization of inputs, no exception handling.
 
 
-### Affected code: 
+### Affected code 13: 
 
 ```c++
 

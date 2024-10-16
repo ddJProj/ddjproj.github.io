@@ -6,7 +6,7 @@ heroImage:
   src: '/blog-placeholder-4.jpg'
   alt: ''
 tags: ["journal", "reverse-engineering"]
-updatedDate: 'May 25 2024'
+updatedDate: 'July 14 2024'
 series: "journal"
 ---
 

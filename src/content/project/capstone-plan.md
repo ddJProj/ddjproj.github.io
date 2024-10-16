@@ -9,7 +9,7 @@ platform: Console / Terminal application
 stack: ['Cpp', 'Assembly', 'Rust', 'MySQL']
 website: https://ddjproj.github.io/
 github:  https://github.com/ddJProj/
-order: 1
+order: 1 
 ---
 
 ## Source Repositories:

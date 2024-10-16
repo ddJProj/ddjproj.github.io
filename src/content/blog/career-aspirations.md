@@ -7,6 +7,7 @@ heroImage:
   alt: 'Career plans & education goals'
 tags: ["journal", "career"]
 series: "journal"
+updatedDate: 'September, 25 2024'
 hide: false
 ---
 
@@ -25,7 +26,7 @@ My career choices / plans have not drastically changed over the course of this C
 </br>
 
 ## How has your thinking about your career evolved?
-My time spent in the program has helped me refine what I would like to eventually end up doing career wise. When I started the program last year, I was very close to having dual B.S. in both Biochemistry (4-5 courses off), and Russian Studies (2 courses off). A deciding factor in my transition to computer science was that there isn't much I can do with an undergrad Biochem degree, any of the careers that I was interested in required a minimum of a masters. After starting the Computer science program I realized fairly quickly that I made the right decision. I thoroughly enjoy the challenge that writing code provides me with. I am hopeful that I can find a job / career path that will include my prior studies, and this led me to the decision to pursue a masters degree in computational science + data science. I would like to end up in a career working on / with software that can be used for simulating reactive chemistry. This is a relatively new, and emerging field, and I would very much like to contribute to it in any way that I am able. 
+My time spent in the program has helped me refine what I would like to eventually end up doing career wise. When I started the program last year, I was very close to having dual degrees, a B.S. in Biochemistry (4-5 courses off), and a B.A. in Russian Studies (2 courses off). A deciding factor in my transition to computer science was that there isn't much I can do with an undergrad Biochemistry degree. Any of the careers that I was interested in required a minimum of a masters. After starting the Computer science program I realized fairly quickly that I made the right decision. I thoroughly enjoy the challenge that writing code provides me with. I am hopeful that I can find a job / career path that will include my prior studies, and this led me to the decision to pursue a masters degree in computational science / data science. I would like to end up in a career working on / with software that can be used for simulating reactive chemistry. This is a relatively new, and emerging field, and I would very much like to contribute to it in any way that I am able. 
 <br>
 </br>
 

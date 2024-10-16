@@ -7,7 +7,7 @@ heroImage:
   alt: 'third-post'
 tags: ["journal","emergent trends"]
 series: "journal"
-updatedDate: 'July, 28 2024'
+updatedDate: 'September, 02 2024'
 hide: false
 ---
 
