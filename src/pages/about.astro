@@ -1,108 +1,126 @@
 ---
 import Layout from '../layouts/Base.astro';
 
-
 interface Tech {
-  title: string;
-  desc: string;
-  href: string;
+	title: string;
+	desc: string;
+	href: string;
 }
 
 interface TechType {
-  name: string;
-  items: Tech[];
+	name: string;
+	items: Tech[];
 }
 
-
-const technologies: TechType[] = [    
+const technologies: TechType[] = [
 	{
-		name: "Core / Languages",
+		name: 'Core / Languages',
 		items: [
 			{
-				title: "C++",
-				desc: "Learn this versatile and powerful programming language.",
-				href: "https://cplusplus.com/",
-			},    
-			{
-				title: "Rust",
-				desc: "A language empowering everyone to build reliable and efficient software.",
-				href: "https://www.rust-lang.org/",
-			},    
-			{
-				title: "Kotlin",
-				desc: "Concise. Multiplatform. Fun.",
-				href: "https://kotlinlang.org/",
+				title: 'C++',
+				desc: 'Learn this versatile and powerful programming language.',
+				href: 'https://cplusplus.com/',
 			},
 			{
-				title: "Java",
-				desc: "Free-to-use, and a versatile language designed for ease of use.",
-				href: "https://www.java.com/en/",
-			},    
+				title: 'Rust',
+				desc: 'A language empowering everyone to build reliable and efficient software.',
+				href: 'https://www.rust-lang.org/',
+			},
 			{
-				title: "JavaScript",
-				desc: "A high-level, often just-in-time compiled language that conforms to the ECMAScript standard",
-				href: "https://www.javascript.com/about",
-			},   
+				title: 'Kotlin',
+				desc: 'Concise. Multiplatform. Fun.',
+				href: 'https://kotlinlang.org/',
+			},
+			{
+				title: 'Java',
+				desc: 'Free-to-use, and a versatile language designed for ease of use.',
+				href: 'https://www.java.com/en/',
+			},
+			{
+				title: 'JavaScript',
+				desc: 'A high-level, often just-in-time compiled language that conforms to the ECMAScript standard',
+				href: 'https://www.javascript.com/about',
+			},	
+			{
+				title: 'Python',
+				desc: 'Python lets you work quickly, and integrate systems more effectively.',
+				href: 'https://www.python.org/',
+			},
 		],
 	},
-		{
-		name: "Web-based",
+	{
+		name: 'Web-based',
 		items: [
 			{
-			title: "ExpressJS",
-			desc: "Fast, unopinionated, minimalist web framework for Node.js",
-			href: "https://github.com/expressjs/express",
-			},    
+				title: 'ExpressJS',
+				desc: 'Fast, unopinionated, minimalist web framework for Node.js',
+				href: 'https://github.com/expressjs/express',
+			},
 			{
-			title: "Node.js",
-			desc: "JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts",
-			href: "https://nodejs.org/en",
-			},   
+				title: 'Node.js',
+				desc: 'JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts',
+				href: 'https://nodejs.org/en',
+			},
 			{
-			title: "Angular",
-			desc: "A web framework that empowers developers to build fast, reliable applications.",
-			href: "https://angular.dev/overview",
-			},    
+				title: 'Angular',
+				desc: 'A web framework that empowers developers to build fast, reliable applications.',
+				href: 'https://angular.dev/overview',
+			},
 
 			{
-			title: "Astro",
-			desc: "Build fast websites, faster.",
-			href: "https://astro.build",
-			},    
+				title: 'Astro',
+				desc: 'Build fast websites, faster.',
+				href: 'https://astro.build',
+			},
 		],
 	},
-{
-	name: "Database",
-	items: [
-    {
-        title: "MySQL",
-        desc: "The world's most popular open source database",
-        href: "https://www.mysql.com/why-mysql/",
-    },
-    {
-        title: "MongoDB",
-        desc: "Built by developers, for developers",
-        href: "https://www.mongodb.com/",
-		},
+	{
+		name: 'Database',
+		items: [
+			{
+				title: 'MySQL',
+				desc: "The world's most popular open source database",
+				href: 'https://www.mysql.com/why-mysql/',
+			},
+			{
+				title: 'MongoDB',
+				desc: 'Built by developers, for developers',
+				href: 'https://www.mongodb.com/',
+			},
 		],
-},
+	},
+	{
+		name: 'Operating Platforms & Containers',
+		items: [
+			{
+				title: 'Linux/Unix Systems',
+				desc: 'Highly capable in Unix-based environments, with a specializing in Debian-based distributions',
+				href: 'https://www.linux.org/',
+			},
+			{
+				title: 'Android',
+				desc: 'Your Android, smarter and more secure.',
+				href: 'https://www.android.com/',
+			},
+			{
+				title: 'Docker',
+				desc: 'Develop faster. Run anywhere.',
+				href: 'https://www.docker.com/',
+			},
+		],
+	},
 ];
 
-
-
-
-
-    // {
-    //     title: "X86 Assembly",
-    //     desc: "Machine-specific and low-level, for detailed and time-critical applications.",
-    //     href: "https://docs.oracle.com/cd/E19641-01/802-1948/802-1948.pdf",
-    // },    
-    // {
-    //     title: "Markdown",
-    //     desc: "Simple and easy-to-use markup language.",
-    //     href: "https://www.markdownguide.org/",
-    // },    
-
+// {
+//     title: "X86 Assembly",
+//     desc: "Machine-specific and low-level, for detailed and time-critical applications.",
+//     href: "https://docs.oracle.com/cd/E19641-01/802-1948/802-1948.pdf",
+// },
+// {
+//     title: "Markdown",
+//     desc: "Simple and easy-to-use markup language.",
+//     href: "https://www.markdownguide.org/",
+// },
 ---
 
 <Layout
@@ -112,134 +130,196 @@ const technologies: TechType[] = [
 >
 	<h1 class="title">About</h1>
 	<p>
-		Born and raised in Tallahassee, I spent close to a decade in St. Louis, MO (2012-2020). I bought a house through short-sale auction in the city, and performed a full gut-rehab on it while I was working full-time, and attending college. I lived in St. Louis until early 2020, at which point I sold my then finished house and moved back to Florida to focus on my education full-time. My formal education in Computer Science prior to completing my B.S. degree was limited to taking web design, JavaScript, C++, and a few general I.T. related courses in high school. I have several years of experience with web-development, as that was one of the jobs I held long term in St. Louis,MO. 
+		Born and raised in Tallahassee, I spent close to a decade in St. Louis, MO (2012-2020). I bought
+		a house through short-sale auction in the city, and performed a full gut-rehab on it while I was
+		working full-time, and attending college. I lived in St. Louis until early 2020, at which point
+		I sold my then finished house and moved back to Florida to focus on my education full-time. My
+		formal education in Computer Science prior to completing my B.S. degree was limited to taking
+		web design, JavaScript, C++, and a few general I.T. related courses in high school. I have
+		several years of experience with web-development, as that was one of the jobs I held long term
+		in St. Louis,MO.
 	</p>
 
 	<h1 class="title mt-8">Education:</h1>
 	<ul class="list-inside list-disc ml-8">
-		<li><strong>Saint Louis Community College</strong> (STLCC) - Forest Park : General courses</li> 
-		<br>
-		<li><strong>Saint Louis University</strong> (SLU): Dual Major - B.S. in Biochemistry, B.A. in Russian Studies (Language, History, & Culture) </li>
-		<br>
-		<li><strong>Southern New Hampshire University</strong> (SNHU): Major - Computer Science B.S. - GPA: 4.0 - Graduated summa cum laude.</li>
+		<li><strong>Saint Louis Community College</strong> (STLCC) - Forest Park : General courses</li>
+		<br />
+		<li>
+			<strong>Saint Louis University</strong> (SLU): Dual Major - B.S. in Biochemistry, B.A. in Russian
+			Studies (Language, History, & Culture)
+		</li>
+		<br />
+		<li>
+			<strong>Southern New Hampshire University</strong> (SNHU): Major - Computer Science B.S. - GPA:
+			4.0 - Graduated summa cum laude.
+		</li>
 		<ul class="accomplishments-list">
 			<strong>Accomplishments:</strong>
-			<li>Built full-stack Android mobile application using <u>Kotlin & Jetpack Compose</u>. Application is for managing a warehouse's product inventory. </li>
-			<li>Built full-stack console/terminal based <u>Rust</u> application for financial investment firm to manage their client lists & associated client data. Utilizes a remote <u>MySQL</u> database for storing client data used in general application, as well as hashed employee passwords for authenticating login attempts.</li>
-			<li>Built full, playable, prototype level for a stealth based 3rd person game using <u>Unreal Engine 5.4</u>. Implemented various mechanics such as player being caught, player hiding/visibility, patrolling NPC enemies, various collision related mechanics such as trip wires, security cameras, environmental meshes, etc. Also designed the various custom environment models that were used to create the map for the level. Implemented various item pickups that affect the player's score, visible on the player HUD. Keys and the doors they unlock were also implemented. Included level objectives on the hud which update when progress event is triggered. Everything implemented from scratch.</li>
-			<li>Built JavaScript based web-application using <u>Express, Node.js, Handlebars</u>(page templating), and <u>MongoDB</u>. Also constructed a SPA for managing & customizing the web-app using <u>Angular</u>. </li>
-			<li>Constructed a machine learning model in <u>python</u> using <u>Keras/TensorFlow</u>. Utilized deep Q-learning to develop the most efficient strategy for completing an exploration based puzzle game.</li>
-			</ul>
+			<li>
+				Built full-stack Android mobile application using <u>Kotlin & Jetpack Compose</u>.
+				Application is for managing a warehouse's product inventory.
+			</li>
+			<li>
+				Built full-stack console/terminal based <u>Rust</u> application for financial investment firm
+				to manage their client lists & associated client data. Utilizes a remote <u>MySQL</u> database
+				for storing client data used in general application, as well as hashed employee passwords for
+				authenticating login attempts.
+			</li>
+			<li>
+				Built full, playable, prototype level for a stealth based 3rd person game using <u
+					>Unreal Engine 5.4</u
+				>. Implemented various mechanics such as player being caught, player hiding/visibility,
+				patrolling NPC enemies, various collision related mechanics such as trip wires, security
+				cameras, environmental meshes, etc. Also designed the various custom environment models that
+				were used to create the map for the level. Implemented various item pickups that affect the
+				player's score, visible on the player HUD. Keys and the doors they unlock were also
+				implemented. Included level objectives on the hud which update when progress event is
+				triggered. Everything implemented from scratch.
+			</li>
+			<li>
+				Built JavaScript based web-application using <u>Express, Node.js, Handlebars</u>(page
+				templating), and <u>MongoDB</u>. Also constructed a SPA for managing & customizing the
+				web-app using <u>Angular</u>.
+			</li>
+			<li>
+				Constructed a machine learning model in <u>Python</u> using <u>Keras/TensorFlow</u>.
+				Utilized deep Q-learning to develop the most efficient strategy for completing an
+				exploration based puzzle game.
+			</li>
+		</ul>
 	</ul>
 
-		<br>
+	<br />
 
 	<h1 class="title mt-6">Employment:</h1>
 	<ul class="list-inside list-disc ml-8">
-		<li><strong>FedEX Office - Lead Production Coordinator (Production Manager) - 2010-2012:</strong>
+		<li>
+			<strong>FedEX Office - Lead Production Coordinator (Production Manager) - 2010-2012:</strong>
 			<ul class="list-inside list-disc ml-8 mt-2">
-				<li>Managed daily operations of the production floor, production of orders when necessary, and intake / processing of new orders for Tier-1 center (1M+ annual gross).</li>
-				<li>Coordinated with remote departments to ensure projects were delegated to appropriate vendors to meet set deadlines.</li>
-				<li>Responsible for communicating order details between shifts (hand-offs), ensuring all orders met quality guidelines, and processing center end of day paperwork/bank deposits. </li>
+				<li>
+					Managed daily operations of the production floor, production of orders when necessary, and
+					intake / processing of new orders for Tier-1 center (1M+ annual gross).
+				</li>
+				<li>
+					Coordinated with remote departments to ensure projects were delegated to appropriate
+					vendors to meet set deadlines.
+				</li>
+				<li>
+					Responsible for communicating order details between shifts (hand-offs), ensuring all
+					orders met quality guidelines, and processing center end of day paperwork/bank deposits.
+				</li>
 			</ul>
 		</li>
-		<br>
-		<li><strong>UPS - Dispatch Supervisor - 2013-2016:</strong>
+		<br />
+		<li>
+			<strong>UPS - Dispatch Supervisor - 2013-2016:</strong>
 			<ul class="list-inside list-disc ml-8 mt-2">
 				<li>Built daily route & load plan for 30+ trucks/drivers (Greater Metro area)</li>
 				<li>Handled & corrected address entries for the address database used in route planning</li>
-				<li>Daily communication with upper-level center supervisors to handle internal paperwork & filings related to position</li>
+				<li>
+					Daily communication with upper-level center supervisors to handle internal paperwork &
+					filings related to position
+				</li>
 			</ul>
 		</li>
-		<br> 
-		<li><strong>TimeKeeper - Web Developer & e-Commerce Store Manager - 2013-2019:</strong>
+		<br />
+		<li>
+			<strong>TimeKeeper - Web Developer & e-Commerce Store Manager - 2013-2019:</strong>
 
 			<ul class="list-inside list-disc ml-8 mt-2">
 				<li>Designed and built e-commerce webstore platform for brick and mortar business.</li>
 				<li>Custom site built using JavaScript, CSS, and tools provided by Prestashop (PHP).</li>
-				<li>Integrated e-commerce web-store to allow syncing of inventory from other online platforms (using Ebay's sync API).
-				<li>Managed inventory, generated web-store pages for 1000's of high-value items (Jewelry, Clocks, Antiques, & Classic Cars)</li>
-				<li>Diverted traffic from our sales accounts on other e-commerce platforms (Etsy/Ebay) to the web-store.Increased revenue on individual high-value sales by using SEO techniques, Advertising, and removing cuts taken from external platforms.</li>
+				<li>
+					Integrated e-commerce web-store to allow syncing of inventory from other online platforms
+					(using Ebay's sync API).
+					<li>
+						Managed inventory, generated web-store pages for 1000's of high-value items (Jewelry,
+						Clocks, Antiques, & Classic Cars)
+					</li>
+					<li>
+						Diverted traffic from our sales accounts on other e-commerce platforms (Etsy/Ebay) to
+						the web-store.Increased revenue on individual high-value sales by using SEO techniques,
+						Advertising, and removing cuts taken from external platforms.
+					</li>
+				</li>
 			</ul>
 		</li>
-	</ul>
 
-		<br>
-	<!-- Technologies section -->
-  <section class="mt-8">
-    <h1 class="title">Technologies:</h1>
-    <ul class="space-y-4">
-      {technologies.map((category) => (
-        <li class="category">
-          <h2 class="text-xl font-bold mb-2">{category.name}</h2>
-          <ul class="space-y-1 sm:space-y-2">
-            {category.items.map(({ href, title, desc }) => (
-              <li class="tech-item">
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cody-link inline-block"
-                >
-                  {title}
-                </a>
-                : 
-                <p class="inline-block sm:mt-0">{desc}</p>
-              </li>
-            ))}
-          </ul>
-        </li>
-      ))}
-    </ul>
-  </section>
-
-
-
+		<br />
+		<!-- Technologies section -->
+		<section class="mt-8">
+			<h1 class="title">Technologies:</h1>
+			<ul class="space-y-4">
+				{
+					technologies.map((category) => (
+						<li class="category">
+							<h2 class="text-xl font-bold mb-2">{category.name}</h2>
+							<ul class="space-y-1 sm:space-y-2">
+								{category.items.map(({ href, title, desc }) => (
+									<li class="tech-item">
+										<a
+											href={href}
+											target="_blank"
+											rel="noopener noreferrer"
+											class="cody-link inline-block"
+										>
+											{title}
+										</a>
+										:<p class="inline-block sm:mt-0">{desc}</p>
+									</li>
+								))}
+							</ul>
+						</li>
+					))
+				}
+			</ul>
+		</section>
 
 		<div class="mt-16">
 			This theme was based on the following two themes:
-			<a 
-				class="cody-link" 
+			<a
+				class="cody-link"
 				href="https://astro-theme-cactus.netlify.app"
 				target="_blank"
-				rel="noopener noreferrer"
-			>Astro Cactus</a>
+				rel="noopener noreferrer">Astro Cactus</a
+			>
 			and
-			<a 
-				class="cody-link" 
+			<a
+				class="cody-link"
 				target="_blank"
 				rel="noopener noreferrer"
-				href="https://risotto.joeroe.io"
-			>Risotto</a>.
+				href="https://risotto.joeroe.io">Risotto</a
+			>.
 		</div>
+	</ul>
+	<style>
+		.title {
+			@apply text-2xl font-bold mb-4;
+		}
+		.category {
+			/*indent category*/
+			@apply pl-4;
+		}
+		.tech-item {
+			/*indent type*/
+			@apply pl-8;
+		}
+		.accomplishments-list {
+			list-style-type: disc;
+			margin-left: 2rem;
+			margin-top: 1rem;
+		}
+
+		.accomplishments-list li {
+			margin-bottom: 0.75rem;
+			margin-left: 2rem;
+			line-height: 1.25;
+		}
+
+		.accomplishments-list strong {
+			display: block;
+			margin-bottom: 1rem;
+			font-size: 1.1em;
+		}
+	</style>
 </Layout>
-<style>
-	.title {
-		@apply text-2xl font-bold mb-4;
-	}
-	.category {
-		/*indent category*/
-		@apply pl-4; 
-	}
-	.tech-item {
-		/*indent type*/
-		@apply pl-8; 
-	}
-	.accomplishments-list {
-		list-style-type: disc;
-		margin-left: 2rem;
-		margin-top: 1rem;
-	}
-
-	.accomplishments-list li {
-		margin-bottom: 0.75rem;
-		margin-left: 2rem;
-		line-height: 1.25;
-	}
-
-	.accomplishments-list strong {
-		display: block;
-		margin-bottom: 1rem;
-		font-size: 1.1em;
-	}
-</style>

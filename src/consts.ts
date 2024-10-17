@@ -41,7 +41,7 @@ export const socialLinks: Array<SocialLink> = [
 	{
 		icon: "mdi:linkedin",
 		friendlyName: "LinkedIn",
-		link: "#",
+		link: "https://www.linkedin.com/in/edward-johnson-4482a1279/",
 	},
 	{
 		icon: "mdi:email",

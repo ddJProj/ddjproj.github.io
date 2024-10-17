@@ -1,6 +1,6 @@
 ---
-title: 'C.S. Capstone Project - Planning Documentation'
-description: 'Planning the final project of my degree program, documenting the enhancements'
+title: 'C.S. Capstone Project - Planning, & documentation'
+description: 'Planning the Rust based TUI Client Management Application. For a Financial Investment Firm.'
 pubDate: 'July 10, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'

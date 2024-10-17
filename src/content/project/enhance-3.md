@@ -1,6 +1,6 @@
 ---
-title: 'C.S. Capstone Project - Enhancement #3 - Database'
-description: 'This is the third of three enhancement stages to satisfy my C.S. degree, capstone competency criteria for Database design and implementation.'
+title: 'C.S. Capstone Project - Stage #3 - Database Implementation'
+description: 'This is the third of three enhancement stages stages for the Rust TUI application. Satisfies degree criteria for Database design and implementation.'
 pubDate: 'July 25, 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
