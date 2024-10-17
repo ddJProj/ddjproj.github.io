@@ -44,7 +44,7 @@ Some of the topics we covered relating to operations included how both tradition
 
 During my time in this program, we were expected to learn the steps that go into formally planning and designing an application, while including input/feedback from stakeholders. Students were expected to learn what duties and work must be accomplished by each role/member of a development team. We not only needed to learn the roles that various team members may perform when on a development team, we also had to practice filling each of those roles.
 
-As teams sizes and roles will differ between organizations, I believe it is incredible valuable to have a strong understanding of the various components that make up a successful development team.
+As teams sizes and roles will differ between organizations, I believe it is of incredible valuable to have a strong understanding of the various components that make up a successful development team.
 
 In addition to understanding the various roles, it is equally important for the team to ensure that the final product meets and delivers on the values that are expected by the stakeholders / future users. This includes the importance of regularly asking for and incorporating feedback from stakeholders into our work. Depending on the team format, this can be done via an intermediary team member such as a product owner, project manager, or via direct contact with stakeholder(s). We were expected to prove that we understood and absorbed these concepts by practically applying them to a variety of different design and coding based projects.
   
