@@ -44,62 +44,8 @@ The three categories include:
 </strong>
 </p>
 
-<br></br>
-# Self-Introduction:
+<br>
 
-## What have you learned while in the Computer Science program? List three of the most important concepts or skills you have learned.
-
-I have learned a tremendous amount over the past year while studying in this program.
-
-If I were to name just three of the most important topics, it would start with algorithmic thinking. When I first started the program, I didn’t have any significant experience in the science of computers and programming. I have always been analytically minded, and my background in biochemistry did contribute to my ability to break down problems. That being said, deeply investing myself into my work in this program has allowed me to work on building my ability to think algorithmically, while also developing my ability to problem solve through programming. I am now quite comfortable decomposing moderately complex problems and turning them into manageable units of an code for an application.
-
-The second important topic I learned in this program, is how applications are compiled into low level assembly language and how memory is managed. Developing a fairly intimate understanding of assembly (X86) has provided me with a great deal of context in how work is accomplished with computers. Specifically, I found it incredibly valuable to understand how memory is handled on the stack, and how values are passed through registers. I also found it interesting how the compiler simplifies / breaks down certain instructions written in higher level languages.
-
-Last, I would say that understanding linear algebra was instrumental in developing myself. Specifically I would look to concepts like dot product calculations, orthogonality, how stochastic systems work, also how Markov chains / Markov models can be applied and used in machine learning. Additionally, just generally understanding concepts that involve manipulating matrices, and their usage in different algorithmic computations such as with compression, or cryptographic algorithms.
-  
-
-## Discuss the specific skills you aim to demonstrate through your enhancements to reach each of the course outcomes.
-
-For this course, I focused on demonstrating my skills in organization, in designing back-end implementations for secure software applications, as well as quickly adapting to, and then become proficient in new technologies. I  primarily focused on rewriting the C++ client handling application that I turned in for my reverse engineering course.
-
-I sought to clearly demonstrate that I am capable of independently researching, learning, and then implementing new development strategies. This assessment was broken into three enhancement segments:
-- **Software Engineering and Design**, 
-- **Data Structures and Algorithms**, 
-- **database implementation**.
-
-To meet the desired software engineering and design aspects, I will be focused on providing clean code that meets the standards of industry best secure coding practices.
-
-For data structures and algorithms, I focused on both designing, then implementing modular, reusable code, and when necessary implemented appropriate data structures to handle operations within the application. This was done while considering the time-complexity of various implementations.
-
-For the database component I designed, then implemented a database integration for my application. It was one that handles application authentication, as well as managing client data. I aimed to demonstrate that the database integration focused on providing secure communications / authentication, and again followed best practices.
-  
-
-## How do the specific skills you will demonstrate align with your career plans related to your degree?
-
-The skills I have mentioned are critical to the work and research of my intended career path. Learning to carefully apply them is what will allow me to develop practical solutions to any problems that I face, whether it be software based, or in solving chemical / material based computations. My career goal is to end up working as computational scientist. This project is significant to me because it allowed me to demonstrate how well I have been able to refine my problem solving capabilities. In this context, this was done through the design and implementation of a program that seek to generate solutions to complex problems.
-
-To reach my career aspirations, I both want, and need to be accustomed working in environments that are challenging, and that may be lacking in guidance. I feel that this project will serve as a valuable contribution towards demonstrating that I am quite capable of thriving under these conditions.
-
-
-## How does this contribute to the specialization you are targeting for your career?
-
-I plan to apply for internships and employment positions related to computational programming, low level software engineering, embedded systems, and machine learning. With my background in biochemistry, I also plan to begin applying to masters programs for computational science or data science and computation.
-
-The career that I am hoping to work in would require me to work with, and design machine learning models that are capable of generally processing experimental data. The models would then be used to help produce generalized applications of that data that could accurately predict experimental outcomes.
-
-With this capstone project, I hope to be able to demonstrate that I am capable of identifying complex problems, breaking down those problems into manageable components, then both designing and implementing targeted solutions to those problems. I aim to show that I am capable of maintaining project scope, and that I can deliver on a functioning application within a designated time-frame via responsible time management.
-
-
-## Course Outcomes:
-
-1. _Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science._
-2. _Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts._
-3. _Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices._
-4. _Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals._
-5. _Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources._
-
-
-<br></br>
 # Enhancement Plan:
 
 ## Category One: Software Engineering and Design
@@ -1177,9 +1123,57 @@ I have not yet had the opportunity to thoroughly dig into MySQL, but I have read
 	
 To meet the secondary outcome, I will ensure that the methods that I implement in my application follow the best known security standards for the technologies / language of my choice. I have already researched into what the best approaches are when it comes to encryption and hashing, including using a secure, updated version of MySQL, and using the relevant, up to date Argon2 crate.
 
+
+<br></br>
+
+
+## Course & Project goals / outcomes:
+
+1. _Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science._
+2. _Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts._
+3. _Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices._
+4. _Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals._
+5. _Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources._
+
+
+<br>
+
+
+
+
+
+
+## Discuss the specific skills you aim to demonstrate through your enhancements to reach each of the course outcomes.
+
+For this course, I focused on demonstrating my skills in organization, in designing back-end implementations for secure software applications, as well as quickly adapting to, and then become proficient in new technologies. I  primarily focused on rewriting the C++ client handling application that I turned in for my reverse engineering course.
+
+I sought to clearly demonstrate that I am capable of independently researching, learning, and then implementing new development strategies. This assessment was broken into three enhancement segments:
+- **Software Engineering and Design**, 
+- **Data Structures and Algorithms**, 
+- **database implementation**.
+
+To meet the desired software engineering and design aspects, I will be focused on providing clean code that meets the standards of industry best secure coding practices.
+
+For data structures and algorithms, I focused on both designing, then implementing modular, reusable code, and when necessary implemented appropriate data structures to handle operations within the application. This was done while considering the time-complexity of various implementations.
+
+For the database component I designed, then implemented a database integration for my application. It was one that handles application authentication, as well as managing client data. I aimed to demonstrate that the database integration focused on providing secure communications / authentication, and again followed best practices.
   
 
-    
+## How do the specific skills you will demonstrate align with your career plans related to your degree?
+
+The skills I have mentioned are critical to the work and research of my intended career path. Learning to carefully apply them is what will allow me to develop practical solutions to any problems that I face, whether it be software based, or in solving chemical / material based computations. My career goal is to end up working as computational scientist. This project is significant to me because it allowed me to demonstrate how well I have been able to refine my problem solving capabilities. In this context, this was done through the design and implementation of a program that seek to generate solutions to complex problems.
+
+To reach my career aspirations, I both want, and need to be accustomed working in environments that are challenging, and that may be lacking in guidance. I feel that this project will serve as a valuable contribution towards demonstrating that I am quite capable of thriving under these conditions.
+
+
+## How does this contribute to the specialization you are targeting for your career?
+
+I plan to apply for internships and employment positions related to computational programming, low level software engineering, embedded systems, and machine learning. With my background in biochemistry, I also plan to begin applying to masters programs for computational science or data science and computation.
+
+The career that I am hoping to work in would require me to work with, and design machine learning models that are capable of generally processing experimental data. The models would then be used to help produce generalized applications of that data that could accurately predict experimental outcomes.
+
+With this capstone project, I hope to be able to demonstrate that I am capable of identifying complex problems, breaking down those problems into manageable components, then both designing and implementing targeted solutions to those problems. I aim to show that I am capable of maintaining project scope, and that I can deliver on a functioning application within a designated time-frame via responsible time management.
+
 
 
 ## Skills and outcomes planned to be illustrated in the code review

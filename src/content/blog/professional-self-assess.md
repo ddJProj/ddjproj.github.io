@@ -11,9 +11,24 @@ updatedDate: 'September, 23 2024'
 hide: false
 ---
 
+# Self-Introduction:
+
+## What I have learned while in the Computer Science program. Three of the most important concepts / skills I have learned.
+
+I have learned a tremendous amount over the past year while studying in this program.
+
+If I were to name just three of the most important topics, it would start with algorithmic thinking. When I first started the program, I didn’t have any significant experience in the science of computers and programming. I have always been analytically minded, and my background in biochemistry did contribute to my ability to break down problems. That being said, deeply investing myself into my work in this program has allowed me to work on building my ability to think algorithmically, while also developing my ability to problem solve through programming. I am now quite comfortable decomposing moderately complex problems and turning them into manageable units of an code for an application.
+
+The second important topic I learned in this program, is how applications are compiled into low level assembly language and how memory is managed. Developing a fairly intimate understanding of assembly (X86) has provided me with a great deal of context in how work is accomplished with computers. Specifically, I found it incredibly valuable to understand how memory is handled on the stack, and how values are passed through registers. I also found it interesting how the compiler simplifies / breaks down certain instructions written in higher level languages.
+
+Last, I would say that understanding linear algebra was instrumental in developing myself. Specifically I would look to concepts like dot product calculations, orthogonality, how stochastic systems work, also how Markov chains / Markov models can be applied and used in machine learning. Additionally, just generally understanding concepts that involve manipulating matrices, and their usage in different algorithmic computations such as with compression, or cryptographic algorithms.
+  
 
 
-# Introduction:
+
+
+
+# Brief Reflection on Progress Made:
 
 Reflecting on the progress and achievements I have made during my time in the Computer Science program, I am struck by just how much material I have managed to absorb. I have constructed for myself a comprehensive repertoire of skills and knowledge that showcases my strengths within the field of Computer Science. These are skills and abilities that I believe are desirable, and enhance my employability. In this self-assessment, I am going to cover what I feel to be the most significant aspects of my educational growth. The assessment will be separated into three primary categories. I will also be providing an additional assessment at the end of the document that details and summarizes what my capstone project for the program covered, and why it is an important feature of my ePortfolio.
 
