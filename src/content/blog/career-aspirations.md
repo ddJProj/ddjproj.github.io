@@ -7,7 +7,7 @@ heroImage:
   alt: 'Career plans & education goals'
 tags: ["journal", "career"]
 series: "journal"
-updatedDate: 'September, 25 2024'
+updatedDate: 'August, 15 2024'
 hide: false
 ---
 
