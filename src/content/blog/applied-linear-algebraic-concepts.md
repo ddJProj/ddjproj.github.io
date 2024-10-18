@@ -30,26 +30,52 @@ The topic that I am choosing to discuss is centered around machine learning, and
 I recently wrote about a few different articles in this same field of science, and it is incredibly interesting to me the more I learn about it. It concerns Machine-learning interatomic potentials, and how they are used in a variety of different ways to compute, simulate and predict possible outcomes of quantum mechanical interactions between atomic particles. MLIPs focus on the energy potentials, various energy states, and positions of atomic particles. This entire field of computational science is built on top of similar principles to those that we learned about in our linear algebra course. For instance, this area of science deals with moment / momentary potentials, which is to put simply, an energy potential that is represented by a specific atomic configuration. 
 </p>
 
-<p>
+
 The following is an example from one of the papers that I was recently reading through, and it talks about some of the calculations that are performed with these potentials using linear algebraic methods. 
 
 "In order to construct the basis functions Bα(alpha) we define the so-called level of moments:
-$$\text{lev}M_{\mu,\nu} = 2 + 4\mu + \nu.$$"
-</p>
+<strong>
+$$
+\displaystyle
+\begin{aligned}
+&\text{lev}M_{\mu,\nu} = 2 + 4\mu + \nu. 
+\end{aligned}
+$$
 
-For example:  
-"$\text{lev}M_{0,1} = 3$, $\text{lev}M_{1,1} = 7$, $\text{lev}M_{0,2} = 4$, $\text{lev}M_{0,0} = 2$.
-<p>
-"The coefficients 2, 4, and 1 in (5) were empirically found to be optimal on a number of tests done in [25] and are fixed in the MLIP package. The level of multiplication, or more generally, contractions of a number of moments is defined by adding the levels, for example:
-</p>
+</strong>
+
+<strong>
+
+For Example:
+$$
+\displaystyle
+\begin{aligned}
+\text{lev}M_{0,1} &= 3, &\quad \text{lev}M_{1,1} &= 7, &\quad \text{lev}M_{0,2} &= 4, &\quad \text{lev}M_{0,0} &= 2
+\end{aligned}
+$$
+
+</strong>
+
+The coefficients 2, 4, and 1 in (5) were empirically found to be optimal on a number of tests done in [25] and are fixed in the MLIP package. The level of multiplication, or more generally, contractions of a number of moments is defined by adding the levels,
+<br>
+
+ Example:
+
+<strong>
+
+$$
+\displaystyle
+\begin{aligned}
+\text{lev}M_{1,0}^{2} &= 12, &\quad \text{lev}M_{0,0}^{4} &= 8, &\quad \text{lev}M_{2,0}^{3} &= 30, \\
+\text{lev}(M_{1,1} \cdot M_{0,1}) &= 10, &\quad \text{lev}(M_{1,2} : M_{0,2}) &= 12, &\quad \text{lev}((M_{0,3}M_{0,2}) \cdot M_{0,1}) &= 12,
+\end{aligned}
+$$
 
 
-$$\text{lev}M_{0}^{2} = 12, \quad \text{lev}M_{0}^{4} = 8, \quad \text{lev}M_{2}^{3} = 30,$$
-
-$$\text{lev}(M_{1} \cdot M_{0,1}) = 10, \quad \text{lev}(M_{1,2} \cdot M_{0,2}) = 12, \quad \text{lev}((M_{0,3}M_{0,2}) \cdot M_{0,1}) = 12,$$
+</strong>
 
 
-where ‘·’ is the dot product of two vectors, ‘:’ is the Frobenius product of two matrices," (Novikov et al., 2021).
+where ‘·’ is the dot product of two vectors, ‘:’ is the Frobenius product of two matrices. As could be seen from these examples, non-scalar moments could yield scalars upon their contraction." (Novikov et al., 2021).
 
 
 This is only a small portion of the work discussed in the cited paper. But this is an example of work using methods such as dot-product calculations, forming a basis, or linear regression using a set of basis functions. This is also only speaking on the computation of potential and interactions. The implementations for the machine learning model that uses data from the calculated interaction would also rely on similar methods to those learned in our linear algebra course. The model implementation utilizes principles that we have covered or that are deeper into the topic of linear algebra than we have yet covered, such as markov chains. 
