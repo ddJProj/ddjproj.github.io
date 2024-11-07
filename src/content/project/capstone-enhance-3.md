@@ -8,7 +8,7 @@ heroImage:
 platform: Console/Terminal Emulator
 stack: ['Rust', 'MySQL']
 website: https://ddjproj.github.io/
-github:  https://github.com/ddJProj/CS499-Capstone-Project_Artifact-Enhancements
+github:  https://github.com/ddJProj/CSBS-Capstone-Project_Artifact-Enhancements
 order: 2 
 ---
 
