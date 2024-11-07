@@ -1,6 +1,6 @@
 ---
 title: 'Data Structures and Algorithms - Final Project'
-description: 'DSA Proficiency - course catalog & management application'
+description: 'DSA coursework and final project, a course catalog & management application'
 pubDate: 'Feb 27 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
