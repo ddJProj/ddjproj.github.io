@@ -1,6 +1,6 @@
 ---
-title: 'CS330 - Computer Science Graphics and Visualizations - Final Project'
-description: 'Build a 3D Virtual environment of a selected scene (image) using C++ and OpenGL.'
+title: 'Computer Science Graphics and Visualizations course - Final Project'
+description: 'Building a 3D Virtual environment of a selected scene (image) using C++ and OpenGL.'
 pubDate: 'Aug 27 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
@@ -8,7 +8,7 @@ heroImage:
 platform: Windows, Executable 3D Graphical Environment Viewer
 stack: ['Cpp', 'glsl']
 website: https://ddjproj.github.io/
-github: https://github.com/ddJProj/CS330
+github: https://github.com/ddJProj/CSBS-CG-and-visualization
 order: 3
 ---
 ### The full code is provided in the github repository link above. 
@@ -29,7 +29,7 @@ This initial version of the scene shows a rendering of the bare shapes after the
 
 
 <a href="" target="_blank">
-<img src="https://github.com/ddJProj/CS330/blob/main/early-version-scene.png?raw=true" alt="CS330 - Final Scene" width="600" style="max-width: 100%; height: auto;">
+<img src="https://github.com/ddJProj/CSBS-CG-and-visualization/blob/main/early-version-scene.png?raw=true" alt="CS330 - Final Scene" width="600" style="max-width: 100%; height: auto;">
 
 </a>
 
@@ -38,7 +38,7 @@ This initial version of the scene shows a rendering of the bare shapes after the
 ## Click on the animated .gif below to view the full YouTube video demonstration of the final scene.
 
 <a href="https://www.youtube.com/watch?v=bOR8THyTE8M" target="_blank">
-  <img src="https://github.com/ddJProj/CS330/raw/main/scene-preview.gif" alt="CS330 - Final Scene" width="600" style="max-width: 100%; height: auto;">
+  <img src="https://github.com/ddJProj/CSBS-CG-and-visualization/blob/main/scene-preview.gif?raw=true" alt="CS330 - Final Scene" width="600" style="max-width: 100%; height: auto;">
 </a>
 
 

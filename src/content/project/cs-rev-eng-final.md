@@ -1,6 +1,6 @@
 ---
-title: 'CS410 - Reverse Engineering - Final Project'
-description: 'CS410 - Financial Investment Firm - Security analysis an application rewrite.'
+title: 'Software Reverse Engineering - Final Project'
+description: 'Coursework and final project, rewriting client application for Financial Investment Firm, and performing security analysis.'
 pubDate: 'May 20 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
@@ -8,7 +8,7 @@ heroImage:
 platform: Command-Line Interface - Client Service Management Tool
 stack: ['Cpp', 'Assembly']
 website: https://ddjproj.github.io/
-github: https://github.com/ddJProj/CS410/blob/main/Project-2/Mod6_Updated-Security-CPP_E-Johnson.cpp
+github: https://github.com/ddJProj/CSBS-reverse-engineering
 order: 3
 ---
 
@@ -16,12 +16,12 @@ order: 3
 
 ### Prompt: 
 
-In Project One, you applied for a Software Engineer position at a large investment company called SNHU Investments. Recently, they have been trying to move their legacy code into a cloud-based application. You were selected to participate in a proficiency test as part of the interview process. In the proficiency test, you demonstrated your ability to reverse engineer code.
+In the first Project for this course, we applied for a Software Engineer position at a large investment company. This firm has been trying to move their legacy code into a cloud-based application. I was selected to participate in a proficiency test as part of the interview process. In the proficiency test, I demonstrated my ability to reverse engineer code.
 
-For the next part of the proficiency test, you have been asked to identify and explain security vulnerabilities within the client management application. You will identify multiple security vulnerabilities within blocks of assembly code, explain the vulnerabilities, and describe recommendations to fix the vulnerabilities.
+For the next part of the proficiency test, I have been asked to identify and explain security vulnerabilities within the client management application. I will identify multiple security vulnerabilities within blocks of assembly code, explain the vulnerabilities, and describe recommendations to fix the vulnerabilities.
 
 ### Then: 
-Using the C++ (CPP file) that you created in Project One, you will identify multiple security vulnerabilities, explain the vulnerabilities, and describe recommendations to fix the security vulnerabilities.
+Using the C++ (CPP file) that I created in Project One, I will first identify multiple security vulnerabilities, explain the vulnerabilities, and then describe recommendations to fix the security vulnerabilities.
 
 
 
@@ -1136,7 +1136,7 @@ void populateClientList(){
 
 
 
-
+https://github.com/ddJProj/CSBS-reverse-engineering
 
 
 ## Sources:

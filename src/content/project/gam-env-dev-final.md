@@ -1,6 +1,6 @@
 ---
-title: 'GAM303 - Design of Virtual Game Environments - Final Project'
-description: 'Rapid prototype of full game level for 3rd person stealth game.'
+title: 'Design of Virtual Game Environments - Final Project'
+description: 'Final project of Game Environments design course. Full apid prototype of designed game level for a 3rd person stealth game.'
 pubDate: 'August 30 2024'
 heroImage:
   url: '/blog-placeholder-about.jpg'
@@ -8,7 +8,7 @@ heroImage:
 platform: Unreal Engine 5.4 - Windows, Mac, or Linux
 stack: ['Cpp', 'csharp']
 website: https://ddjproj.github.io/
-github: https://github.com/ddJProj/CS410/tree/main/Project-2
+github: https://github.com/ddJProj/CSBS-game-env-design
 order: 3
 ---
 
@@ -16,7 +16,10 @@ order: 3
 [Link to the Unreal Engine 5.4 source code/files hosted in a public repo on Bitbucket: ](https://bitbucket.org/johnson-arena-c3-2024/johnson_arena/src/main/)
 
 ### Design documents created throughout the development process:
-[Link to the planning & documentation for the game level hosted in a public repository on GitHub: ](https://github.com/ddJProj/CS410/tree/main/Project-2)
+
+The planning and design documentation for this game level can be found in the public repository below: 
+[Link to the planning & documentation for the game level hosted in a public repository on GitHub: ](https://github.com/ddJProj/CSBS-game-env-design/tree/main/PROTOTYPE-LEVEL-DOCUMENTS)
+
 
 ## Below are two video run-through examples of the final level prototype. 
 

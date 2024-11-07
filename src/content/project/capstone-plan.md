@@ -8,20 +8,20 @@ heroImage:
 platform: Console / Terminal application
 stack: ['Cpp', 'Assembly', 'Rust', 'MySQL']
 website: https://ddjproj.github.io/
-github:  https://github.com/ddJProj/
+github:  https://github.com/ddJProj/CSBS-Capstone-Project_Artifact-Enhancements
 order: 1 
 ---
 
 ## Source Repositories:
 
 #### Original C++ project (Basis of all three enhancements):
-[Link to the GitHub repository containing the original C++ application's source code](https://github.com/ddJProj/CS410/tree/main/Project-2)
+[Link to the GitHub repository containing the original C++ application's source code](https://github.com/ddJProj/CSBS-reverse-engineering/tree/main/Project-2)
 
 #### My original implementation of an AVL Tree in C++ (Used in enhancement stage 2):
-[Link to the GitHub repository containing the original C++ AVL tree implementation](https://github.com/ddJProj/CS300/tree/main/ABCU_Project-2)
+[Link to the GitHub repository containing the original C++ AVL tree implementation](https://github.com/ddJProj/CSBS-data-struct-and-alg/tree/main/ABCU_Project-2)
 
 #### Completed rewrite of the original C++ project, in Rust:
-[Link to the GitHub repository containing completed, enhanced Rust project & source code](https://github.com/ddJProj/CS499-Capstone-Project_Artifact-Enhancements)
+[Link to the GitHub repository containing completed, enhanced Rust project & source code](https://github.com/ddJProj/CSBS-Capstone-Project_Artifact-Enhancements)
 
 <br></br>
 
@@ -57,7 +57,7 @@ For the first artifact, I will be enhancing the final project for my CS410 – S
 I rewrote the entire application, included validation checks and sanitization. I introduced class objects to handle the authentication process, as well as class objects to encapsulate the client data. I then implemented a hashing system to store password hashes instead of plain a plain text password that could easily be discovered when decompiling the binary executable. I also restructured all of the functionality into modular functions, properly encapsulating those functions as class methods when it maintained consistency.
 
 **Link to C++ source code for project:**  
-[My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CS410/blob/main/Project-2/Mod6_Updated-Security-CPP_E-Johnson.cpp)
+[My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CSBS-reverse-engineering/tree/main/Project-2)
 
   
 ### Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.
@@ -426,10 +426,11 @@ The first artifact enhancement primarily aligns with two of the provided course 
 For the second artifact, I will again be using my final project from my CS410 reverse engineering course. In the original C++ code, the list of clients is handled with a singleton class "ClientList" which contains a private vector "clientList" that stores all of the individual clients. The list is accessed through a static accessor method that returns the clientList instead of a public constructor. A second class is used to create Client objects, and a client object can on into the respective Rust equivalent. This will include input validation / sanitization, using rust's equivalents of object oriented programming, as well as providing tbe created by calling the addClient function in the ClientList class. This addClient function then calls the constructor for the Client class, and then pushes the new object instance into the vector of Client objects. For this application, I will plan to implement an AVL tree that stores client instances and balances itself by client id values. For source material, I will be building and basing this AVL tree on the implementation that I first created for my Data Structures and Algorithms final project.
 
 **Link to C++ source code for project:**  
-[My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CS410/blob/main/Project-2/Mod6_Updated-Security-CPP_E-Johnson.cpp)
+[My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CSBS-reverse-engineering/tree/main/Project-2)
 
 **Link to my original C++ AVL tree implementation:**	            		     
-[My AVL_tree C++ implementation:](https://github.com/ddJProj/CS300/tree/main/ABCU_Project-2)
+[My AVL_tree C++ implementation:](https://github.com/ddJProj/CSBS-data-struct-and-alg/tree/main/ABCU_Project-2)
+
 
 
 ### Describe a practical, well-illustrated plan for enhancement in alignment with the category, including pseudocode that illustrates the planned enhancement.
@@ -711,7 +712,8 @@ For the database artifact selection, I will again be selecting the client servic
   
 
 **Link to C++ source code for project:**  
-[My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CS410/blob/main/Project-2/Mod6_Updated-Security-CPP_E-Johnson.cpp)
+[My C++ source project for Artifact 1, 2, & 3:](https://github.com/ddJProj/CSBS-reverse-engineering/tree/main/Project-2)
+
 
 
 ### Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.
@@ -1117,7 +1119,7 @@ With my tool implementations and styling, I will also look to meet the secondary
 	
 I am aiming to provide a database implementation that provides stable performance, and that meets the standards of industry best practices. I see this artifact enhancement as an opportunity to meet the same standards that I would be held to if I were a senior engineer doing this job. I don’t yet have the experience of a senior engineer, but I am more than willing to put in the time and work to get there.
 	
-Prior to this project, my only real experience implementing databases was with MongoDB for my CS340, and CS465 courses. CS340 was focused on performing queries and uploading data to the database, and CS465 primarily focused on angular / express js.
+Prior to this project, my only real experience implementing databases was with MongoDB for myClient Server Development, and Full-stack Development courses. Client Server Development was focused on performing queries and uploading data to the database, and Full-stack Development primarily focused on building an angular / express js web-application.
 	
 I have not yet had the opportunity to thoroughly dig into MySQL, but I have read that it is very valuable to have experience with. I have looked through the available database frameworks to find what would be the industry standard, as well as what is most marketable. I noticed that much of FAANG uses MySQL, and that was something I factored into my decision on MySQL. For this database implementation I hoped to build some experience with it, so I would like to use MySQL to handle my database and application’s queries. In doing so, I will further demonstrate that I am capable of picking up, and gaining proficiency in new technologies. I will implement an SQL relational database that will track client data in the first table, and handle employee user login authentication / validation attempts with a second table.
 	
