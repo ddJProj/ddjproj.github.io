@@ -1,5 +1,5 @@
 ---
-title: 'Computer Science Graphics and Visualizations course - Final Project'
+title: 'Computer Science Graphics and Visualizations - Final Project'
 description: 'Building a 3D Virtual environment of a selected scene (image) using C++ and OpenGL.'
 pubDate: 'Aug 27 2024'
 heroImage:
