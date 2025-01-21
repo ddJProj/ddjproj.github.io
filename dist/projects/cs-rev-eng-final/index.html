@@ -1,0 +1,991 @@
+<!DOCTYPE html><html lang="en" class="dark"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.1.8"><!-- Font preloads --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><!-- Canonical URL --><link rel="canonical" href="https://ddjproj.github.io/projects/cs-rev-eng-final/"><!-- Primary Meta Tags --><title>Software Reverse Engineering - Final Project | Portfolio &amp; Blog</title><meta name="title" content="Software Reverse Engineering - Final Project"><meta name="description" content="Coursework and final project, rewriting client application for Financial Investment Firm, and performing security analysis."><meta name="author" content="E. Johnson"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://ddjproj.github.io/projects/cs-rev-eng-final/"><meta property="og:title" content="Software Reverse Engineering - Final Project"><meta property="og:description" content="Coursework and final project, rewriting client application for Financial Investment Firm, and performing security analysis."><meta property="og:image" content="https://ddjproj.github.io/blog-placeholder-1.jpg"><meta property="article:author" content="E. Johnson"><meta property="article:published_time" content="2024-05-20T04:00:00.000Z"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://ddjproj.github.io/projects/cs-rev-eng-final/"><meta property="twitter:title" content="Software Reverse Engineering - Final Project"><meta property="twitter:description" content="Coursework and final project, rewriting client application for Financial Investment Firm, and performing security analysis."><meta property="twitter:image" content="https://ddjproj.github.io/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.CItO0ltx.css">
+<link rel="stylesheet" href="/_astro/about.COTOMhSK.css">
+<style>a[data-astro-cid-eimmu3lg]:before{content:"./";margin-right:-.5rem;color:var(--theme-accent-2)}a[data-astro-cid-eimmu3lg]{margin-right:.25rem;color:var(--theme-accent)}a[data-astro-cid-eimmu3lg]:hover{text-decoration:underline}
+.toc-item[data-astro-cid-zekvapgs]{font-size:.9rem;line-height:1.5;margin-bottom:.35rem}li[data-astro-cid-zekvapgs] a[data-astro-cid-zekvapgs]{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;text-decoration:none;color:inherit;padding:2px 0}.toc-prefix[data-astro-cid-zekvapgs]{margin-right:.5em;color:var(--accent-color, #888);font-size:.7em}.toc-number[data-astro-cid-zekvapgs]{margin-right:.5em;color:var(--text-color);font-size:.7em}.toc-text[data-astro-cid-zekvapgs]{flex:1;overflow:hidden;text-overflow:ellipsis}.depth-1[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs]{font-weight:700}.depth-2[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs]{padding-left:1em}.depth-3[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs]{padding-left:1em}.depth-4[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs],.depth-5[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs],.depth-6[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs]{padding-left:1em}.active-toc[data-astro-cid-zekvapgs]{color:var(--accent-color)}.toc-nav[data-astro-cid-xvrfupwn]{font-size:.875rem;width:100%}.toc-nav[data-astro-cid-xvrfupwn] h2[data-astro-cid-xvrfupwn]{font-size:1rem;margin-bottom:.5rem}.toc-nav[data-astro-cid-xvrfupwn] ul[data-astro-cid-xvrfupwn]{padding-left:.5rem;width:100%}
+small[data-astro-cid-uogrpsp5]{margin-right:.5rem;min-width:95px;background-color:var(--theme-accent);padding-left:.25rem;padding-right:.25rem;font-weight:600;color:var(--theme-bg)}.project-frontmatter-item[data-astro-cid-uogrpsp5]{display:flex;flex-direction:column;-moz-column-gap:0px;column-gap:0px}@media (min-width: 640px){.project-frontmatter-item[data-astro-cid-uogrpsp5]{flex-direction:row}}
+</style></head> <body> <header class="group relative mb-8 flex justify-between items-center gap-4" id="main-header" data-astro-cid-3ef6ksr2> <div class="block" data-astro-cid-3ef6ksr2> <a class="title whitespace-nowrap" href="/" aria-current="false" data-astro-cid-3ef6ksr2>Portfolio &amp; Blog</a> </div> <nav class="mt-4 bg-surface/95 sm:bg-bgColor absolute hidden top-8 w-full sm:block sm:static sm:mt-0 group-[.menu-open]:z-50 group-[.menu-open]:flex group-[.menu-open]:bg-bgColor" id="navigation-menu" aria-label="main menu" data-astro-cid-3ef6ksr2> <div class="space-y-1 px-2 pb-3 pt-2 sm:flex sm:px-0 sm:py-0 sm:space-y-0 sm:space-x-2" data-astro-cid-3ef6ksr2> <a href="/" class="block py-2 sm:py-0" title="Home" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Home </a> <a href="/about" class="block py-2 sm:py-0" title="About Me" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> About Me </a> <a href="/blog" class="block py-2 sm:py-0" title="Blog" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a> <a href="/projects" class="block py-2 sm:py-0" title="Projects" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Projects </a>  <a href="/tags" class="sm:hidden block py-2 sm:py-0" title="tags" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Tags </a>  <a href="/series" class="sm:hidden block py-2 sm:py-0" title="series" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Series </a>  </div> </nav> <div class="flex gap-2 items-center justify-center" data-astro-cid-3ef6ksr2> <button id="themeToggle" class="transition-all relative" aria-label="toggle theme" data-astro-cid-x3pjskd3> <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-astro-cid-x3pjskd3> <path class="sun opacity-100 transition-all dark:scale-0 dark:opacity-0" fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z" data-astro-cid-x3pjskd3></path> <path class="moon opacity-0 transition-all dark:scale-100 dark:opacity-100" fill-rule="evenodd" d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z" data-astro-cid-x3pjskd3></path> </svg> </button>  <script>
+  const theme = (() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+      return 'light';
+  })();
+
+  if (theme === 'light') {
+    document.documentElement.classList.remove('dark');
+  } else {
+    document.documentElement.classList.add('dark');
+  }
+
+  window.localStorage.setItem('theme', theme);
+
+  const handleToggleClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("dark");
+
+    const isDark = element.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  }
+
+  document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
+</script> <nav-button data-astro-cid-3ef6ksr2="true"> <div class="sm:hidden" data-astro-cid-3ef6ksr2> <span class="sr-only" data-astro-cid-3ef6ksr2>open main menu</span> <button class="group flex items-center justify-center" type="button" id="navigation-menu-btn" aria-label="Open main menu" aria-expanded="false" aria-haspopup="menu" data-astro-cid-3ef6ksr2> <!-- icon when menu is closed --> <svg class="transform transition-all duration-150 ease-out group-aria-expanded:scale-0 group-aria-expanded:opacity-0 h-6 w-6 block group-aria-expanded:hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-3ef6ksr2> <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" data-astro-cid-3ef6ksr2></path> </svg> <!-- icon when menu is open --> <svg class="transform transition-all duration-150 ease-out h-6 w-6 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100 hidden group-aria-expanded:block" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-3ef6ksr2> <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" data-astro-cid-3ef6ksr2></path> </svg> </button> </div> </nav-button> </div> </header>  <script type="module">class e extends HTMLElement{headerEl;mobileButtonEl;menuOpen;constructor(){super(),this.headerEl=document.getElementById("main-header"),this.mobileButtonEl=this.querySelector("button"),this.menuOpen=!1,this.mobileButtonEl.addEventListener("click",this.toggleMobileMenu)}toggleMobileMenu=()=>{this.headerEl.classList.toggle("menu-open"),this.menuOpen=!this.menuOpen,this.mobileButtonEl.setAttribute("aria-expanded",this.menuOpen.toString())}}customElements.define("nav-button",e);</script> <main class="grid grid-cols-1 gap-y-4 lg:grid-cols-[minmax(0,1fr)_300px] sm:gap-x-4 max-w-7xl mx-auto">  <section class="cody-bg space-y-2 sm:space-y-4" data-astro-cid-uogrpsp5> <h2 class="title" data-astro-cid-uogrpsp5>Software Reverse Engineering - Final Project</h2> <div class="aspect-h-9 aspect-w-6 mb-6 w-full" data-astro-cid-uogrpsp5> <img src="/blog-placeholder-about.jpg" alt="GitHub wallpaper" data-astro-cid-uogrpsp5> </div> <ul class="space-y-2" data-astro-cid-uogrpsp5> <li class="project-frontmatter-item" data-astro-cid-uogrpsp5> <small data-astro-cid-uogrpsp5>PLATFORM</small> <span data-astro-cid-uogrpsp5>Command-Line Interface - Client Service Management Tool</span> </li> <li class="project-frontmatter-item" data-astro-cid-uogrpsp5> <small data-astro-cid-uogrpsp5>STACK</small> <ul class="inline-flex gap-2 sm:gap-4" data-astro-cid-uogrpsp5> <li data-astro-cid-uogrpsp5> <svg width="1em" height="1em" class="h-6 w-6 text-textColor" focusable="false" data-astro-cid-uogrpsp5="true" data-icon="vscode-icons:file-type-cpp"> <title>cpp</title>  <symbol id="ai:vscode-icons:file-type-cpp" viewBox="0 0 32 32"><path fill="#984c93" d="M14.742 24.047a10.24 10.24 0 0 1-4.673.919a7.63 7.63 0 0 1-5.914-2.346A8.88 8.88 0 0 1 2 16.369a9.48 9.48 0 0 1 2.422-6.748a8.22 8.22 0 0 1 6.285-2.588a11.2 11.2 0 0 1 4.035.641v3.761A6.84 6.84 0 0 0 11 10.395a4.81 4.81 0 0 0-3.712 1.535a5.9 5.9 0 0 0-1.413 4.159A5.8 5.8 0 0 0 7.209 20.1a4.57 4.57 0 0 0 3.59 1.493a7.3 7.3 0 0 0 3.943-1.113Zm2.37-9.218v-2.344h2.344v2.344H21.8v2.343h-2.344v2.343h-2.344v-2.343H14.77v-2.344zm8.201 0v-2.344h2.344v2.344H30v2.343h-2.343v2.343h-2.344v-2.343h-2.342v-2.344z"/></symbol><use href="#ai:vscode-icons:file-type-cpp"></use>  </svg> </li><li data-astro-cid-uogrpsp5> <svg width="1em" height="1em" class="h-6 w-6 text-textColor" focusable="false" data-astro-cid-uogrpsp5="true" data-icon="vscode-icons:file-type-assembly"> <title>assembly</title>  <symbol id="ai:vscode-icons:file-type-assembly" viewBox="0 0 32 32"><defs><linearGradient id="vscodeIconsFileTypeAssembly0" x1="836.63" x2="843.802" y1="36.205" y2="14.48" gradientTransform="rotate(180 262.961 15.125)scale(.607)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".275"/></linearGradient></defs><path fill="#0000bf" d="M16 2c-1.246 3.056-2 5.057-3.391 8.022a22 22 0 0 0 3.591 3.134a14.9 14.9 0 0 1-4-2.283C10.43 14.579 7.646 19.855 2 30c5.186-2.994 9.012-4.648 12.691-4.966V24.2h-.834v-.837h.834v.837h1.675v-1.679h-1.675v-.834h-.834v-1.674h.834v-.834h1.675v.834h.834v.837h-.837v-.837h-1.672v1.675h1.675v.834h.834V24.2h-.837v.783c3.98.1 8.006 1.772 13.634 5.021c-.863-1.589-1.636-3.021-2.372-4.385a25.5 25.5 0 0 0-4.833-3.333A14.4 14.4 0 0 1 26.65 23.8C19.17 9.872 18.565 8.02 16 2m-5.489 17.179h1.671v.834h.837v5.021h-.837v-2.513h-1.671v2.512h-.838v-5.02h.837Zm0 .834v1.675h1.671v-1.675Zm7.526-.834h.837v.834h.837v.837h.834v-.837h.837v-.834h.837v5.855h-.837V20.85h-.837v.837h-.834v-.837h-.837v4.184h-.837Z"/><path fill="#fff" fill-opacity=".166" d="M23.881 18.642c-6.069-8.237-7.476-14.876-7.832-16.461a175 175 0 0 0 7.832 16.461"/><path fill="url(#vscodeIconsFileTypeAssembly0)" d="M16.051 2.12L15.6 3.227l-.461 1.131q-.226.548-.448 1.077c-.222.529-.3.7-.448 1.053s-.3.706-.465 1.066s-.329.729-.506 1.111s-.362.778-.561 1.193l-.089.181a22 22 0 0 0 3.578 3.117a14.9 14.9 0 0 1-3.989-2.276l-.14.287c-.065.133-.144.283-.212.42l-.106.219c-.878 1.793-2.006 3.984-3.524 6.822c3.551-2 7.381-4.887 14.338-2.4a226 226 0 0 1-1.812-3.507a113 113 0 0 1-1.354-2.776c-.196-.413-.38-.818-.554-1.2s-.339-.754-.5-1.118s-.3-.727-.447-1.081s-.291-.709-.434-1.066l-.109-.277c-.408-.956-.821-1.945-1.306-3.083"/></symbol><use href="#ai:vscode-icons:file-type-assembly"></use>  </svg> </li> </ul> </li> <li class="project-frontmatter-item" data-astro-cid-uogrpsp5> <small data-astro-cid-uogrpsp5>WEBSITE</small> <a href="https://ddjproj.github.io/" target="_blank" class="cody-link" data-astro-cid-uogrpsp5> https://ddjproj.github.io/ </a> </li> <li class="project-frontmatter-item" data-astro-cid-uogrpsp5> <small data-astro-cid-uogrpsp5>GITHUB</small> <a href="https://github.com/ddJProj/CSBS-reverse-engineering" target="_blank" class="cody-link" data-astro-cid-uogrpsp5> https://github.com/ddJProj/CSBS-reverse-engineering </a> </li> </ul> <hr data-astro-cid-uogrpsp5> <!-- ADDING  prose-cody scales the body to content--> <div class="prose dark:prose-invert prose-sm prose-headings:font-semibold prose-headings:ml-0 prose-headings:before:absolute prose-headings:before:-ms-0 prose-headings:before:text-accent prose-headings:before:content prose-th:before:content-none max-w-none" data-astro-cid-uogrpsp5>  <h2 id="financial-investment-firm-client-management-software-application">Financial Investment Firm: Client Management Software Application</h2>
+<h3 id="prompt">Prompt:</h3>
+<p>In the first Project for this course, we applied for a Software Engineer position at a large investment company. This firm has been trying to move their legacy code into a cloud-based application. I was selected to participate in a proficiency test as part of the interview process. In the proficiency test, I demonstrated my ability to reverse engineer code.</p>
+<p>For the next part of the proficiency test, I have been asked to identify and explain security vulnerabilities within the client management application. I will identify multiple security vulnerabilities within blocks of assembly code, explain the vulnerabilities, and describe recommendations to fix the vulnerabilities.</p>
+<h3 id="then">Then:</h3>
+<p>Using the C++ (CPP file) that I created in Project One, I will first identify multiple security vulnerabilities, explain the vulnerabilities, and then describe recommendations to fix the security vulnerabilities.</p>
+<br>
+<h1 id="discovered-vulnerabilities">Discovered Vulnerabilities:</h1>
+<h2 id="vulnerability-1">Vulnerability 1:</h2>
+<h4 id="raw-personal-data-for-clients-should-be-encapsulated-within-a-class-for-better-security--placed-into-a-data-structure-such-as-a-hash-mapunordered-map-or-other-similar-data-structure">Raw personal data for clients should be encapsulated within a class for better security, / placed into a data structure such as a hash map/unordered map) or other similar data structure.</h4>
+<h4 id="current-state-of-variables-could-lead-to-confusion-and-incorrect-information-being-used-to-represent-a-client">Current state of variables could lead to confusion and incorrect information being used to represent a client.</h4>
+<h4 id="no-way-to-easily-add-more-clients-without-hard-coding-additional-sets-of-variables">No way to easily add more clients without hard coding additional sets of variables.</h4>
+<ul>
+<li>Sensitive data, such as raw client information should always be properly stored. Proper storage includes using an appropriate data structure, as well as encapsulating the data / data structure within a class when using an object oriented language such as C++.  In the initial application code, client names, id numbers, and service selections are all given variables, but none of these variables are directly tied to each other in any way other than a number reference within the variable name. These should be paired up with matching values assigned to a class object instance, assigned a private status, and given mutator / accessor methods to modify or retrieve the values for a specific instance. This ensures that there is no mess, or any confusion due to having a long list of assorted variables in the general program structure. Each client will have their own instance, and the data of those clients will only be accessible by ways that are defined in the class setup. This also provides a modular way to add additional clients in the future without the need to hard code a new full set of matching general variables. An interface can be used to access the addClient() method, and passed the relevant Client data.</li>
+</ul>
+<h3 id="affected-code-1">Affected code 1:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">int32_t</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num1 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">int32_t</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num2 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 2</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">int32_t</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num3 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">int32_t</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num4 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">int32_t</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num5 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 2</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">std::string name1 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Bob Jones"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">std::string name2 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Sarah Davis"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">std::string name3 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Amy Friendly"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">std::string name4 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Johnny Smith"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">std::string name5 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Carol Spears"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span></code></pre>
+<br>
+<h2 id="vulnerability-2">Vulnerability 2:</h2>
+<h3 id="description-of-vulnerabilities">Description of vulnerabilities:</h3>
+<h4 id="variable-declarations-not-initialized-with-default-values-can-cause-memory-issues-when-address-is-accessed-but-no-value-has-been-assigned-yet">Variable declarations not initialized with default values. Can cause memory issues when address is accessed but no value has been assigned yet.</h4>
+<ul>
+<li>There are a number of variables that are not initialized with a value in their declarations. They can be found within the main method, within the CheckUserPermissionAcces function, and the ChangeCustomerChoice function. By declaring a variable but not initializing it, you may open yourself and your application up to undefined behaviors. Attempting to access a variable that hasn’t been initialized can cause a host of problems such as memory related access violations, exceptions, or application clashes. The application may end up exposing sensitive data by accessing incorrect memory, and can leave your application compromised. Always give declared variables a default / initialization value to avoid these problems.</li>
+</ul>
+<h3 id="affected-code-2">Affected code 2:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::string username</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::string password</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  int64_t</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> changechoice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  int64_t</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> newservice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span></code></pre>
+<br>
+<h2 id="vulnerability-3">Vulnerability 3:</h2>
+<h3 id="description-of-vulnerabilities-1">Description of vulnerabilities:</h3>
+<h4 id="hard-coding-of-authentication-data--passwords-should-never-be-done-use-password-hashes-instead-of-raw-passwords-hash-the-user-input-password-and-compare-the-hashes">Hard coding of authentication data / passwords should never be done. Use password hashes instead of raw passwords, hash the user input password and compare the hashes.</h4>
+<ul>
+<li>The application directly stores the password “123” in plain text within the code for the program. This is a severe violation of secure, best coding practices. One of the easiest ways you can compromise your application is by hard-coding security or other authentication related data. Never use hard coded passwords or authentication credentials, as doing so provides individuals familiar in reverse engineering direct access to those values. It is very easy to access hard-coded strings or other values, so they should never be written into the code. Passwords should always be stored as hash values, ideally as salted hash values. They should be stored on an encrypted drive, or in a similar secure manner whenever possible. To authenticate a user password, you should hash the input password and compare the hash to the stored hash.</li>
+<li>In this application we will implement an openssl hash function using SHA256, and this function will be used to validate entered passwords by comparing the input password to the stored hash for the original password of the application “123”. For the purpose of this application, we will store the valid password hash within the constructor of the singleton authentication class.</li>
+</ul>
+<h3 id="affected-code-3">Affected code 3:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  if</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">password </span><span style="color:#94E2D5;--shiki-dark:#179299">==</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "123"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">)</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    localAnswer </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">  }</span><span style="color:#CBA6F7;--shiki-dark:#8839EF"> else</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    localAnswer </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 2</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">  }</span></span></code></pre>
+<br>
+<h2 id="vulnerability-4">Vulnerability 4:</h2>
+<h3 id="description-of-vulnerabilities-2">Description of vulnerabilities:</h3>
+<h4 id="no-rate-limit-or-attempt-limit-enforced-for-attempts-at-authentication-program-is-very-vulnerable-to-brute-forcing">No rate limit or attempt limit enforced for attempts at authentication, program is very vulnerable to brute forcing.</h4>
+<ul>
+<li>The application does not implement any form of rate limiting for authentication attempts, or any form of attempt limits. Rate limits limit the speed at which a user can attempt to connect to the system, and attempt limits will limit the quantity of authentication attempts that a user can make. Rate limiting is important, especially in the context of networking infrastructure, as too many attempts to connect in too short of a time frame can effectively lock up a system. Methods such as denial of service, or distributed denial of service attacks can cause damage to a system, and can cause undefined behavior to occur. This is especially true in systems that are not set up to lock out connection attempts that have passed a threshold, or with a method to “fail with grace” when large volumes of traffic / attempts to connect are made.</li>
+<li>Not limiting the connection attempts also leaves your system open to brute forcing, as there is nothing preventing a malicious user from making an unlimited amount of connection attempts.</li>
+<li>For this system specifically, it would  be helpful to implement a limit to the quantity of valid connection attempts that can be made to the system. This would be straight forward to implement using an authentication class object that handles providing connections to users. A straightforward implementation of this would be to create an authentication class that handles authentication attempts with a private member variable. It will increment the attemptsMade variable whenever the user provides a valid authentication request but fails to connect due to invalid password etc. For the purpose of this application it will be a singleton method. But for a networked version of the application, instances and connection attempts should be assigned by user account (per username/password).</li>
+</ul>
+<h3 id="affected-code-4">Affected code 4:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  do</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span><span style="color:#6C7086;font-style:italic;--shiki-dark:#9CA0B0;--shiki-dark-font-style:italic"> // authentication loop</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    answer </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#89B4FA;font-style:italic;--shiki-dark:#1E66F5;--shiki-dark-font-style:italic"> CheckUserPermissionAccess</span><span style="color:#9399B2;--shiki-dark:#7C7F93">();</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">    if</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">answer </span><span style="color:#94E2D5;--shiki-dark:#179299">!=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">)</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">      std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Invalid Password. Please try again</span><span style="color:#F5C2E7;--shiki-dark:#EA76CB">\n</span><span style="color:#A6E3A1;--shiki-dark:#40A02B">"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">    }</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">  }</span><span style="color:#CBA6F7;--shiki-dark:#8839EF"> while</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">answer </span><span style="color:#94E2D5;--shiki-dark:#179299">!=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">);</span></span></code></pre>
+<br>
+<h2 id="vulnerability-5">Vulnerability 5:</h2>
+<h3 id="description-of-vulnerabilities-3">Description of vulnerabilities:</h3>
+<h4 id="printing-detailed-authentication-failure-message-is-a-security-vulnerability-makes-brute-forcing-easier-and-can-open-you-to-side-channel-attack-use-a-generalized-authenticationlogin-attempt-failure-message">Printing detailed authentication failure message is a security vulnerability. Makes brute forcing easier and can open you to side-channel attack. Use a generalized authentication/login attempt failure message.</h4>
+<ul>
+<li>Printing detailed authentication failure message is a security vulnerability. Use a generalized authentication/login attempt failure message</li>
+<li>The system initially provides the user with feedback in the form of an “Invalid password” message when the user enters an incorrect password. Giving feedback for authentication in this manner makes brute forcing easier and can open your system up to side-channel attacks. Side channel attacks can occur when a system inadvertently leaks information about the way that it operates, and that data can be used to glean enough information to gain unauthorized access to the system. We will use a generic failed authentication attempt message when a user does not make a successful login attempt but provides valid inputs.</li>
+</ul>
+<h3 id="affected-code-5">Affected code 5:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">    if</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">answer </span><span style="color:#94E2D5;--shiki-dark:#179299">!=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">)</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">      std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Invalid Password. Please try again</span><span style="color:#F5C2E7;--shiki-dark:#EA76CB">\n</span><span style="color:#A6E3A1;--shiki-dark:#40A02B">"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">    }</span></span></code></pre>
+<br>
+<h2 id="vulnerability-6">Vulnerability 6:</h2>
+<h3 id="description-of-vulnerabilities-4">Description of vulnerabilities:</h3>
+<h4 id="authentication-process-is-a-public-function-accessed-in-the-main-function-instead-of-an-authentication-class-that-encapsulates--methods">Authentication process is a public function accessed in the main function instead of an authentication class that encapsulates  methods.</h4>
+<ul>
+<li>I mention the implementation of an authentication class in vulnerability #4, and the corrections regarding #6 will also be built into the implementation of the authentication class.</li>
+<li>Currently, the authentication method is very simple, and is performed below the main method within the program file. This is not best secure coding practices, as the variables are open and accessible, and the method itself is public. To correct this implementation, we will be implementing a public authenticate method within the authentication class. This authenticate method will be what takes the input password, calls the private hashing function to create a hash of the input password, and then calls the private constant time comparison function with the stored hash value and the input password hash value to determine if the passwords match. This will encapsulate all of the inner functions and variables of the authentication process within private member methods and variables, and will provide a modular interface for the authentication process to be called from.</li>
+</ul>
+<h3 id="affected-code-6">Affected code 6:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  do</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span><span style="color:#6C7086;font-style:italic;--shiki-dark:#9CA0B0;--shiki-dark-font-style:italic"> // authentication loop</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    answer </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#89B4FA;font-style:italic;--shiki-dark:#1E66F5;--shiki-dark-font-style:italic"> CheckUserPermissionAccess</span><span style="color:#9399B2;--shiki-dark:#7C7F93">();</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">    if</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">answer </span><span style="color:#94E2D5;--shiki-dark:#179299">!=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">)</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">      std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Invalid Password. Please try again</span><span style="color:#F5C2E7;--shiki-dark:#EA76CB">\n</span><span style="color:#A6E3A1;--shiki-dark:#40A02B">"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">  }</span><span style="color:#CBA6F7;--shiki-dark:#8839EF"> while</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">answer </span><span style="color:#94E2D5;--shiki-dark:#179299">!=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">);</span></span></code></pre>
+<br>
+<h2 id="vulnerability-7">Vulnerability 7:</h2>
+<h3 id="description-of-vulnerabilities-5">Description of vulnerabilities:</h3>
+<h4 id="generic-string-comparisons-create-insecurity-to-timing-attacks-using-values-to-compare-directly-in-if-conditional-not-best-practice">Generic string comparisons create insecurity to timing attacks. Using values to compare directly in if conditional not best practice.</h4>
+<ul>
+<li>Generic string comparisons create insecurity to timing attacks. Using values to compare directly in simple comparisons such as with comparing strings does not follow best, secure coding standards.</li>
+<li>In vulnerability #5, I reference the fact that providing detailed error messages regarding authentication states can open your system up to side-channel attacks. One of the most common types of side-channel attacks is known as a timing attack. Different operations within a system can take varying time frames to perform, and analyzing the time that the system takes to perform it’s operations can allow attackers to gather valuable data about what operations are being performed. This greatly depends on the implementation that a programmer uses. If for instance you are directly comparing a stored string value against an input string value, and are doing so in a way that returns when an incorrect character is reached, the time of those returns will vary. There are a number of ways this can be performed but at least with a simple timing attack, analyzing this side-channel of information can allow an attacker to deduce the correct password with enough connection attempts.</li>
+<li>To resolve this issue, we will implement a comparison method for the password hashes that utilizes constant time to complete the comparison. The comparison ensures that we take the same amount of time every time a comparison attempt is made. In this instance, I will iterate over the length of characters in the stored hash, and compare each to the corresponding character at the same position in the user input password hash. I perform an XOR (exclusive or) operation on the characters at each position and assign that value using an OR assignment operator to an answer variable. The answer will be initially set to the value 0, so that if any of the characters are different within the hash, we will end up with a non-zero answer value. We can then declare that the answer is zero, and return the boolean of that statement. If the answer is not zero, the values of the hashes were not the same, and the passwords did not match. Because we iterate over the stored hash, the amount of time the operations take remains constant.</li>
+</ul>
+<h3 id="affected-code-7">Affected code 7:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  if</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">password </span><span style="color:#94E2D5;--shiki-dark:#179299">==</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "123"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">)</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    localAnswer </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">  }</span><span style="color:#CBA6F7;--shiki-dark:#8839EF"> else</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    localAnswer </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 2</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">  }</span></span></code></pre>
+<br>
+<h2 id="vulnerability-8">Vulnerability 8:</h2>
+<h3 id="description-of-vulnerabilities-6">Description of vulnerabilities:</h3>
+<h4 id="using-magic-numbers-for-program-control-instead-of-const-values-read-only-calculated-at-compile-time-values-that-dont-need-to-change-should-not-be-able-to-change">Using “magic numbers” for program control instead of const values (read only), calculated at compile time. Values that don’t need to change should not be able to change.</h4>
+<ul>
+<li>Using “magic numbers” for program control instead of const values (read only), calculated at compile time. Values that don’t need to change should not be able to change. Using magic numbers for program flow is not in line with best coding practices.</li>
+<li>Magic numbers are unique values within the application that do not have an explained meaning associated with them in the same way that a named constant value would. An example of such would be integers used in conditional branching that is used to control the program flow. Using magic numbers disrupt the readability of the code, and create complications when it comes to maintainability. They can be inadvertently changed down the road, and in doing so implement undesired behavior or vulnerabilities. It is best to always use named constant values when implementing values to control the flow of the application. All instances of magic numbers in the program will be transitioned to named constants, and new control variables will follow this same guideline.</li>
+</ul>
+<h3 id="affected-code-8">Affected code 8:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  if</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">password </span><span style="color:#94E2D5;--shiki-dark:#179299">==</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "123"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">)</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    localAnswer </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">  }</span><span style="color:#CBA6F7;--shiki-dark:#8839EF"> else</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    localAnswer </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 2</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">  }</span></span></code></pre>
+<br>
+<h2 id="vulnerability-9">Vulnerability 9:</h2>
+<h3 id="description-of-vulnerabilities-7">Description of vulnerabilities:</h3>
+<h4 id="no-input-validation-here-no-sanitization-of-inputs">No input validation here, no sanitization of inputs.</h4>
+<ul>
+<li>No input validation here, no sanitization of inputs</li>
+<li>Not implementing a system of robust input validation system is one of the greatest sources of vulnerabilities for a system. It is extremely important to make sure that a malicious actor cannot use the input of your program to gain access to sensitive data. Without proper sanitation of inputs as well, you leave the system open to attacks that can directly inject of code into your system by passing it as an input to the program. A common example of this would be passing SQL commands/arguments into the system to control the flow of information within the database that the system relies on. Another could be using the input system to pass information related to your methods of authentication. An example could be passing an input that overflows a given input value and causes a portion of the input to be treated as code instructions. This could lead to a scenario when someone is able to completely bypass the normal authentication process. Applications must always account for all possible input conditions, and limit the system inputs to only allow those which would maintain desired functionality. This application will use a string validation function to validate string inputs, limiting only basic alphanumeric values to be entered. An integer validation function will also be implemented to ensure that only valid integers can be given to the system, and both functions will limit the the number of characters allowed for a single input.</li>
+</ul>
+<h3 id="affected-code-9">Affected code 9:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Enter your username: </span><span style="color:#F5C2E7;--shiki-dark:#EA76CB">\n</span><span style="color:#A6E3A1;--shiki-dark:#40A02B">"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cin </span><span style="color:#94E2D5;--shiki-dark:#179299">>></span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> username</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Enter your password: </span><span style="color:#F5C2E7;--shiki-dark:#EA76CB">\n</span><span style="color:#A6E3A1;--shiki-dark:#40A02B">"</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cin </span><span style="color:#94E2D5;--shiki-dark:#179299">>></span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> password</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span></code></pre>
+<br>
+<h2 id="vulnerability-10">Vulnerability 10:</h2>
+<h3 id="description-of-vulnerabilities-8">Description of vulnerabilities:</h3>
+<h4 id="not-following-dry--best-practices-no-need-to-create-a-new-output-line-for-each-client-clients-should-be-stored-in-a-data-structure-and-the-data-structure-iterated-through-to-output-client-list">Not following DRY / best practices. No need to create a new output line for each client, clients should be stored in a data structure, and the data structure iterated through to output client list</h4>
+<ul>
+<li>Not following DRY / best practices. No need to create a new output line for each client, clients should be stored in a data structure, and the data structure iterated through to output client list.</li>
+<li>Numerous duplications of the same statement for variables is not best coding practice.  We should always consolidate duplications such  as these into a object instances when necessary, and store the instances within an appropriate data structure. Having a large amount of named variables performing the same operations creates a code-base that is burdensome to navigate. These could very easily be contained within a single data structure and into class / object instances. We will implement a Client class to manage all of our individual clients. This will encapsulate their private personal data. We will then use a ClientList singleton class to manage all operations related to the client class. This instance will contain a static vector with all Clients added to it on their creation. To create a new Client object instance, call the addClient method of the ClientList class. Passing the addClient method a client name and service choice will automatically generate the next available clientId number, assign it to the client, and then add the new Client object to the vector of Clients. These classes will provide a modular interface to access the data and operations of the program through, and will do so in a way that can later allow the addition/integration of a graphical user interface.</li>
+</ul>
+<h3 id="affected-code-10">Affected code 10:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">void</span><span style="color:#89B4FA;font-style:italic;--shiki-dark:#1E66F5;--shiki-dark-font-style:italic"> DisplayInfo</span><span style="color:#9399B2;--shiki-dark:#7C7F93">()</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout</span></span>
+<span class="line"><span style="color:#94E2D5;--shiki-dark:#179299">      &#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "  Client's Name    Service Selected (1 = Brokerage, 2 = Retirement)"</span></span>
+<span class="line"><span style="color:#94E2D5;--shiki-dark:#179299">      &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> std::endl</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "1. "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> name1 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> " selected option "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num1 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> std::endl</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "2. "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> name2 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> " selected option "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num2 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> std::endl</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "3. "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> name3 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> " selected option "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num3 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> std::endl</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "4. "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> name4 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> " selected option "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num4 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> std::endl</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "5. "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> name5 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> " selected option "</span><span style="color:#94E2D5;--shiki-dark:#179299"> &#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> num5 </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> std::endl</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#9399B2;--shiki-dark:#7C7F93">}</span></span></code></pre>
+<br>
+<h2 id="vulnerability-11">Vulnerability 11:</h2>
+<h3 id="description-of-vulnerabilities-9">Description of vulnerabilities:</h3>
+<h4 id="again-it-is-bad-coding-practice-to-have-this-much-duplicate-code-without-an-express-need">Again, it is bad coding practice to have this much duplicate code without an express need.</h4>
+<ul>
+<li>Bad coding practice to have this much duplicate code. This is an extension of the previous code problem, <code>#10</code>. This is another area where code is being duplicated without the need to. This could very easily be contained within a class object, and a single accessor function that iterates over  a list of the objects. Best coding practices would not be to continue adding cases to a switch statement indefinitely. The application should be designed in a way that supports maintainability and stability. The values should be defined once, within the class object, and then if a matching object is found in the list of objects, the value can be modified. This way we are not rewriting the same code multiple times throughout the application, and it is easy to find and maintain into the future.</li>
+</ul>
+<h3 id="affected-code-11">Affected code 11:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF"> switch</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> (</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69">changechoice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">)</span><span style="color:#9399B2;--shiki-dark:#7C7F93"> {</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  case</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 1</span><span style="color:#9399B2;--shiki-dark:#7C7F93">:</span></span>
+<span class="line"><span style="color:#6C7086;font-style:italic;--shiki-dark:#9CA0B0;--shiki-dark-font-style:italic">    // set client 1's service to equal newservice</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    num1 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> newservice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">    break</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  case</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 2</span><span style="color:#9399B2;--shiki-dark:#7C7F93">:</span></span>
+<span class="line"><span style="color:#6C7086;font-style:italic;--shiki-dark:#9CA0B0;--shiki-dark-font-style:italic">    // set client 2's service to equal newservice</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    num2 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> newservice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">    break</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  case</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 3</span><span style="color:#9399B2;--shiki-dark:#7C7F93">:</span></span>
+<span class="line"><span style="color:#6C7086;font-style:italic;--shiki-dark:#9CA0B0;--shiki-dark-font-style:italic">    // set client 3's service to equal newservice</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    num3 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> newservice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">    break</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  case</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 4</span><span style="color:#9399B2;--shiki-dark:#7C7F93">:</span></span>
+<span class="line"><span style="color:#6C7086;font-style:italic;--shiki-dark:#9CA0B0;--shiki-dark-font-style:italic">    // set client 4's service to equal newservice</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">    num4 </span><span style="color:#94E2D5;--shiki-dark:#179299">=</span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> newservice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">    break</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CBA6F7;--shiki-dark:#8839EF">  case</span><span style="color:#FAB387;--shiki-dark:#FE640B"> 5</span><span style="color:#9399B2;--shiki-dark:#7C7F93">:</span></span></code></pre>
+<br>
+<h2 id="vulnerability-12">Vulnerability 12:</h2>
+<h3 id="description-of-vulnerabilities-10">Description of vulnerabilities:</h3>
+<h4 id="use-exception-handling-for-reading-inputs--for-handling-operation-failures-program-currently-will-not-handle-invalid-types-etc-in-a-graceful-manner">Use exception handling for reading inputs / for handling operation failures. Program currently will not handle invalid types etc in a graceful manner.</h4>
+<ul>
+<li>It is not best, secure coding practices to allow inputs or operations within your program to cause an unexpected exception, or to result in the program failure / a crash. We should use exception blocks to account for all states that might allow the program to fail. If an operation fails and there is not exception handling in place it could cause undefined behavior and potentially expose vulnerable areas of the application. Branching should handle all expected edge-cases, and exception handling along with a robust logging system should catch the remaining errors.</li>
+<li>Exception handling will be used for reading input, and for attempting operations within the application that could fail.  The current program will not handle invalid type in a graceful manner, and there is no handling or checks for the process of assigning a new service value to a client.</li>
+</ul>
+<h3 id="affected-code-12">Affected code 12:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cin </span><span style="color:#94E2D5;--shiki-dark:#179299">>></span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> newservice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cin </span><span style="color:#94E2D5;--shiki-dark:#179299">>></span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> changechoice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cin </span><span style="color:#94E2D5;--shiki-dark:#179299">>></span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> username</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cin </span><span style="color:#94E2D5;--shiki-dark:#179299">>></span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> password</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span></code></pre>
+<br>
+<h2 id="vulnerability-13">Vulnerability 13:</h2>
+<h3 id="description-of-vulnerabilities-11">Description of vulnerabilities:</h3>
+<h4 id="no-input-validation-here-no-sanitization-of-inputs-no-exception-handling">No input validation here, no sanitization of inputs, no exception handling.</h4>
+<h3 id="affected-code-13">Affected code 13:</h3>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="c"><code><span class="line"></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Enter the number of the client that you wish to change"</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cin </span><span style="color:#94E2D5;--shiki-dark:#179299">>></span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> changechoice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cout </span><span style="color:#94E2D5;--shiki-dark:#179299">&#x3C;&#x3C;</span><span style="color:#A6E3A1;--shiki-dark:#40A02B"> "Please enter the client's new service choice (1 = Brokerage, 2 = Retirement)"</span></span>
+<span class="line"><span style="color:#CDD6F4;--shiki-dark:#4C4F69">  std::cin </span><span style="color:#94E2D5;--shiki-dark:#179299">>></span><span style="color:#CDD6F4;--shiki-dark:#4C4F69"> newservice</span><span style="color:#9399B2;--shiki-dark:#7C7F93">;</span></span></code></pre>
+<h1 id="revised-and-updated-code-base-without-vulnerabilities">Revised and Updated Code-Base without Vulnerabilities:</h1>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>// Created by Edward Johnson 06/16/24</span></span>
+<span class="line"><span>// SNHU - CS410 - Project 2</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>#include &#x3C;cstdint></span></span>
+<span class="line"><span>#include &#x3C;iostream></span></span>
+<span class="line"><span>#include &#x3C;limits></span></span>
+<span class="line"><span>#include &#x3C;stdexcept></span></span>
+<span class="line"><span>#include &#x3C;string></span></span>
+<span class="line"><span>#include &#x3C;utility></span></span>
+<span class="line"><span>#include &#x3C;vector></span></span>
+<span class="line"><span>#include &#x3C;openssl/evp.h></span></span>
+<span class="line"><span>#include &#x3C;sstream></span></span>
+<span class="line"><span>#include &#x3C;iomanip></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// FIXME: Comment for professor:</span></span>
+<span class="line"><span>// password is the same as it was in non-secure (hard-coded) version "123"</span></span>
+<span class="line"><span>// hash of the password is = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3"</span></span>
+<span class="line"><span>// see storedHash of authenticator class for more info. This is to be later replaced by salting + secure disk/DB storage of hashes.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/*</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> *     GENERAL FUNC. &#x26; CONSTANT DECLARATIONS</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// Login / auth:</span></span>
+<span class="line"><span>void Authentication();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// Setup / menu fns:</span></span>
+<span class="line"><span>int32_t menuChoiceHandler();</span></span>
+<span class="line"><span>void populateClientList();</span></span>
+<span class="line"><span>void DisplayMenu();</span></span>
+<span class="line"><span>void DisplayClients();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//Action fns:</span></span>
+<span class="line"><span>void customerChoiceHandler();</span></span>
+<span class="line"><span>int32_t selectValidClient();</span></span>
+<span class="line"><span>int32_t selectValidService();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// Input fns:</span></span>
+<span class="line"><span>int32_t getIntegerInput();</span></span>
+<span class="line"><span>std::string getStringInput();</span></span>
+<span class="line"><span>bool invalidInputChars(std::string&#x26; input);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// Control flow constants:</span></span>
+<span class="line"><span>const int32_t DEFAULT_MENU_VALUE = -1;</span></span>
+<span class="line"><span>const int32_t RETURN_PREV_MENU = 0;</span></span>
+<span class="line"><span>const int32_t PRINT_CLIENT_LIST = 1;</span></span>
+<span class="line"><span>const int32_t CHANGE_SERVICE_CHOICE = 2;</span></span>
+<span class="line"><span>const int32_t EXIT_PROGRAM = 3;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>const int32_t MENU_SERVICE_ONE = 1;</span></span>
+<span class="line"><span>const int32_t MENU_SERVICE_TWO = 2;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// Authentication:</span></span>
+<span class="line"><span>const int32_t VALID_AUTHENTICATION = 9269348;</span></span>
+<span class="line"><span>const int32_t INVALID_AUTHENTICATION = 9237892;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>const int32_t MAXIMUM_AUTH_ATTEMPTS = 5;</span></span>
+<span class="line"><span>const int32_t NO_AUTH_ATTEMPTS = 0;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/*</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> *              CLIENT CLASS</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> * Classes created without cin/cout usage so they can be used with non-console interfaces</span></span>
+<span class="line"><span> * I would ideally separate classes into their own files/headers</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/**</span></span>
+<span class="line"><span> * Client class to protect/encapsulate client information</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>class Client {</span></span>
+<span class="line"><span>public:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@constructor</span></span>
+<span class="line"><span>     * automatically increments id # by +1 for new Clients, using nextValidId#.</span></span>
+<span class="line"><span>     * move name str instead of copying from param (no need/more efficient when passing in a str)</span></span>
+<span class="line"><span>     * @param - string - name of client</span></span>
+<span class="line"><span>     * @param - int32_t - service client selected</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    Client(std::string clientName, int32_t clientService)</span></span>
+<span class="line"><span>            : clientId(nextValidId++), clientName(std::move(clientName)),</span></span>
+<span class="line"><span>              clientService(clientService) {}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@setClientService</span></span>
+<span class="line"><span>     * mutator / set method for clientService number selected</span></span>
+<span class="line"><span>     * @param - int32_t - selected service for a client</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    void setClientService(int32_t serviceChoice) {</span></span>
+<span class="line"><span>        this->clientService = serviceChoice;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**</span></span>
+<span class="line"><span>     * Getter method for clientName</span></span>
+<span class="line"><span>     * @return: const int clientName</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    std::string getClientname() const { // use const as value will not change</span></span>
+<span class="line"><span>        return this->clientName;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**</span></span>
+<span class="line"><span>     * Getter method for clientId number</span></span>
+<span class="line"><span>     * @return: const int clientId</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    int32_t getClientId() const { // use const as value will not change</span></span>
+<span class="line"><span>        return this->clientId;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**</span></span>
+<span class="line"><span>     * Getter method for clientService number selected</span></span>
+<span class="line"><span>     * @return: const int clientService</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    int32_t getClientService() const { // use const as value will not change</span></span>
+<span class="line"><span>        return this->clientService;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>private:</span></span>
+<span class="line"><span>    int32_t clientId;</span></span>
+<span class="line"><span>    std::string clientName;</span></span>
+<span class="line"><span>    int32_t clientService;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    static int32_t</span></span>
+<span class="line"><span>            nextValidId; // static value to track and assign an ID# to each client</span></span>
+<span class="line"><span>};</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// Starting value for id num's.</span></span>
+<span class="line"><span>// creating a new Client object auto increments the value</span></span>
+<span class="line"><span>int32_t Client::nextValidId = 1;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/*</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> *           CLIENTLIST CLASS</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/**</span></span>
+<span class="line"><span> * Singleton ClientList class to encapsulate Client objects/data</span></span>
+<span class="line"><span> *</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>class ClientList {</span></span>
+<span class="line"><span>public:</span></span>
+<span class="line"><span>    /**@getClientListInstance</span></span>
+<span class="line"><span>     * Getter / retrieval method for our singleton ClientList object</span></span>
+<span class="line"><span>     * @return: ClientList singleton containing added Clients</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    static ClientList &#x26;getClientListInstance() {</span></span>
+<span class="line"><span>        static ClientList clientListInstance;    // static singleton clientList object</span></span>
+<span class="line"><span>        return clientListInstance; // return our singleton list</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /*</span></span>
+<span class="line"><span>     * Reference used in this section:</span></span>
+<span class="line"><span>     * https://stackoverflow.com/questions/1008019/how-do-you-implement-the-singleton-design-pattern</span></span>
+<span class="line"><span>     * Deleting copy+copy assign, move+move assign constructors.</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    ClientList(const ClientList &#x26;) = delete;</span></span>
+<span class="line"><span>    ClientList(ClientList &#x26;&#x26;) = delete;</span></span>
+<span class="line"><span>    ClientList &#x26;operator=(const ClientList &#x26;) = delete;</span></span>
+<span class="line"><span>    ClientList &#x26;operator=(ClientList &#x26;&#x26;) = delete;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@getClientsList</span></span>
+<span class="line"><span>     * Retrieval method for vector list of Client objects</span></span>
+<span class="line"><span>     * @return: vector&#x3C;Client> - clientList (vector of Client objects)</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    std::vector&#x3C;Client> &#x26;getClientsList() {</span></span>
+<span class="line"><span>        // return the vector containing Client Objects</span></span>
+<span class="line"><span>        return clientsList;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@addToClientList</span></span>
+<span class="line"><span>     * Inserts a Client object into the ClientList</span></span>
+<span class="line"><span>     *  @param - const Client object - client object as a ref</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    void addToClientList(const Client &#x26;client) {</span></span>
+<span class="line"><span>        // push Client object into the clientsList vector</span></span>
+<span class="line"><span>        clientsList.push_back(client);</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@newClient</span></span>
+<span class="line"><span>     * Creates new client object, then adds to clientList</span></span>
+<span class="line"><span>     *  @param - string - reference to name of client string</span></span>
+<span class="line"><span>     *  @param - int32_t - selected service for the client instance</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    void newClient(const std::string &#x26;clientName, int clientService) {</span></span>
+<span class="line"><span>        Client newClient = Client(clientName, clientService); // creates new Client object using args</span></span>
+<span class="line"><span>        addToClientList(newClient); // call method to push new Client into existing list</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@isClientIdValid</span></span>
+<span class="line"><span>     * Method to check if user input for Client ID matches a Client object</span></span>
+<span class="line"><span>     * @param - const int32_t - client id # input by user</span></span>
+<span class="line"><span>     * @return: boolean isInputIDValid</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    bool isClientIdValid(const int32_t inputClientId) {</span></span>
+<span class="line"><span>        bool isIdValid = false; // initialize bool to false</span></span>
+<span class="line"><span>        // for each client object in the clientlist (use auto to determine class</span></span>
+<span class="line"><span>        // object type)</span></span>
+<span class="line"><span>        for (const auto &#x26;client : clientsList) {</span></span>
+<span class="line"><span>            // if the current client object's id matches inputID</span></span>
+<span class="line"><span>            if (client.getClientId() == inputClientId) {</span></span>
+<span class="line"><span>                // the input ID is valid</span></span>
+<span class="line"><span>                isIdValid = true;</span></span>
+<span class="line"><span>            }</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        return isIdValid; // return the id number validity state</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>private:</span></span>
+<span class="line"><span>    ClientList() {}  // private constructor to limit # of lists to 1</span></span>
+<span class="line"><span>    ~ClientList()= default; // prevent accidental deletion of singleton</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    std::vector&#x3C;Client> clientsList; // vector list to hold our Client objects</span></span>
+<span class="line"><span>};</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/*</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> *           AUTHENTICATOR CLASS</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>/**</span></span>
+<span class="line"><span> * Authenticator class to encapsulate and validate user login</span></span>
+<span class="line"><span> * Still needs salting + a longterm storage method for password hashes</span></span>
+<span class="line"><span> * to pair passw with usernames add map + add username to relevant fns</span></span>
+<span class="line"><span> * Would need account auth status + thread safety implemented also</span></span>
+<span class="line"><span> *</span></span>
+<span class="line"><span> * Started off using old openSSH implementation but wouldn't work / was depreciated:</span></span>
+<span class="line"><span> * https://stackoverflow.com/questions/13784434/how-to-use-openssls-sha256-functions</span></span>
+<span class="line"><span> *</span></span>
+<span class="line"><span> * Needed to use these sources to create working hash fn:</span></span>
+<span class="line"><span> * https://wiki.openssl.org/index.php/EVP_Symmetric_Encryption_and_Decryption</span></span>
+<span class="line"><span> * https://www.openssl.org/docs/man1.0.2/man3/EVP_sha256.html</span></span>
+<span class="line"><span> * https://linux.die.net/man/3/evp_sha256</span></span>
+<span class="line"><span> * https://cpp.hotexamples.com/examples/-/-/EVP_DigestInit/cpp-evp_digestinit-function-examples.html</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>class Authenticator{</span></span>
+<span class="line"><span>private:</span></span>
+<span class="line"><span>    int32_t authStatus = INVALID_AUTHENTICATION; // set base auth state</span></span>
+<span class="line"><span>    int32_t authAttempts = NO_AUTH_ATTEMPTS; // set base auth attempts</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // this would typically be in a sep. class that handles pulling data from db / storage</span></span>
+<span class="line"><span>    // this is the same value as the initial program's password, but as a hash</span></span>
+<span class="line"><span>    std::string storedHash = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3"; // the stored password hash</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@constructor - private</span></span>
+<span class="line"><span>     *</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    Authenticator(){}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    ~Authenticator()= default; // private destructor</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@hashFunction</span></span>
+<span class="line"><span>    * hash function to take input string / pass and hash it</span></span>
+<span class="line"><span>    * @param - const string - reference to the password string</span></span>
+<span class="line"><span>    * @return: string - hashed password after processing</span></span>
+<span class="line"><span>    */</span></span>
+<span class="line"><span>    std::string hashFunction(const std::string&#x26; pass) const {</span></span>
+<span class="line"><span>        unsigned char hash[EVP_MAX_MD_SIZE];</span></span>
+<span class="line"><span>        unsigned int lengthOfHash = 0;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        EVP_MD_CTX *context = EVP_MD_CTX_new();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        // EVP_MD_CTX_new operation failed, context = nullptr</span></span>
+<span class="line"><span>        if (context == nullptr) {</span></span>
+<span class="line"><span>            throw std::runtime_error("Failure calling EVP_MD_CTX_new. Returned null.");</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        const EVP_MD* md = EVP_get_digestbyname("sha256"); //setting hash method</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        if (md == nullptr){</span></span>
+<span class="line"><span>            EVP_MD_CTX_free(context);</span></span>
+<span class="line"><span>            throw std::runtime_error("Failure calling EVP_get_digestbyname. Returned null.");</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        // Initialise encryption operation. Uses sha256.</span></span>
+<span class="line"><span>        if (EVP_DigestInit_ex(context, md, nullptr) != 1){</span></span>
+<span class="line"><span>            EVP_MD_CTX_free(context);</span></span>
+<span class="line"><span>            throw std::runtime_error("Failure calling EVP_DigestInit_ex. Returned null.");</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        // Provide the message to be encrypted, obtain encrypted output.</span></span>
+<span class="line"><span>        if (EVP_DigestUpdate(context, pass.c_str(), pass.size()) != 1){</span></span>
+<span class="line"><span>            EVP_MD_CTX_free(context);</span></span>
+<span class="line"><span>            throw std::runtime_error("Failure calling EVP_DigestUpdate.");</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        // Finalize encryption.</span></span>
+<span class="line"><span>        if (EVP_DigestFinal_ex(context, hash, &#x26;lengthOfHash) != 1){</span></span>
+<span class="line"><span>            EVP_MD_CTX_free(context);</span></span>
+<span class="line"><span>            throw std::runtime_error("Failure calling EVP_DigestFinal_ex.");</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        EVP_MD_CTX_free(context); // clean up</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        std::stringstream ss;</span></span>
+<span class="line"><span>        for (unsigned int i = 0; i &#x3C; lengthOfHash; i++){</span></span>
+<span class="line"><span>            ss &#x3C;&#x3C; std::hex &#x3C;&#x3C; std::setw(2) &#x3C;&#x3C; std::setfill('0') &#x3C;&#x3C; static_cast&#x3C;int>(hash[i]);</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        return ss.str();</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@setAuthStatus</span></span>
+<span class="line"><span>     * to update authStatus if user provides correct credentials</span></span>
+<span class="line"><span>     * @param - const int32_t - status of authentication for program</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    void setAuthStatus(int32_t const status){</span></span>
+<span class="line"><span>        authStatus = status;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@constantCompareTime</span></span>
+<span class="line"><span>     * Compares hashed input pass against stored hash using constant time O(1)</span></span>
+<span class="line"><span>     * To help avoid timing comparison attacks</span></span>
+<span class="line"><span>     * @param - const string - first string to compare</span></span>
+<span class="line"><span>     * @param - const string - second string to compare</span></span>
+<span class="line"><span>     * @return - bool - false if strings not equal, true if equal</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    bool constantCompareTime(const std:: string&#x26; x, const std::string&#x26; y) const{</span></span>
+<span class="line"><span>        if (x.length() != y.length()) {</span></span>
+<span class="line"><span>            return false;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        unsigned char answer = 0;</span></span>
+<span class="line"><span>        for (size_t i = 0; i &#x3C; x.length(); i++){</span></span>
+<span class="line"><span>            // if char x[i] and y[i] same, XOR = 0, not equal returns a non-zero value</span></span>
+<span class="line"><span>            // |= (OR) operator changes value of answer if any of the char comparisons are different</span></span>
+<span class="line"><span>            answer |= (x[i] ^ y[i]);</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        // answer after looping will be non-zero if any chars were different</span></span>
+<span class="line"><span>        // if answer is not 0, then we return false</span></span>
+<span class="line"><span>        // if strings equal, answer is still 0 so we return true</span></span>
+<span class="line"><span>        return answer == 0;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@setPasswordHash</span></span>
+<span class="line"><span>     * Sets the storedHash value to be the hash of our password</span></span>
+<span class="line"><span>     * Moved to private to prevent use after sys setup.</span></span>
+<span class="line"><span>     * Can be integrated into instanced user account / password creation.</span></span>
+<span class="line"><span>     * @param - const string - reference to the hashed password string</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    void setPasswordHash(const std::string&#x26; passHash){</span></span>
+<span class="line"><span>        storedHash = passHash;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    /**@outputPassHash</span></span>
+<span class="line"><span>     * Used in initial creation of a password hash</span></span>
+<span class="line"><span>     * if called outputs hash of string arg to console</span></span>
+<span class="line"><span>     * @param - const string - ref to password string</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    void outputPassHash(const std::string&#x26; pass) const {</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; "Hash:" &#x3C;&#x3C; hashFunction(pass) &#x3C;&#x3C;std::endl;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>public:</span></span>
+<span class="line"><span>    /*</span></span>
+<span class="line"><span>     * Deletes copy+copy assign &#x26; move+move assign constructors.</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    Authenticator(const Authenticator &#x26;) = delete;</span></span>
+<span class="line"><span>    Authenticator(Authenticator &#x26;&#x26;) = delete;</span></span>
+<span class="line"><span>    Authenticator &#x26;operator=(const Authenticator &#x26;) = delete;</span></span>
+<span class="line"><span>    Authenticator &#x26;operator=(Authenticator &#x26;&#x26;) = delete;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@getInstance</span></span>
+<span class="line"><span>     * Getter / retrieval method for our singleton authenticator class instance</span></span>
+<span class="line"><span>     * @return: Authenticator - singleton instance of authenticator class</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    static Authenticator&#x26; getInstance(){</span></span>
+<span class="line"><span>        static Authenticator authInstance;</span></span>
+<span class="line"><span>        return authInstance;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@authenticate</span></span>
+<span class="line"><span>     * Checks the hashed input password against our stored / disk password hash</span></span>
+<span class="line"><span>     * @param - const string - ref to input password string</span></span>
+<span class="line"><span>     * @return: boolean - isPasswordValid?</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    bool authenticate(const std::string&#x26; pass) {</span></span>
+<span class="line"><span>        authAttempts++; // increment attempts for each time auth is called</span></span>
+<span class="line"><span>        if (constantCompareTime(storedHash, hashFunction(pass))){</span></span>
+<span class="line"><span>            setAuthStatus(VALID_AUTHENTICATION); // sets auth status to valid</span></span>
+<span class="line"><span>            authAttempts = NO_AUTH_ATTEMPTS; // reset auth attempts to 0 on success</span></span>
+<span class="line"><span>            return true;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        setAuthStatus(INVALID_AUTHENTICATION); // sets auth status to invalid</span></span>
+<span class="line"><span>        return false;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@getAuthAttempts</span></span>
+<span class="line"><span>     * Getter / retrieval method for amount of auth attempts made</span></span>
+<span class="line"><span>     * @return: Authenticator - singleton instance of authenticator class</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    int32_t getAuthAttempts() const{</span></span>
+<span class="line"><span>        return authAttempts;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    /**@getAuthStatus</span></span>
+<span class="line"><span>     * Getter / retrieval method for state of authStatus</span></span>
+<span class="line"><span>     * @return: Authenticator - singleton instance of authenticator class</span></span>
+<span class="line"><span>     */</span></span>
+<span class="line"><span>    int32_t getAuthStatus() const{</span></span>
+<span class="line"><span>        return authStatus;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>};</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/*</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> *           MAIN METHOD</span></span>
+<span class="line"><span> **************************************************</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>int main() {</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    Authenticator&#x26; authInstance = Authenticator::getInstance();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "Edward Johnson - SNHU - CS410: Project 2\n";</span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "Hello! Welcome to our Investment Company\n";</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // generates Client objects using current  client data</span></span>
+<span class="line"><span>    populateClientList(); // this will be replaced by DB / disk storage of client data</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    int32_t choice = 0; // user menu choice / selection</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // Authentication looping:</span></span>
+<span class="line"><span>    do{</span></span>
+<span class="line"><span>        Authentication(); // call program authentication handler</span></span>
+<span class="line"><span>        // continue authentication while invalid status &#x26; auth attempts less than max attepts</span></span>
+<span class="line"><span>    } while (authInstance.getAuthStatus() == INVALID_AUTHENTICATION &#x26;&#x26;</span></span>
+<span class="line"><span>             authInstance.getAuthAttempts() &#x3C; MAXIMUM_AUTH_ATTEMPTS);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // Main program loop:</span></span>
+<span class="line"><span>    // if MAXIMUM_AUTH_ATTEMPTS reached, or EXIT_PROGRAM selected, ends the program main loop</span></span>
+<span class="line"><span>    while (choice != EXIT_PROGRAM &#x26;&#x26; authInstance.getAuthAttempts() &#x3C; MAXIMUM_AUTH_ATTEMPTS){</span></span>
+<span class="line"><span>        choice = menuChoiceHandler(); // call main menu handler</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    return 0;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @menuChoiceHandler</span></span>
+<span class="line"><span> * handles main menu selections &#x26; actions</span></span>
+<span class="line"><span> * @return int32_t - the selected menu choice</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>int32_t menuChoiceHandler(){</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    int32_t choice = DEFAULT_MENU_VALUE; // the menu selection</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // Updated to use single call to DisplayMenu function</span></span>
+<span class="line"><span>    DisplayMenu();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    choice = getIntegerInput();    // get new menu selection / choice.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // main menu switch uses constants instead of magic numbers</span></span>
+<span class="line"><span>    switch (choice) {</span></span>
+<span class="line"><span>        case PRINT_CLIENT_LIST:</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "You chose option: " &#x3C;&#x3C; choice &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>            DisplayClients();</span></span>
+<span class="line"><span>            break;</span></span>
+<span class="line"><span>        case CHANGE_SERVICE_CHOICE:</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "You chose option: " &#x3C;&#x3C; choice &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>            customerChoiceHandler();</span></span>
+<span class="line"><span>            break;</span></span>
+<span class="line"><span>        case EXIT_PROGRAM:</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "Goodbye." &#x3C;&#x3C; choice &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>            break;</span></span>
+<span class="line"><span>        default:</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "Select a valid menu option." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>            break;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    return choice;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @Authentication</span></span>
+<span class="line"><span> * authenticates user login session</span></span>
+<span class="line"><span> * sets authenticator object instance value to valid when successful</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>void Authentication(){</span></span>
+<span class="line"><span>    // this gets instance of auth api, could reference a db / stored account pass hashes</span></span>
+<span class="line"><span>    Authenticator&#x26; authInstance = Authenticator::getInstance();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // local var memory is freed before function return</span></span>
+<span class="line"><span>    std::string username = "";</span></span>
+<span class="line"><span>    // local var memory is freed before function return</span></span>
+<span class="line"><span>    std::string password = "";</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "Enter your username: \n";</span></span>
+<span class="line"><span>    username = getStringInput();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "Enter your password: \n";</span></span>
+<span class="line"><span>    password = getStringInput();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // for initially getting hash to use as password</span></span>
+<span class="line"><span>    // authInstance.outputPassHash(password);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // call authentication method of auth class w/ password input</span></span>
+<span class="line"><span>    authInstance.authenticate(password);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // uses constants instead of magic numbers</span></span>
+<span class="line"><span>    if (authInstance.getAuthStatus() == INVALID_AUTHENTICATION){</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; "Invalid Password. Please try again" &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; "You have " &#x3C;&#x3C; MAXIMUM_AUTH_ATTEMPTS - authInstance.getAuthAttempts();</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; " attempts remaining." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @customerChoiceHandler</span></span>
+<span class="line"><span> *  handles selection of clients, and service changes</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>void customerChoiceHandler() {</span></span>
+<span class="line"><span>    bool returnToMenu = false;</span></span>
+<span class="line"><span>    // retrieve reference to the singleton ClientList instance</span></span>
+<span class="line"><span>    ClientList &#x26;clientsInstance = ClientList::getClientListInstance();</span></span>
+<span class="line"><span>    // use auto type, retrieve reference to our vector of Clients objects</span></span>
+<span class="line"><span>    auto &#x26;clientsList = clientsInstance.getClientsList();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    int32_t clientChoice = DEFAULT_MENU_VALUE; // initialize value for client to change</span></span>
+<span class="line"><span>    int32_t newService = DEFAULT_MENU_VALUE;   // initialize value for new service choice</span></span>
+<span class="line"><span>    clientChoice = selectValidClient(); // set client selected to return from selectValidClient</span></span>
+<span class="line"><span>    if (clientChoice == RETURN_PREV_MENU){</span></span>
+<span class="line"><span>        // end function looping</span></span>
+<span class="line"><span>        returnToMenu = true;</span></span>
+<span class="line"><span>    } else { // when clientChoice isn't 0 (return to main menu)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        // get input for updated service from selectValidService</span></span>
+<span class="line"><span>        newService = selectValidService();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        // if return to main menu selected</span></span>
+<span class="line"><span>        if (newService == RETURN_PREV_MENU) {</span></span>
+<span class="line"><span>            // end function looping</span></span>
+<span class="line"><span>            returnToMenu = true;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    // to prevent out of bounds if 0 given for either selection, skip + return to prev menu</span></span>
+<span class="line"><span>    if (clientChoice != RETURN_PREV_MENU &#x26;&#x26; newService != RETURN_PREV_MENU) {</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        try { // attempt to change the service of a client Object</span></span>
+<span class="line"><span>            // modify the service of selected client to updated value</span></span>
+<span class="line"><span>            // use clientchoice-1 because index starts at 1 ! 0</span></span>
+<span class="line"><span>            clientsList.at(clientChoice - 1).setClientService(newService);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        } catch (const std::out_of_range &#x26;except) { // if exception occurs (client id out of range)</span></span>
+<span class="line"><span>            std::cerr &#x3C;&#x3C; "An exception occurred while updating service for client ID: ";</span></span>
+<span class="line"><span>            std::cerr &#x3C;&#x3C; clientChoice &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>            std::cerr &#x3C;&#x3C; except.what() &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @selectValidClient</span></span>
+<span class="line"><span> * Validates user inputs for clientIds, only allows matching clientId values</span></span>
+<span class="line"><span> * @return clientId - the valid clientId to use</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>int32_t selectValidClient() {</span></span>
+<span class="line"><span>    int32_t clientId = DEFAULT_MENU_VALUE; // initialize client selected to -1</span></span>
+<span class="line"><span>    bool doneLooping = false;</span></span>
+<span class="line"><span>    // retrieve reference to the singleton ClientList instance</span></span>
+<span class="line"><span>    ClientList &#x26;clientsInstance = ClientList::getClientListInstance();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // while entered client ID is not valid continue looping</span></span>
+<span class="line"><span>    while (!doneLooping) {</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; "\nEnter the number of the client that you wish to change" &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; "Or enter 0 to return to previous menu." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        clientId = getIntegerInput(); // get a valid integer input</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        // if input = RETURN_PREV_MENU , or matching id found / client</span></span>
+<span class="line"><span>        if (clientId == RETURN_PREV_MENU || clientsInstance.isClientIdValid(clientId)) {</span></span>
+<span class="line"><span>            doneLooping = true;</span></span>
+<span class="line"><span>        }else {</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "Matching Client ID was not found. Try again." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    return clientId;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @selectValidService</span></span>
+<span class="line"><span> * Modifies and validates Client service selections</span></span>
+<span class="line"><span> * @return selectedService - the updated client service selection</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>int32_t selectValidService() {</span></span>
+<span class="line"><span>    int32_t selectedService = DEFAULT_MENU_VALUE; // initialize service variable to -1</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // while input is not 0, 1 or 2, continue looping</span></span>
+<span class="line"><span>    while(selectedService != MENU_SERVICE_ONE &#x26;&#x26; selectedService != MENU_SERVICE_TWO &#x26;&#x26; selectedService != RETURN_PREV_MENU){</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; "Please enter the client's new service choice (1 = Brokerage, 2 = Retirement)" &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; "Enter 0 to return to previous menu." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        // get an input integer for service selection</span></span>
+<span class="line"><span>        selectedService = getIntegerInput();</span></span>
+<span class="line"><span>        if (selectedService != MENU_SERVICE_ONE &#x26;&#x26; selectedService != MENU_SERVICE_TWO &#x26;&#x26; selectedService != RETURN_PREV_MENU) {</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "Valid options are: 0, 1, or 2. Please enter a valid selection." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    return selectedService;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @getIntegerInput</span></span>
+<span class="line"><span> * Provides general integer input validation</span></span>
+<span class="line"><span> * This is our primary way to provide enhanced input security.</span></span>
+<span class="line"><span> * Prevent xss by only allowing valid inputs.</span></span>
+<span class="line"><span> *</span></span>
+<span class="line"><span> * @return int32_t userInput</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>int32_t getIntegerInput() {</span></span>
+<span class="line"><span>    int64_t userInput = DEFAULT_MENU_VALUE;</span></span>
+<span class="line"><span>    bool doneLooping = false;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    while (!doneLooping) {</span></span>
+<span class="line"><span>        // checks that input integer is within the range of values for a 32bit integer, and that cin is successful</span></span>
+<span class="line"><span>        if (std::cin >> userInput &#x26;&#x26; (userInput >= std::numeric_limits&#x3C;int32_t>::min() + 1) &#x26;&#x26; (userInput &#x3C;= std::numeric_limits&#x3C;int32_t>::max() - 1)) {</span></span>
+<span class="line"><span>            doneLooping = true;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>        else {      // if cin fails / is not a valid int</span></span>
+<span class="line"><span>            std::cin.clear(); // clear any cin errors</span></span>
+<span class="line"><span>            std::cin.ignore(std::numeric_limits&#x3C;std::streamsize>::max(),</span></span>
+<span class="line"><span>                            '\n'); // clear out input buffer</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "\nYou must enter a valid integer." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    // cast the integer back to 32bit once confirmed valid</span></span>
+<span class="line"><span>    return static_cast&#x3C;int32_t>(userInput);</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @getStringInput</span></span>
+<span class="line"><span> * Provides general string input validation</span></span>
+<span class="line"><span> * Primary way to provide enhanced input security.</span></span>
+<span class="line"><span> * Prevent xss by only allowing valid inputs.</span></span>
+<span class="line"><span> * @return string userInput</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>std::string getStringInput() {</span></span>
+<span class="line"><span>    std::string userInput = "";</span></span>
+<span class="line"><span>    bool doneLooping = false;</span></span>
+<span class="line"><span>    while (!doneLooping) {</span></span>
+<span class="line"><span>        // if input is valid</span></span>
+<span class="line"><span>        if (std::getline(std::cin, userInput)) {</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            // if invalidInputChars returns true OR userInput is emtpy</span></span>
+<span class="line"><span>            if (invalidInputChars(userInput) || userInput.empty()){</span></span>
+<span class="line"><span>                std::cout &#x3C;&#x3C; "Not a valid input attempt." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>                std::cout &#x3C;&#x3C; "Inputs cannot contain the following characters: ";</span></span>
+<span class="line"><span>                std::cout &#x3C;&#x3C; R"( \ ! $ @ ( ) % ^ # * &#x26; &#x3C; > / "\ , . | ; ~ ` : ' )" &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            } else if(userInput.length() > 12) { // if input length is greater than 12 characters</span></span>
+<span class="line"><span>                std::cout &#x3C;&#x3C; "Not a valid input attempt." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>                std::cout &#x3C;&#x3C; "Input length cannot exceed 12 characters. Please try again." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>            }else { // otherwise return the string</span></span>
+<span class="line"><span>                doneLooping = true;</span></span>
+<span class="line"><span>            }</span></span>
+<span class="line"><span>        } else {   // if cin fails / is not a valid string</span></span>
+<span class="line"><span>            std::cin.clear(); // clear any cin errors</span></span>
+<span class="line"><span>            std::cin.ignore(std::numeric_limits&#x3C;std::streamsize>::max(),</span></span>
+<span class="line"><span>                            '\n'); // clear out input buffer</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "Not a valid input attempt." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>            std::cout &#x3C;&#x3C; "You must enter a valid string." &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    return userInput;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @invalidInputChars</span></span>
+<span class="line"><span> * Detects if a string contains bad characters</span></span>
+<span class="line"><span> * returns true if bad chars detected, false for not</span></span>
+<span class="line"><span> * @param - string - user input string</span></span>
+<span class="line"><span> * @return boolean true/false - is string valid</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>bool invalidInputChars(std::string&#x26; input){</span></span>
+<span class="line"><span>    const std::string invalidCharacters = R"(\!$@()#%^&#x26;*&#x3C;>/"\,.|;~`:' )";</span></span>
+<span class="line"><span>    // https://cplusplus.com/reference/string/string/find_first_of/</span></span>
+<span class="line"><span>    // use findfirstof to search for invalid chars in our username / password.</span></span>
+<span class="line"><span>    // return true / false if invalid chars were found in string arg</span></span>
+<span class="line"><span>    return input.find_first_of(invalidCharacters) != std::string::npos;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @DisplayMenu</span></span>
+<span class="line"><span> * Outputs the main menu for program</span></span>
+<span class="line"><span> */</span></span>
+<span class="line"><span>void DisplayMenu() {</span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "\nWhat would you like to do?\n";</span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "DISPLAY the client list (enter 1)\n";</span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "CHANGE a client's choice (enter 2)\n";</span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "Exit the program.. (enter 3)\n";</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @DisplayClients</span></span>
+<span class="line"><span>* Display method. Iterate through list of Client objects, outputting each.</span></span>
+<span class="line"><span>*/</span></span>
+<span class="line"><span>void DisplayClients() { // use const as value will not change</span></span>
+<span class="line"><span>    // initialize/retrieve reference to the singleton ClientList instance</span></span>
+<span class="line"><span>    ClientList &#x26;clients = ClientList::getClientListInstance();</span></span>
+<span class="line"><span>    // use auto type, retrieve reference to our vector of Clients objects</span></span>
+<span class="line"><span>    auto &#x26;clientsList = clients.getClientsList();</span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "\nID# | Client's Name | Service Selected (1 = Brokerage, 2 = Retirement)" &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>    std::cout &#x3C;&#x3C; "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // for each client object in the clientlist (use auto to determine class object type)</span></span>
+<span class="line"><span>    for (const auto &#x26;client : clientsList) {</span></span>
+<span class="line"><span>        // output the details of the client object</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; client.getClientId() &#x3C;&#x3C; ".  | ";</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; client.getClientname();</span></span>
+<span class="line"><span>        std::cout &#x3C;&#x3C; "   selected option " &#x3C;&#x3C; client.getClientService() &#x3C;&#x3C; std::endl;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/** @populateClientList</span></span>
+<span class="line"><span>* creates Client objects using the provided client names / selected services</span></span>
+<span class="line"><span>* would be done using a file / database in future iterations</span></span>
+<span class="line"><span>*</span></span>
+<span class="line"><span>*/</span></span>
+<span class="line"><span>void populateClientList(){</span></span>
+<span class="line"><span>    // initialize/retrieve reference to the singleton ClientList instance</span></span>
+<span class="line"><span>    ClientList &#x26;clients = ClientList::getClientListInstance();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    // creates our initial Client objects</span></span>
+<span class="line"><span>    // accepts a client name and service selected</span></span>
+<span class="line"><span>    // adds each client to the singleton list</span></span>
+<span class="line"><span>    clients.newClient("Bob Jones  ", 1);</span></span>
+<span class="line"><span>    clients.newClient("Sarah Davis", 2);</span></span>
+<span class="line"><span>    clients.newClient("Amy Friendly", 1);</span></span>
+<span class="line"><span>    clients.newClient("Johnny Smith", 1);</span></span>
+<span class="line"><span>    clients.newClient("Carol Spears", 2);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>}</span></span></code></pre>
+<p><a href="https://github.com/ddJProj/CSBS-reverse-engineering">https://github.com/ddJProj/CSBS-reverse-engineering</a></p>
+<h2 id="sources">Sources:</h2>
+<h3 id="timing-attacks">Timing Attacks:</h3>
+<ul>
+<li><a href="https://www.chosenplaintext.ca/articles/beginners-guide-constant-time-cryptography.html">https://www.chosenplaintext.ca/articles/beginners-guide-constant-time-cryptography.html</a></li>
+<li><a href="https://timing.attacks.cr.yp.to/index.html">https://timing.attacks.cr.yp.to/index.html</a></li>
+<li><a href="https://stackoverflow.com/questions/8768469/guessing-a-string-with-time-comparison-is-it-possible">https://stackoverflow.com/questions/8768469/guessing-a-string-with-time-comparison-is-it-possible</a></li>
+</ul>  </div> </section>   <aside data-astro-cid-uogrpsp5> <div class="flex flex-col space-y-4" data-astro-cid-uogrpsp5> <h2 class="font-semibold text-lg text-textColor" data-astro-cid-uogrpsp5>E. Johnson</h2> <p data-astro-cid-uogrpsp5>Projects &amp; Blog</p> <div class="flex flex-wrap items-end gap-x-4"> <ul class="flex flex-wrap flex-1 items-center gap-x-2 sm:flex-initial"> <li class="flex"> <a class="inline-block p-1 sm:hover:text-accent" href="https://github.com/ddJProj" target="_blank" rel="noopener noreferrer" title="Github"> <svg width="1em" height="1em" class="h-5 w-5" aria-hidden="true" focusable="false" data-icon="mdi:github">   <symbol id="ai:mdi:github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></symbol><use href="#ai:mdi:github"></use>  </svg> <span class="sr-only">Github</span> </a> </li><li class="flex"> <a class="inline-block p-1 sm:hover:text-accent" href="https://www.linkedin.com/in/edward-johnson-4482a1279/" target="_blank" rel="noopener noreferrer" title="LinkedIn"> <svg width="1em" height="1em" class="h-5 w-5" aria-hidden="true" focusable="false" data-icon="mdi:linkedin">   <symbol id="ai:mdi:linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></symbol><use href="#ai:mdi:linkedin"></use>  </svg> <span class="sr-only">LinkedIn</span> </a> </li><li class="flex"> <a class="inline-block p-1 sm:hover:text-accent" href="mailto:edd.f.johnson.work@gmail.com" target="_blank" rel="noopener noreferrer" title="email"> <svg width="1em" height="1em" class="h-5 w-5" aria-hidden="true" focusable="false" data-icon="mdi:email">   <symbol id="ai:mdi:email" viewBox="0 0 24 24"><path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></symbol><use href="#ai:mdi:email"></use>  </svg> <span class="sr-only">email</span> </a> </li> </ul> </div> <span class="!my-4 text-accent" aria-hidden data-astro-cid-uogrpsp5>---</span> <p data-astro-cid-uogrpsp5> Coursework and final project, rewriting client application for Financial Investment Firm, and performing security analysis. </p> </div> <nav class="toc-nav sticky top-20 max-h-[calc(100vh-5rem)] overflow-y-auto overflow-x-hidden" data-astro-cid-xvrfupwn><hr data-astro-cid-xvrfupwn><h2 class="font-bold text-base" data-astro-cid-xvrfupwn>Table of Contents</h2><ul class="text-sm" id="toc" data-astro-cid-xvrfupwn><li class="toc-item depth-1" data-astro-cid-zekvapgs> <a href="#discovered-vulnerabilities" id="toc-discovered-vulnerabilities" title="Discovered Vulnerabilitie..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>•</span> <span class="toc-number" data-astro-cid-zekvapgs>1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Discovered Vulnerabilitie...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-1" id="toc-vulnerability-1" title="Vulnerability 1:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 1:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#raw-personal-data-for-clients-should-be-encapsulated-within-a-class-for-better-security--placed-into-a-data-structure-such-as-a-hash-mapunordered-map-or-other-similar-data-structure" id="toc-raw-personal-data-for-clients-should-be-encapsulated-within-a-class-for-better-security--placed-into-a-data-structure-such-as-a-hash-mapunordered-map-or-other-similar-data-structure" title="Raw personal data for cli..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Raw personal data for cli...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#raw-personal-data-for-clients-should-be-encapsulated-within-a-class-for-better-security--placed-into-a-data-structure-such-as-a-hash-mapunordered-map-or-other-similar-data-structure" id="toc-raw-personal-data-for-clients-should-be-encapsulated-within-a-class-for-better-security--placed-into-a-data-structure-such-as-a-hash-mapunordered-map-or-other-similar-data-structure" title="Raw personal data for cli..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.1.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Raw personal data for cli...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#current-state-of-variables-could-lead-to-confusion-and-incorrect-information-being-used-to-represent-a-client" id="toc-current-state-of-variables-could-lead-to-confusion-and-incorrect-information-being-used-to-represent-a-client" title="Current state of variable..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.1.1.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Current state of variable...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#no-way-to-easily-add-more-clients-without-hard-coding-additional-sets-of-variables" id="toc-no-way-to-easily-add-more-clients-without-hard-coding-additional-sets-of-variables" title="No way to easily add more..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.1.1.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>No way to easily add more...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-1" id="toc-affected-code-1" title="Affected code 1:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.1.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 1:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-2" id="toc-vulnerability-2" title="Vulnerability 2:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 2:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities" id="toc-description-of-vulnerabilities" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.2.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#variable-declarations-not-initialized-with-default-values-can-cause-memory-issues-when-address-is-accessed-but-no-value-has-been-assigned-yet" id="toc-variable-declarations-not-initialized-with-default-values-can-cause-memory-issues-when-address-is-accessed-but-no-value-has-been-assigned-yet" title="Variable declarations not..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.2.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Variable declarations not...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-2" id="toc-affected-code-2" title="Affected code 2:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.2.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 2:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-3" id="toc-vulnerability-3" title="Vulnerability 3:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 3:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-1" id="toc-description-of-vulnerabilities-1" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.3.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#hard-coding-of-authentication-data--passwords-should-never-be-done-use-password-hashes-instead-of-raw-passwords-hash-the-user-input-password-and-compare-the-hashes" id="toc-hard-coding-of-authentication-data--passwords-should-never-be-done-use-password-hashes-instead-of-raw-passwords-hash-the-user-input-password-and-compare-the-hashes" title="Hard coding of authentica..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.3.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Hard coding of authentica...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-3" id="toc-affected-code-3" title="Affected code 3:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.3.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 3:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-4" id="toc-vulnerability-4" title="Vulnerability 4:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.4.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 4:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-2" id="toc-description-of-vulnerabilities-2" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.4.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#no-rate-limit-or-attempt-limit-enforced-for-attempts-at-authentication-program-is-very-vulnerable-to-brute-forcing" id="toc-no-rate-limit-or-attempt-limit-enforced-for-attempts-at-authentication-program-is-very-vulnerable-to-brute-forcing" title="No rate limit or attempt ..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.4.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>No rate limit or attempt ...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-4" id="toc-affected-code-4" title="Affected code 4:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.4.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 4:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-5" id="toc-vulnerability-5" title="Vulnerability 5:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.5.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 5:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-3" id="toc-description-of-vulnerabilities-3" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.5.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#printing-detailed-authentication-failure-message-is-a-security-vulnerability-makes-brute-forcing-easier-and-can-open-you-to-side-channel-attack-use-a-generalized-authenticationlogin-attempt-failure-message" id="toc-printing-detailed-authentication-failure-message-is-a-security-vulnerability-makes-brute-forcing-easier-and-can-open-you-to-side-channel-attack-use-a-generalized-authenticationlogin-attempt-failure-message" title="Printing detailed authent..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.5.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Printing detailed authent...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-5" id="toc-affected-code-5" title="Affected code 5:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.5.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 5:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-6" id="toc-vulnerability-6" title="Vulnerability 6:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.6.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 6:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-4" id="toc-description-of-vulnerabilities-4" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.6.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#authentication-process-is-a-public-function-accessed-in-the-main-function-instead-of-an-authentication-class-that-encapsulates--methods" id="toc-authentication-process-is-a-public-function-accessed-in-the-main-function-instead-of-an-authentication-class-that-encapsulates--methods" title="Authentication process is..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.6.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Authentication process is...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-6" id="toc-affected-code-6" title="Affected code 6:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.6.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 6:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-7" id="toc-vulnerability-7" title="Vulnerability 7:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.7.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 7:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-5" id="toc-description-of-vulnerabilities-5" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.7.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#generic-string-comparisons-create-insecurity-to-timing-attacks-using-values-to-compare-directly-in-if-conditional-not-best-practice" id="toc-generic-string-comparisons-create-insecurity-to-timing-attacks-using-values-to-compare-directly-in-if-conditional-not-best-practice" title="Generic string comparison..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.7.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Generic string comparison...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-7" id="toc-affected-code-7" title="Affected code 7:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.7.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 7:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-8" id="toc-vulnerability-8" title="Vulnerability 8:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.8.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 8:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-6" id="toc-description-of-vulnerabilities-6" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.8.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#using-magic-numbers-for-program-control-instead-of-const-values-read-only-calculated-at-compile-time-values-that-dont-need-to-change-should-not-be-able-to-change" id="toc-using-magic-numbers-for-program-control-instead-of-const-values-read-only-calculated-at-compile-time-values-that-dont-need-to-change-should-not-be-able-to-change" title="Using “magic numbers” for..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.8.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Using “magic numbers” for...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-8" id="toc-affected-code-8" title="Affected code 8:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.8.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 8:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-9" id="toc-vulnerability-9" title="Vulnerability 9:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.9.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 9:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-7" id="toc-description-of-vulnerabilities-7" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.9.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#no-input-validation-here-no-sanitization-of-inputs" id="toc-no-input-validation-here-no-sanitization-of-inputs" title="No input validation here,..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.9.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>No input validation here,...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-9" id="toc-affected-code-9" title="Affected code 9:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.9.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 9:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-10" id="toc-vulnerability-10" title="Vulnerability 10:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.10.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 10:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-8" id="toc-description-of-vulnerabilities-8" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.10.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#not-following-dry--best-practices-no-need-to-create-a-new-output-line-for-each-client-clients-should-be-stored-in-a-data-structure-and-the-data-structure-iterated-through-to-output-client-list" id="toc-not-following-dry--best-practices-no-need-to-create-a-new-output-line-for-each-client-clients-should-be-stored-in-a-data-structure-and-the-data-structure-iterated-through-to-output-client-list" title="Not following DRY / best ..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.10.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Not following DRY / best ...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-10" id="toc-affected-code-10" title="Affected code 10:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.10.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 10:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-11" id="toc-vulnerability-11" title="Vulnerability 11:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.11.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 11:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-9" id="toc-description-of-vulnerabilities-9" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.11.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#again-it-is-bad-coding-practice-to-have-this-much-duplicate-code-without-an-express-need" id="toc-again-it-is-bad-coding-practice-to-have-this-much-duplicate-code-without-an-express-need" title="Again, it is bad coding p..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.11.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Again, it is bad coding p...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-11" id="toc-affected-code-11" title="Affected code 11:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.11.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 11:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-12" id="toc-vulnerability-12" title="Vulnerability 12:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.12.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 12:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-10" id="toc-description-of-vulnerabilities-10" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.12.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#use-exception-handling-for-reading-inputs--for-handling-operation-failures-program-currently-will-not-handle-invalid-types-etc-in-a-graceful-manner" id="toc-use-exception-handling-for-reading-inputs--for-handling-operation-failures-program-currently-will-not-handle-invalid-types-etc-in-a-graceful-manner" title="Use exception handling fo..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.12.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Use exception handling fo...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-12" id="toc-affected-code-12" title="Affected code 12:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.12.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 12:</span> </a>  </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#vulnerability-13" id="toc-vulnerability-13" title="Vulnerability 13:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.13.</span> <span class="toc-text" data-astro-cid-zekvapgs>Vulnerability 13:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#description-of-vulnerabilities-11" id="toc-description-of-vulnerabilities-11" title="Description of vulnerabil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.13.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Description of vulnerabil...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#no-input-validation-here-no-sanitization-of-inputs-no-exception-handling" id="toc-no-input-validation-here-no-sanitization-of-inputs-no-exception-handling" title="No input validation here,..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.13.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>No input validation here,...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#affected-code-13" id="toc-affected-code-13" title="Affected code 13:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>1.13.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Affected code 13:</span> </a>  </li>  </ul> </li>  </ul> </li> <li class="toc-item depth-1" data-astro-cid-zekvapgs> <a href="#revised-and-updated-code-base-without-vulnerabilities" id="toc-revised-and-updated-code-base-without-vulnerabilities" title="Revised and Updated Code-..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>•</span> <span class="toc-number" data-astro-cid-zekvapgs>2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Revised and Updated Code-...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#sources" id="toc-sources" title="Sources:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Sources:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#timing-attacks" id="toc-timing-attacks" title="Timing Attacks:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Timing Attacks:</span> </a>  </li>  </ul> </li>  </ul> </li> </ul></nav><script type="module">const c=document.getElementById("toc");c&&c.addEventListener("click",t=>{const n=window.location.hash.slice(1),e=document.getElementById(`toc-${n}`);e instanceof HTMLElement&&e.classList.remove("active-toc"),t.target instanceof HTMLElement&&t.target.classList.add("active-toc")});</script> </aside> </main> <footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pb-4 pt-20 text-center align-top font-semibold sm:flex-row sm:justify-between sm:text-xs text-textColor mb-8"> <div class="mr-2 sm:mr-0">
+Copyright &copy; 2025  E. Johnson </div> <nav aria-label="More on this site" class="gap-x-0 sm:gap-x-2 sm:flex sm:divide-x sm:divide-accent"> <a href="/" class="px-2 py-0 hover:text-textColor hover:underline sm:px-4 sm:py-2"> Home </a><a href="/about" class="px-2 py-0 hover:text-textColor hover:underline sm:px-4 sm:py-2"> About Me </a><a href="/blog" class="px-2 py-0 hover:text-textColor hover:underline sm:px-4 sm:py-2"> Blog </a><a href="/projects" class="px-2 py-0 hover:text-textColor hover:underline sm:px-4 sm:py-2"> Projects </a> </nav> </footer>
+</html</body></html> 

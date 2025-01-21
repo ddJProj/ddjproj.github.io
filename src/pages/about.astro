@@ -13,104 +13,157 @@ interface TechType {
 }
 
 const technologies: TechType[] = [
-	{
-		name: 'Core / Languages',
-		items: [
-			{
-				title: 'C++',
-				desc: 'Learn this versatile and powerful programming language.',
-				href: 'https://cplusplus.com/',
-			},
-			{
-				title: 'Rust',
-				desc: 'A language empowering everyone to build reliable and efficient software.',
-				href: 'https://www.rust-lang.org/',
-			},
-			{
-				title: 'Kotlin',
-				desc: 'Concise. Multiplatform. Fun.',
-				href: 'https://kotlinlang.org/',
-			},
-			{
-				title: 'Java',
-				desc: 'Free-to-use, and a versatile language designed for ease of use.',
-				href: 'https://www.java.com/en/',
-			},
-			{
-				title: 'JavaScript',
-				desc: 'A high-level, often just-in-time compiled language that conforms to the ECMAScript standard',
-				href: 'https://www.javascript.com/about',
-			},	
-			{
-				title: 'Python',
-				desc: 'Python lets you work quickly, and integrate systems more effectively.',
-				href: 'https://www.python.org/',
-			},
-		],
-	},
-	{
-		name: 'Web-based',
-		items: [
-			{
-				title: 'ExpressJS',
-				desc: 'Fast, unopinionated, minimalist web framework for Node.js',
-				href: 'https://github.com/expressjs/express',
-			},
-			{
-				title: 'Node.js',
-				desc: 'JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts',
-				href: 'https://nodejs.org/en',
-			},
-			{
-				title: 'Angular',
-				desc: 'A web framework that empowers developers to build fast, reliable applications.',
-				href: 'https://angular.dev/overview',
-			},
-
-			{
-				title: 'Astro',
-				desc: 'Build fast websites, faster.',
-				href: 'https://astro.build',
-			},
-		],
-	},
-	{
-		name: 'Database',
-		items: [
-			{
-				title: 'MySQL',
-				desc: "The world's most popular open source database",
-				href: 'https://www.mysql.com/why-mysql/',
-			},
-			{
-				title: 'MongoDB',
-				desc: 'Built by developers, for developers',
-				href: 'https://www.mongodb.com/',
-			},
-		],
-	},
-	{
-		name: 'Operating Platforms & Containers',
-		items: [
-			{
-				title: 'Linux/Unix Systems',
-				desc: 'Highly capable in Unix-based environments, with a specializing in Debian-based distributions',
-				href: 'https://www.linux.org/',
-			},
-			{
-				title: 'Android',
-				desc: 'Your Android, smarter and more secure.',
-				href: 'https://www.android.com/',
-			},
-			{
-				title: 'Docker',
-				desc: 'Develop faster. Run anywhere.',
-				href: 'https://www.docker.com/',
-			},
-		],
-	},
+    {
+        name: 'Core / Languages',
+        items: [
+            {
+                title: 'C',
+                desc: 'A powerful low-level programming language with high performance and direct hardware access.',
+                href: 'https://en.cppreference.com/w/c',
+            },
+            {
+                title: 'x86 Assembly', 
+                desc: 'Low-level programming language for x86 architecture processors.',
+                href: 'https://www.cs.virginia.edu/~evans/cs216/guides/x86.html',
+            },
+            {
+                title: 'C++',
+                desc: 'Learn this versatile and powerful programming language.',
+                href: 'https://cplusplus.com/',
+            },
+            {
+                title: 'Rust',
+                desc: 'A language empowering everyone to build reliable and efficient software.',
+                href: 'https://www.rust-lang.org/',
+            },
+            {
+                title: 'Kotlin',
+                desc: 'Concise. Multiplatform. Fun.',
+                href: 'https://kotlinlang.org/',
+            },
+            {
+                title: 'Java',
+                desc: 'Free-to-use, and a versatile language designed for ease of use.',
+                href: 'https://www.java.com/en/',
+            },
+            {
+                title: 'JavaScript',
+                desc: 'A high-level, often just-in-time compiled language that conforms to the ECMAScript standard',
+                href: 'https://www.javascript.com/about',
+            },    
+            {
+                title: 'Python',
+                desc: 'Python lets you work quickly, and integrate systems more effectively.',
+                href: 'https://www.python.org/',
+            },
+        ],
+    },
+    {
+        name: 'Java Enterprise & Spring Ecosystem',
+        items: [
+            {
+                title: 'Spring Framework',
+                desc: 'The foundation for all Spring projects, providing comprehensive infrastructure support for Java applications.',
+                href: 'https://spring.io/projects/spring-framework',
+            },
+            {
+                title: 'Spring Boot',
+                desc: 'Makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".',
+                href: 'https://spring.io/projects/spring-boot',
+            },
+            {
+                title: 'Spring Data JPA',
+                desc: 'Part of the Spring Data family, making it easy to implement JPA based repositories and simplify your persistence layer.',
+                href: 'https://spring.io/projects/spring-data-jpa',
+            },
+            {
+                title: 'Hibernate',
+                desc: 'A powerful, high-performance Object/Relational persistence and query service for Java.', 
+                href: 'https://hibernate.org/',
+            },
+            {
+                title: 'Spring REST',
+                desc: 'Build RESTful web services with Spring MVC and Spring WebFlux.',
+                href: 'https://spring.io/guides/tutorials/rest/', 
+            },
+            {  
+                title: 'Spring Security',
+                desc: 'Highly customizable authentication and access-control framework for Spring applications.',
+                href: 'https://spring.io/projects/spring-security',
+            },
+        ],
+    },
+    {
+        name: 'Web-based',
+        items: [
+            {
+                title: 'React',
+                desc: 'A JavaScript library for building user interfaces with a component-based architecture.',
+                href: 'https://react.dev/',
+            },
+            {
+                title: 'ExpressJS',
+                desc: 'Fast, unopinionated, minimalist web framework for Node.js',
+                href: 'https://github.com/expressjs/express',
+            },
+            {
+                title: 'Node.js',
+                desc: 'JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts',
+                href: 'https://nodejs.org/en',
+            },
+            {
+                title: 'Angular',
+                desc: 'A web framework that empowers developers to build fast, reliable applications.',
+                href: 'https://angular.dev/overview',
+            },
+            {
+                title: 'Astro',
+                desc: 'Build fast websites, faster.',
+                href: 'https://astro.build',
+            },
+        ],
+    },
+    {
+        name: 'Database',
+        items: [
+            {
+                title: 'MySQL',
+                desc: "The world's most popular open source database",
+                href: 'https://www.mysql.com/why-mysql/',
+            },
+            {
+                title: 'MongoDB',
+                desc: 'Built by developers, for developers',
+                href: 'https://www.mongodb.com/',
+            },
+        ],
+    },
+    {
+        name: 'Operating Platforms & Containers',
+        items: [            
+            {
+                title: 'GCC',  
+                desc: 'The GNU Compiler Collection - a compiler system supporting various programming languages.',
+                href: 'https://gcc.gnu.org/',
+            },
+            {
+                title: 'Linux/Unix Systems',
+                desc: 'Highly capable in Unix-based environments, with a specializing in Debian-based distributions',
+                href: 'https://www.linux.org/',
+            },
+            {
+                title: 'Android',
+                desc: 'Your Android, smarter and more secure.',
+                href: 'https://www.android.com/',
+            },
+            {
+                title: 'Docker',
+                desc: 'Develop faster. Run anywhere.',
+                href: 'https://www.docker.com/',
+            },
+        ],
+    },
 ];
-
 // {
 //     title: "X86 Assembly",
 //     desc: "Machine-specific and low-level, for detailed and time-critical applications.",

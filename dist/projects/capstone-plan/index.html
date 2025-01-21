@@ -1,0 +1,1103 @@
+<!DOCTYPE html><html lang="en" class="dark"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.1.8"><!-- Font preloads --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><!-- Canonical URL --><link rel="canonical" href="https://ddjproj.github.io/projects/capstone-plan/"><!-- Primary Meta Tags --><title>C.S. Capstone Project - Planning, &amp; documentation | Portfolio &amp; Blog</title><meta name="title" content="C.S. Capstone Project - Planning, &#38; documentation"><meta name="description" content="Planning the Rust based TUI Client Management Application. For a Financial Investment Firm."><meta name="author" content="E. Johnson"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://ddjproj.github.io/projects/capstone-plan/"><meta property="og:title" content="C.S. Capstone Project - Planning, &#38; documentation"><meta property="og:description" content="Planning the Rust based TUI Client Management Application. For a Financial Investment Firm."><meta property="og:image" content="https://ddjproj.github.io/blog-placeholder-1.jpg"><meta property="article:author" content="E. Johnson"><meta property="article:published_time" content="2024-07-10T04:00:00.000Z"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://ddjproj.github.io/projects/capstone-plan/"><meta property="twitter:title" content="C.S. Capstone Project - Planning, &#38; documentation"><meta property="twitter:description" content="Planning the Rust based TUI Client Management Application. For a Financial Investment Firm."><meta property="twitter:image" content="https://ddjproj.github.io/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.CItO0ltx.css">
+<link rel="stylesheet" href="/_astro/about.COTOMhSK.css">
+<style>a[data-astro-cid-eimmu3lg]:before{content:"./";margin-right:-.5rem;color:var(--theme-accent-2)}a[data-astro-cid-eimmu3lg]{margin-right:.25rem;color:var(--theme-accent)}a[data-astro-cid-eimmu3lg]:hover{text-decoration:underline}
+.toc-item[data-astro-cid-zekvapgs]{font-size:.9rem;line-height:1.5;margin-bottom:.35rem}li[data-astro-cid-zekvapgs] a[data-astro-cid-zekvapgs]{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;text-decoration:none;color:inherit;padding:2px 0}.toc-prefix[data-astro-cid-zekvapgs]{margin-right:.5em;color:var(--accent-color, #888);font-size:.7em}.toc-number[data-astro-cid-zekvapgs]{margin-right:.5em;color:var(--text-color);font-size:.7em}.toc-text[data-astro-cid-zekvapgs]{flex:1;overflow:hidden;text-overflow:ellipsis}.depth-1[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs]{font-weight:700}.depth-2[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs]{padding-left:1em}.depth-3[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs]{padding-left:1em}.depth-4[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs],.depth-5[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs],.depth-6[data-astro-cid-zekvapgs]>a[data-astro-cid-zekvapgs]{padding-left:1em}.active-toc[data-astro-cid-zekvapgs]{color:var(--accent-color)}.toc-nav[data-astro-cid-xvrfupwn]{font-size:.875rem;width:100%}.toc-nav[data-astro-cid-xvrfupwn] h2[data-astro-cid-xvrfupwn]{font-size:1rem;margin-bottom:.5rem}.toc-nav[data-astro-cid-xvrfupwn] ul[data-astro-cid-xvrfupwn]{padding-left:.5rem;width:100%}
+small[data-astro-cid-uogrpsp5]{margin-right:.5rem;min-width:95px;background-color:var(--theme-accent);padding-left:.25rem;padding-right:.25rem;font-weight:600;color:var(--theme-bg)}.project-frontmatter-item[data-astro-cid-uogrpsp5]{display:flex;flex-direction:column;-moz-column-gap:0px;column-gap:0px}@media (min-width: 640px){.project-frontmatter-item[data-astro-cid-uogrpsp5]{flex-direction:row}}
+</style></head> <body> <header class="group relative mb-8 flex justify-between items-center gap-4" id="main-header" data-astro-cid-3ef6ksr2> <div class="block" data-astro-cid-3ef6ksr2> <a class="title whitespace-nowrap" href="/" aria-current="false" data-astro-cid-3ef6ksr2>Portfolio &amp; Blog</a> </div> <nav class="mt-4 bg-surface/95 sm:bg-bgColor absolute hidden top-8 w-full sm:block sm:static sm:mt-0 group-[.menu-open]:z-50 group-[.menu-open]:flex group-[.menu-open]:bg-bgColor" id="navigation-menu" aria-label="main menu" data-astro-cid-3ef6ksr2> <div class="space-y-1 px-2 pb-3 pt-2 sm:flex sm:px-0 sm:py-0 sm:space-y-0 sm:space-x-2" data-astro-cid-3ef6ksr2> <a href="/" class="block py-2 sm:py-0" title="Home" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Home </a> <a href="/about" class="block py-2 sm:py-0" title="About Me" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> About Me </a> <a href="/blog" class="block py-2 sm:py-0" title="Blog" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a> <a href="/projects" class="block py-2 sm:py-0" title="Projects" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Projects </a>  <a href="/tags" class="sm:hidden block py-2 sm:py-0" title="tags" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Tags </a>  <a href="/series" class="sm:hidden block py-2 sm:py-0" title="series" aria-current="false" data-astro-prefetch="true" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Series </a>  </div> </nav> <div class="flex gap-2 items-center justify-center" data-astro-cid-3ef6ksr2> <button id="themeToggle" class="transition-all relative" aria-label="toggle theme" data-astro-cid-x3pjskd3> <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-astro-cid-x3pjskd3> <path class="sun opacity-100 transition-all dark:scale-0 dark:opacity-0" fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z" data-astro-cid-x3pjskd3></path> <path class="moon opacity-0 transition-all dark:scale-100 dark:opacity-100" fill-rule="evenodd" d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z" data-astro-cid-x3pjskd3></path> </svg> </button>  <script>
+  const theme = (() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+      return 'light';
+  })();
+
+  if (theme === 'light') {
+    document.documentElement.classList.remove('dark');
+  } else {
+    document.documentElement.classList.add('dark');
+  }
+
+  window.localStorage.setItem('theme', theme);
+
+  const handleToggleClick = () => {
+    const element = document.documentElement;
+    element.classList.toggle("dark");
+
+    const isDark = element.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  }
+
+  document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
+</script> <nav-button data-astro-cid-3ef6ksr2="true"> <div class="sm:hidden" data-astro-cid-3ef6ksr2> <span class="sr-only" data-astro-cid-3ef6ksr2>open main menu</span> <button class="group flex items-center justify-center" type="button" id="navigation-menu-btn" aria-label="Open main menu" aria-expanded="false" aria-haspopup="menu" data-astro-cid-3ef6ksr2> <!-- icon when menu is closed --> <svg class="transform transition-all duration-150 ease-out group-aria-expanded:scale-0 group-aria-expanded:opacity-0 h-6 w-6 block group-aria-expanded:hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-3ef6ksr2> <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" data-astro-cid-3ef6ksr2></path> </svg> <!-- icon when menu is open --> <svg class="transform transition-all duration-150 ease-out h-6 w-6 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100 hidden group-aria-expanded:block" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-astro-cid-3ef6ksr2> <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" data-astro-cid-3ef6ksr2></path> </svg> </button> </div> </nav-button> </div> </header>  <script type="module">class e extends HTMLElement{headerEl;mobileButtonEl;menuOpen;constructor(){super(),this.headerEl=document.getElementById("main-header"),this.mobileButtonEl=this.querySelector("button"),this.menuOpen=!1,this.mobileButtonEl.addEventListener("click",this.toggleMobileMenu)}toggleMobileMenu=()=>{this.headerEl.classList.toggle("menu-open"),this.menuOpen=!this.menuOpen,this.mobileButtonEl.setAttribute("aria-expanded",this.menuOpen.toString())}}customElements.define("nav-button",e);</script> <main class="grid grid-cols-1 gap-y-4 lg:grid-cols-[minmax(0,1fr)_300px] sm:gap-x-4 max-w-7xl mx-auto">  <section class="cody-bg space-y-2 sm:space-y-4" data-astro-cid-uogrpsp5> <h2 class="title" data-astro-cid-uogrpsp5>C.S. Capstone Project - Planning, &amp; documentation</h2> <div class="aspect-h-9 aspect-w-6 mb-6 w-full" data-astro-cid-uogrpsp5> <img src="/blog-placeholder-about.jpg" alt="Planning stage for the application rewrite + enhancements." data-astro-cid-uogrpsp5> </div> <ul class="space-y-2" data-astro-cid-uogrpsp5> <li class="project-frontmatter-item" data-astro-cid-uogrpsp5> <small data-astro-cid-uogrpsp5>PLATFORM</small> <span data-astro-cid-uogrpsp5>Console / Terminal application</span> </li> <li class="project-frontmatter-item" data-astro-cid-uogrpsp5> <small data-astro-cid-uogrpsp5>STACK</small> <ul class="inline-flex gap-2 sm:gap-4" data-astro-cid-uogrpsp5> <li data-astro-cid-uogrpsp5> <svg width="1em" height="1em" class="h-6 w-6 text-textColor" focusable="false" data-astro-cid-uogrpsp5="true" data-icon="vscode-icons:file-type-cpp"> <title>cpp</title>  <symbol id="ai:vscode-icons:file-type-cpp" viewBox="0 0 32 32"><path fill="#984c93" d="M14.742 24.047a10.24 10.24 0 0 1-4.673.919a7.63 7.63 0 0 1-5.914-2.346A8.88 8.88 0 0 1 2 16.369a9.48 9.48 0 0 1 2.422-6.748a8.22 8.22 0 0 1 6.285-2.588a11.2 11.2 0 0 1 4.035.641v3.761A6.84 6.84 0 0 0 11 10.395a4.81 4.81 0 0 0-3.712 1.535a5.9 5.9 0 0 0-1.413 4.159A5.8 5.8 0 0 0 7.209 20.1a4.57 4.57 0 0 0 3.59 1.493a7.3 7.3 0 0 0 3.943-1.113Zm2.37-9.218v-2.344h2.344v2.344H21.8v2.343h-2.344v2.343h-2.344v-2.343H14.77v-2.344zm8.201 0v-2.344h2.344v2.344H30v2.343h-2.343v2.343h-2.344v-2.343h-2.342v-2.344z"/></symbol><use href="#ai:vscode-icons:file-type-cpp"></use>  </svg> </li><li data-astro-cid-uogrpsp5> <svg width="1em" height="1em" class="h-6 w-6 text-textColor" focusable="false" data-astro-cid-uogrpsp5="true" data-icon="vscode-icons:file-type-assembly"> <title>assembly</title>  <symbol id="ai:vscode-icons:file-type-assembly" viewBox="0 0 32 32"><defs><linearGradient id="vscodeIconsFileTypeAssembly0" x1="836.63" x2="843.802" y1="36.205" y2="14.48" gradientTransform="rotate(180 262.961 15.125)scale(.607)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".275"/></linearGradient></defs><path fill="#0000bf" d="M16 2c-1.246 3.056-2 5.057-3.391 8.022a22 22 0 0 0 3.591 3.134a14.9 14.9 0 0 1-4-2.283C10.43 14.579 7.646 19.855 2 30c5.186-2.994 9.012-4.648 12.691-4.966V24.2h-.834v-.837h.834v.837h1.675v-1.679h-1.675v-.834h-.834v-1.674h.834v-.834h1.675v.834h.834v.837h-.837v-.837h-1.672v1.675h1.675v.834h.834V24.2h-.837v.783c3.98.1 8.006 1.772 13.634 5.021c-.863-1.589-1.636-3.021-2.372-4.385a25.5 25.5 0 0 0-4.833-3.333A14.4 14.4 0 0 1 26.65 23.8C19.17 9.872 18.565 8.02 16 2m-5.489 17.179h1.671v.834h.837v5.021h-.837v-2.513h-1.671v2.512h-.838v-5.02h.837Zm0 .834v1.675h1.671v-1.675Zm7.526-.834h.837v.834h.837v.837h.834v-.837h.837v-.834h.837v5.855h-.837V20.85h-.837v.837h-.834v-.837h-.837v4.184h-.837Z"/><path fill="#fff" fill-opacity=".166" d="M23.881 18.642c-6.069-8.237-7.476-14.876-7.832-16.461a175 175 0 0 0 7.832 16.461"/><path fill="url(#vscodeIconsFileTypeAssembly0)" d="M16.051 2.12L15.6 3.227l-.461 1.131q-.226.548-.448 1.077c-.222.529-.3.7-.448 1.053s-.3.706-.465 1.066s-.329.729-.506 1.111s-.362.778-.561 1.193l-.089.181a22 22 0 0 0 3.578 3.117a14.9 14.9 0 0 1-3.989-2.276l-.14.287c-.065.133-.144.283-.212.42l-.106.219c-.878 1.793-2.006 3.984-3.524 6.822c3.551-2 7.381-4.887 14.338-2.4a226 226 0 0 1-1.812-3.507a113 113 0 0 1-1.354-2.776c-.196-.413-.38-.818-.554-1.2s-.339-.754-.5-1.118s-.3-.727-.447-1.081s-.291-.709-.434-1.066l-.109-.277c-.408-.956-.821-1.945-1.306-3.083"/></symbol><use href="#ai:vscode-icons:file-type-assembly"></use>  </svg> </li><li data-astro-cid-uogrpsp5> <svg width="1em" height="1em" class="h-6 w-6 text-textColor" focusable="false" data-astro-cid-uogrpsp5="true" data-icon="vscode-icons:file-type-rust"> <title>rust</title>  <symbol id="ai:vscode-icons:file-type-rust" viewBox="0 0 32 32"><defs><radialGradient id="vscodeIconsFileTypeRust0" cx="-492.035" cy="-883.37" r="13.998" gradientTransform="matrix(.866 -.5 -.3 -.52 177.106 -689.033)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7d7d7d"/><stop offset=".267" stop-color="#7e7c7a"/><stop offset=".45" stop-color="#817871"/><stop offset=".608" stop-color="#867162"/><stop offset=".753" stop-color="#8d684c"/><stop offset=".886" stop-color="#965c30"/><stop offset="1" stop-color="#a04f12"/></radialGradient></defs><path fill="url(#vscodeIconsFileTypeRust0)" d="M15.124 5.3a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832M5.2 12.834a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832m19.856.039a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832m-17.451 1.14a.76.76 0 0 0 .386-1l-.369-.835h1.452v6.545h-2.93a10.3 10.3 0 0 1-.332-3.911Zm6.074.161v-1.929h3.458c.179 0 1.261.206 1.261 1.016c0 .672-.83.913-1.513.913ZM8.958 24.561a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832m12.331.039a.832.832 0 1 1 .832.832a.83.83 0 0 1-.832-.832m.257-1.887a.76.76 0 0 0-.9.584l-.418 1.949a10.25 10.25 0 0 1-8.545-.041l-.417-1.949a.76.76 0 0 0-.9-.583l-1.721.37a10 10 0 0 1-.89-1.049h8.374c.095 0 .158-.017.158-.1v-2.966c0-.086-.063-.1-.158-.1h-2.45v-1.881h2.649a1.665 1.665 0 0 1 1.629 1.412c.105.413.336 1.757.494 2.187c.157.483.8 1.447 1.482 1.447h4.323a10 10 0 0 1-.949 1.1Zm4.65-7.821a10.3 10.3 0 0 1 .022 1.779h-1.051c-.105 0-.148.069-.148.172v.483c0 1.136-.641 1.384-1.2 1.447c-.535.06-1.128-.224-1.2-.551a3.62 3.62 0 0 0-1.671-2.808c1.03-.654 2.1-1.619 2.1-2.911A3.29 3.29 0 0 0 21.44 9.8a4.56 4.56 0 0 0-2.2-.724H8.367A10.25 10.25 0 0 1 14.1 5.84l1.282 1.344a.76.76 0 0 0 1.072.026l1.434-1.372a10.25 10.25 0 0 1 7.015 5l-.982 2.217a.76.76 0 0 0 .386 1Zm2.448.036l-.033-.343l1.011-.943a.42.42 0 0 0-.013-.595a.4.4 0 0 0-.121-.081l-1.288-.483l-.1-.334l.806-1.12a.42.42 0 0 0-.13-.581a.4.4 0 0 0-.133-.055l-1.363-.222l-.164-.306l.573-1.257a.42.42 0 0 0-.236-.544a.4.4 0 0 0-.146-.029l-1.383.048l-.224-.264l.318-1.347a.42.42 0 0 0-.343-.487a.4.4 0 0 0-.144 0l-1.348.315l-.266-.219l.049-1.381a.42.42 0 0 0-.431-.411a.4.4 0 0 0-.141.028l-1.257.573l-.306-.164l-.222-1.363a.42.42 0 0 0-.5-.318a.4.4 0 0 0-.133.055l-1.121.806l-.333-.1l-.483-1.293a.42.42 0 0 0-.555-.215a.4.4 0 0 0-.12.08l-.946 1.012l-.343-.033l-.728-1.177a.42.42 0 0 0-.688 0l-.728 1.177l-.343.033l-.943-1.012a.42.42 0 0 0-.595.015a.4.4 0 0 0-.08.12L12.483 3.8l-.333.1l-1.12-.8a.42.42 0 0 0-.581.13a.4.4 0 0 0-.055.133l-.222 1.363l-.306.164l-1.258-.573a.42.42 0 0 0-.544.239a.4.4 0 0 0-.028.144l.048 1.383l-.266.217l-1.347-.316a.42.42 0 0 0-.487.343a.4.4 0 0 0 0 .144L6.3 7.819l-.218.265L4.7 8.036a.422.422 0 0 0-.383.573l.573 1.257l-.164.306l-1.363.222a.42.42 0 0 0-.318.5a.4.4 0 0 0 .055.133l.806 1.12l-.1.334l-1.293.483a.42.42 0 0 0-.215.555a.4.4 0 0 0 .081.121l1.011.943l-.033.343l-1.177.728a.42.42 0 0 0 0 .688l1.177.728l.033.343l-1.011.943a.42.42 0 0 0 .015.595a.4.4 0 0 0 .119.08l1.293.483l.1.334l-.806 1.124a.42.42 0 0 0 .131.581a.4.4 0 0 0 .133.055l1.363.222l.164.307l-.573 1.257a.42.42 0 0 0 .24.545a.4.4 0 0 0 .143.028l1.383-.048l.219.266l-.317 1.348a.42.42 0 0 0 .341.486a.4.4 0 0 0 .146 0l1.345-.319l.266.218l-.049 1.382a.42.42 0 0 0 .429.41a.4.4 0 0 0 .143-.028l1.257-.573l.306.164l.222 1.362a.42.42 0 0 0 .5.319a.4.4 0 0 0 .133-.055l1.12-.807l.334.1l.483 1.292a.42.42 0 0 0 .556.214a.4.4 0 0 0 .119-.08l.943-1.011l.343.034l.728 1.177a.42.42 0 0 0 .588.1a.4.4 0 0 0 .1-.1l.728-1.177l.343-.034l.943 1.011a.42.42 0 0 0 .595-.015a.4.4 0 0 0 .08-.119l.483-1.292l.334-.1l1.12.807a.42.42 0 0 0 .581-.131a.4.4 0 0 0 .055-.133l.222-1.362l.306-.164l1.257.573a.42.42 0 0 0 .544-.239a.4.4 0 0 0 .028-.143l-.048-1.384l.265-.218l1.347.317a.42.42 0 0 0 .487-.34a.5.5 0 0 0 0-.146l-.309-1.346l.218-.266l1.383.048a.42.42 0 0 0 .41-.431a.4.4 0 0 0-.028-.142l-.573-1.257l.164-.307l1.363-.222a.42.42 0 0 0 .319-.5a.4.4 0 0 0-.056-.135l-.806-1.12l.1-.334l1.293-.483a.42.42 0 0 0 .215-.554a.4.4 0 0 0-.081-.121l-1.011-.943l.033-.343l1.177-.728a.42.42 0 0 0 0-.688Z"/></symbol><use href="#ai:vscode-icons:file-type-rust"></use>  </svg> </li><li data-astro-cid-uogrpsp5> <svg width="1em" height="1em" class="h-6 w-6 text-textColor" focusable="false" data-astro-cid-uogrpsp5="true" data-icon="vscode-icons:file-type-mysql"> <title>mysql</title>  <symbol id="ai:vscode-icons:file-type-mysql" viewBox="0 0 32 32"><path fill="#5d87a1" fill-rule="evenodd" d="M8.785 6.865a3 3 0 0 0-.785.1V7h.038a6.5 6.5 0 0 0 .612.785c.154.306.288.611.441.917l.038-.039a1.07 1.07 0 0 0 .4-.957a4 4 0 0 1-.23-.4c-.115-.191-.364-.287-.517-.44"/><path fill="#00758f" fill-rule="evenodd" d="M27.78 23.553a8.85 8.85 0 0 0-3.712.536c-.287.115-.745.115-.785.478c.154.153.172.4.307.613a4.5 4.5 0 0 0 .995 1.167c.4.306.8.611 1.225.879c.745.461 1.588.728 2.314 1.187c.422.268.842.612 1.264.9c.21.153.343.4.611.5v-.058a4 4 0 0 0-.291-.613c-.191-.19-.383-.363-.575-.554a9.1 9.1 0 0 0-1.99-1.932c-.613-.422-1.953-1-2.2-1.7l-.039-.039a7.7 7.7 0 0 0 1.321-.308c.65-.172 1.243-.133 1.912-.3c.307-.077.862-.268.862-.268v-.3c-.342-.34-.587-.795-.947-1.116a25 25 0 0 0-3.122-2.328c-.587-.379-1.344-.623-1.969-.946c-.226-.114-.6-.17-.737-.36a7.6 7.6 0 0 1-.776-1.457a47 47 0 0 1-1.551-3.293a20 20 0 0 0-.965-2.157A19.1 19.1 0 0 0 11.609 5a9 9 0 0 0-2.421-.776c-.474-.02-.946-.057-1.419-.075a8 8 0 0 1-.869-.664C5.818 2.8 3.038 1.328 2.242 3.277C1.732 4.508 3 5.718 3.435 6.343A9 9 0 0 1 4.4 7.762c.133.322.171.663.3 1a23 23 0 0 0 .987 2.538a9 9 0 0 0 .7 1.172c.153.209.417.3.474.645a5.4 5.4 0 0 0-.436 1.419a8.34 8.34 0 0 0 .549 6.358c.3.473 1.022 1.514 1.987 1.116c.851-.34.662-1.419.908-2.364c.056-.229.019-.379.132-.53v.184s.483 1.061.723 1.6a10.8 10.8 0 0 0 2.4 2.59A3.5 3.5 0 0 1 14 24.657V25h.427a1.05 1.05 0 0 0-.427-.788a9.4 9.4 0 0 1-.959-1.16a25 25 0 0 1-2.064-3.519c-.3-.6-.553-1.258-.793-1.857c-.11-.231-.11-.58-.295-.7a7.3 7.3 0 0 0-.884 1.313a11.4 11.4 0 0 0-.517 2.921c-.073.02-.037 0-.073.038c-.589-.155-.792-.792-1.014-1.332a8.76 8.76 0 0 1-.166-5.164c.128-.405.683-1.681.461-2.068c-.111-.369-.48-.58-.682-.871a8 8 0 0 1-.663-1.237C5.912 9.5 5.69 8.3 5.212 7.216a10.4 10.4 0 0 0-.921-1.489A9.6 9.6 0 0 1 3.276 4.22c-.092-.213-.221-.561-.074-.793a.3.3 0 0 1 .259-.252c.238-.212.921.058 1.16.174a9.2 9.2 0 0 1 1.824.967c.258.194.866.685.866.685h.18c.612.133 1.3.037 1.876.21a12.3 12.3 0 0 1 2.755 1.32a17 17 0 0 1 5.969 6.545c.23.439.327.842.537 1.3c.4.94.9 1.9 1.3 2.814a12.6 12.6 0 0 0 1.36 2.564c.286.4 1.435.612 1.952.822a14 14 0 0 1 1.32.535c.651.4 1.3.861 1.913 1.3c.305.23 1.262.708 1.32 1.091"/></symbol><use href="#ai:vscode-icons:file-type-mysql"></use>  </svg> </li> </ul> </li> <li class="project-frontmatter-item" data-astro-cid-uogrpsp5> <small data-astro-cid-uogrpsp5>WEBSITE</small> <a href="https://ddjproj.github.io/" target="_blank" class="cody-link" data-astro-cid-uogrpsp5> https://ddjproj.github.io/ </a> </li> <li class="project-frontmatter-item" data-astro-cid-uogrpsp5> <small data-astro-cid-uogrpsp5>GITHUB</small> <a href="https://github.com/ddJProj/CSBS-Capstone-Project_Artifact-Enhancements" target="_blank" class="cody-link" data-astro-cid-uogrpsp5> https://github.com/ddJProj/CSBS-Capstone-Project_Artifact-Enhancements </a> </li> </ul> <hr data-astro-cid-uogrpsp5> <!-- ADDING  prose-cody scales the body to content--> <div class="prose dark:prose-invert prose-sm prose-headings:font-semibold prose-headings:ml-0 prose-headings:before:absolute prose-headings:before:-ms-0 prose-headings:before:text-accent prose-headings:before:content prose-th:before:content-none max-w-none" data-astro-cid-uogrpsp5>  <h2 id="source-repositories">Source Repositories:</h2>
+<h4 id="original-c-project-basis-of-all-three-enhancements">Original C++ project (Basis of all three enhancements):</h4>
+<p><a href="https://github.com/ddJProj/CSBS-reverse-engineering/tree/main/Project-2">Link to the GitHub repository containing the original C++ application’s source code</a></p>
+<h4 id="my-original-implementation-of-an-avl-tree-in-c-used-in-enhancement-stage-2">My original implementation of an AVL Tree in C++ (Used in enhancement stage 2):</h4>
+<p><a href="https://github.com/ddJProj/CSBS-data-struct-and-alg/tree/main/ABCU_Project-2">Link to the GitHub repository containing the original C++ AVL tree implementation</a></p>
+<h4 id="completed-rewrite-of-the-original-c-project-in-rust">Completed rewrite of the original C++ project, in Rust:</h4>
+<p><a href="https://github.com/ddJProj/CSBS-Capstone-Project_Artifact-Enhancements">Link to the GitHub repository containing completed, enhanced Rust project &#x26; source code</a></p>
+<p><br><br></p>
+<!-- -->
+<h1 id="computer-science-capstone-project-plan">Computer Science Capstone Project Plan</h1>
+<h2>Detailed plan documentation for rewrite of C++ application into Rust.</h2> 
+<p>
+This project posting will cover the initial planning stages and documentation write-up. A formal code review was performed and recorded, as well as writing out a detailed planning document.
+</p><h4>Application rewrite will take place in three stages. Each of enhancements stage has the goal of meeting competency criteria for their respective category of Computer Science.</h4>
+<p>The three categories include:</p>
+<ul>
+<li><strong>Software Engineering and Design</strong></li>
+<li><strong>Data Structures and Algorithms</strong></li>
+<li><strong>Database Design and Implementation</strong></li>
+</ul>
+
+<p></p>
+<br>
+<h1 id="enhancement-plan">Enhancement Plan:</h1>
+<h2 id="category-one-software-engineering-and-design">Category One: Software Engineering and Design</h2>
+<h3 id="select-an-artifact-that-is-aligned-with-the-software-engineering-and-design-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan">Select an artifact that is aligned with the software engineering and design category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan.</h3>
+<p>For the first artifact, I will be enhancing the final project for my CS410 – Software Reverse Engineering course. The purpose of this project was to take the original, poorly written binary executable, to decompile the executable into X86 assembly, to rebuild the application in it’s original C++ form, and finally to refactor the application, removing any security vulnerabilities that it contained in the process. The application contained a login process that had hard-coded authentication data, as well as no input validation checks, or sanitization. It also contained a client management system that allowed the user to modify the services that their clients had selected.</p>
+<p>I rewrote the entire application, included validation checks and sanitization. I introduced class objects to handle the authentication process, as well as class objects to encapsulate the client data. I then implemented a hashing system to store password hashes instead of plain a plain text password that could easily be discovered when decompiling the binary executable. I also restructured all of the functionality into modular functions, properly encapsulating those functions as class methods when it maintained consistency.</p>
+<p><strong>Link to C++ source code for project:</strong><br>
+<a href="https://github.com/ddJProj/CSBS-reverse-engineering/tree/main/Project-2">My C++ source project for Artifact 1, 2, &#x26; 3:</a></p>
+<h3 id="describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-a-pseudocode-or-flowchart-that-illustrates-the-planned-enhancement">Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.</h3>
+<h4 id="artifact-1--software-engineering---initial-planning">Artifact 1 – Software Engineering - Initial Planning:</h4>
+<p>The language that the application is written in is C++, and the language that I will be using to rewrite the application is Rust. I have been studying Rust for a number of months now, but have not had a chance to formally apply the language to any significant works.</p>
+<p>During this initial stage I will be focused on the conversion of my client management application from C++ into Rust.</p>
+<p>This will be when I translate the OOP, class based system into a trait based Rust implementation. As rust does not implement classes / objects in the same way that C++ does, I will be using a combination of rust’s type system / implemented traits, struct objects, functions, and lifetimes to achieve safe operations.</p>
+<p>I know ahead of time that I will be integrating a database to handle the storage of clients data, employee data, and the authentication of employee accounts. I will need to ensure that the updated and converted rust equivalent functions properly handle and reference the data structures that pull source data from the database. This will include if data is changed within the system, that the changes will need to be pushed to the database in addition to the data structures used in local operations. The implementation of the functions that will pull and push the data to the database can be implemented in artifact three, but my design / code for artifact one will reference the functions that will be responsible for that functionality.</p>
+<h4 id="artifact-1--software-engineering--enhancement-requirements-list">Artifact 1 – Software Engineering – Enhancement Requirements List:</h4>
+<p><em>These are the core aspects of this rust rewrite which should be implemented using best practices for the language.</em></p>
+<ul>
+<li><strong>Enhancement 1:</strong> Implement Rust’s error handling using Result&#x3C;data T, Err> types. Use the the ? operator to manage propagation.</li>
+<li><strong>Enhancement 2:</strong> Move away from using unwrap() statements to avoid panic crashes.</li>
+<li><strong>Enhancement 3:</strong> Implement standard library traits wherever possible to reduce code rewriting, such as with trait Default.</li>
+<li><strong>Enhancement 4:</strong> Implement the Option type for any value that could return None.</li>
+<li><strong>Enhancement 5:</strong> Restructure the codebase to utilize composition based design over inheritance.</li>
+<li><strong>Enhancement 6:</strong> Implement proper delegation standards for function calls.</li>
+<li><strong>Enhancement 7:</strong> Use enums with match statements for reusable type definitions (in place of constants).</li>
+<li><strong>Enhancement 8:</strong> Organize the code into distinct modules for better encapsulation.</li>
+<li><strong>Enhancement 9:</strong> Implement structs to define custom data types (instead of classes, etc).</li>
+<li><strong>Enhancement 10:</strong> Utilize traits to provide polymorphism within the application.</li>
+<li><strong>Enhancement 11:</strong> Include relevant annotations, macros, attributes where needed, such as with cloning.</li>
+<li><strong>Enhancement 12:</strong> Implement proper memory management techniques for manually defined lifetime definitions.</li>
+</ul>
+<h4 id="artifact-1--software-engineering---pseudocode">Artifact 1 – Software Engineering - Pseudocode:</h4>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span></span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>// Artifact 1: </span></span>
+<span class="line"><span>//      general program rewrite</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>// Core Structures and Types:</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE struct "Employee"    {</span></span>
+<span class="line"><span>	Declare employee_id of type i32 integer</span></span>
+<span class="line"><span>	Declare employee_name of type string</span></span>
+<span class="line"><span>	Declare hashed_password of type string</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>IMPLEMENT the "Employee" struct    {</span></span>
+<span class="line"><span>	DECLARE new constructor function with params:</span></span>
+<span class="line"><span>		employee_id of type i32 integer</span></span>
+<span class="line"><span>		employee_name of type String reference</span></span>
+<span class="line"><span>		password of type String reference</span></span>
+<span class="line"><span>	RETURNS reference to self	{</span></span>
+<span class="line"><span>		Employee		{</span></span>
+<span class="line"><span>			DECLARE employee_id, </span></span>
+<span class="line"><span>			DECLARE employee_name,</span></span>
+<span class="line"><span>			DECLARE hashed_password,</span></span>
+<span class="line"><span>			DECLARE asn_employee_id,</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE struct "Client"    {</span></span>
+<span class="line"><span>	DECLARE client_id of type i32 integer</span></span>
+<span class="line"><span>	DECLARE client_name of type string</span></span>
+<span class="line"><span>	DECLARE client_service of type i32 integer</span></span>
+<span class="line"><span>	DECLARE asn_employee_id of type i32 integer</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>IMPLEMENT the "Client" struct    {</span></span>
+<span class="line"><span>	DECLARE new constructor function with params:</span></span>
+<span class="line"><span>		client_id of type i32 integer</span></span>
+<span class="line"><span>		client_name of type String</span></span>
+<span class="line"><span>		client_service of type i32 integer</span></span>
+<span class="line"><span>		asn_employee_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS reference to self 	{</span></span>
+<span class="line"><span>		Client {</span></span>
+<span class="line"><span>				DECLARE client_id, </span></span>
+<span class="line"><span>				DECLARE client_name,</span></span>
+<span class="line"><span>				DECLARE client_service,</span></span>
+<span class="line"><span>				DECLARE asn_employee_id,</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	// the database will auto create client_ids for new clients</span></span>
+<span class="line"><span>	// used to set client id locally when a new client added to db</span></span>
+<span class="line"><span>	DECLARE function set_client_id with params:</span></span>
+<span class="line"><span>		reference to type mutable self</span></span>
+<span class="line"><span>		client_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS nothing 	{</span></span>
+<span class="line"><span>		IF client_id param is something, not null/nothing		{</span></span>
+<span class="line"><span>			ASSIGN this/self.client_id the value of client_id param </span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function change_client_service with params:</span></span>
+<span class="line"><span>		reference to type self</span></span>
+<span class="line"><span>		service of type i32 integer</span></span>
+<span class="line"><span>	RETURNS nothing	{</span></span>
+<span class="line"><span>		ASSIGN this/self.client_service the value of service param</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function get_client_service with params:</span></span>
+<span class="line"><span>		reference to type self</span></span>
+<span class="line"><span>	RETURNS i32 integer self.client_service value	{</span></span>
+<span class="line"><span>		RETURN i32 integer self.client_service value</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE function get_client_id with params:</span></span>
+<span class="line"><span>		reference to type self</span></span>
+<span class="line"><span>	RETURNS i32 integer self.client_id value	{</span></span>
+<span class="line"><span>		RETURN i32 integer self.client_id value</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE function get_client_name with params:</span></span>
+<span class="line"><span>		reference to type self</span></span>
+<span class="line"><span>	RETURNS string self.client_name value	{</span></span>
+<span class="line"><span>		RETURN string self.client_name value</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function get_asn_employee with params:</span></span>
+<span class="line"><span>		reference to type self</span></span>
+<span class="line"><span>	RETURNS i32 integer self.asn_employee_id value	{</span></span>
+<span class="line"><span>		RETURN i32 integer self.asn_employee_id value</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>}	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//--------------------------------------------------------</span></span>
+<span class="line"><span>// Menus &#x26; Inputs :</span></span>
+<span class="line"><span>//--------------------------------------------------------</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// main menu enum</span></span>
+<span class="line"><span>DECLARE enum main_menu_choice    {</span></span>
+<span class="line"><span>	DECLARE default_menu_value, assign it the value -1</span></span>
+<span class="line"><span>	DECLARE print_client_list, assign it the value 1</span></span>
+<span class="line"><span>	DECLARE change_service_choice, assign it the value 2</span></span>
+<span class="line"><span>	DECLARE exit_program, assign it the value 3</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>IMPLEMENT the "main_menu_choice" enum     {</span></span>
+<span class="line"><span>	DECLARE function "convert_input" with params</span></span>
+<span class="line"><span>		input of type i32 integer</span></span>
+<span class="line"><span>	RETURNS Option of main_menu_choice (some/none)</span></span>
+<span class="line"><span>		MATCH integer inputs to following cases:</span></span>
+<span class="line"><span>			IF input -1: RETURN some(main_menu_choice::default_menu_value)</span></span>
+<span class="line"><span>			IF input 1: RETURN some(main_menu_choice::print_client_list)</span></span>
+<span class="line"><span>			IF input 2: RETURN some(main_menu_choice::change_service_choice)</span></span>
+<span class="line"><span>			IF input 3: RETURN some(main_menu_choice::exit_program)</span></span>
+<span class="line"><span>			DEFAULT: RETURN none</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE function "menu_choice_handler" no params:</span></span>
+<span class="line"><span>RETURNS Result with no value (Ok) and Error of type pointer to dyn error    {</span></span>
+<span class="line"><span>	CALL display_menu() function to output main menu</span></span>
+<span class="line"><span>	DECLARE "choice", ASSIGN value of return from calling get_integer_input() fn</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	MATCH the following cases:</span></span>
+<span class="line"><span>		IF choice equals main_menu_choice::default_menu_value		{</span></span>
+<span class="line"><span>			PRINT message prompting user to give valid entry</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>		IF choice equals main_menu_choice::print_client_list		{</span></span>
+<span class="line"><span>			PRINT message confirming user choice</span></span>
+<span class="line"><span>			CALL display_clients();</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>		IF choice equals main_menu_choice::change_service_choice	{</span></span>
+<span class="line"><span>			PRINT message confirming user choice</span></span>
+<span class="line"><span>			CALL customer_choice_handler();</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>		IF choice equals main_menu_choice::exit_program		{</span></span>
+<span class="line"><span>			PRINT goodbye message </span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//service menu enum</span></span>
+<span class="line"><span>DECLARE enum client_service_choice    {</span></span>
+<span class="line"><span>	DECLARE return_menu, assign it the value 0</span></span>
+<span class="line"><span>	DECLARE brokerage, assign it the value 1</span></span>
+<span class="line"><span>	DECLARE retirement, assign it the value 2</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>IMPLEMENT the "client_service_choice" enum    {</span></span>
+<span class="line"><span>	DECLARE function "convert_input" with params:</span></span>
+<span class="line"><span>		input of type i32 integer,</span></span>
+<span class="line"><span>	RETURNS Option of client_service_choice (some/none)    {</span></span>
+<span class="line"><span>		MATCH integer inputs to following cases:</span></span>
+<span class="line"><span>			IF input 0: { RETURN some(client_service_choice::return_menu) } </span></span>
+<span class="line"><span>			IF input 1: { RETURN some(client_service_choice::brokerage) }</span></span>
+<span class="line"><span>			IF input 2: { RETURN some(client_service_choice::retirement) }</span></span>
+<span class="line"><span>			DEFAULT: { RETURN none }</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE function "client_choice_handler" with no param:</span></span>
+<span class="line"><span>RETURNS Result with no value (Ok) and Error of type pointer to dyn error    {</span></span>
+<span class="line"><span>	DECLARE "client_id", ASSIGN value of return from get_integer_input() fn</span></span>
+<span class="line"><span>	IF client is found in local_avl_tree from calling avl_tree::find() method with client_id	{</span></span>
+<span class="line"><span>		DECLARE new_service, ASSIGN it the value returned from call to select_valid_service() fn</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>		IF new_service != client_service_choice::return_menu		{</span></span>
+<span class="line"><span>			CALL change_client_service fn with the new_service integer value</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}	ELSE 	{</span></span>
+<span class="line"><span>		RETURN error "no valid client found"</span></span>
+<span class="line"><span>	}	</span></span>
+<span class="line"><span>	RETURN no value Ok(success)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE function "display_menu" no params</span></span>
+<span class="line"><span>RETURNS nothing    {</span></span>
+<span class="line"><span>	PRINT message "What would you like to do?"</span></span>
+<span class="line"><span>	PRINT message "DISPLAY the client list (enter 1)"</span></span>
+<span class="line"><span>    PRINT message "CHANGE a client's choice (enter 2)"</span></span>
+<span class="line"><span>    PRINT message "Exit the program.. (enter 3)"</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE function "display_clients" no params:</span></span>
+<span class="line"><span>RETURNS nothing    {</span></span>
+<span class="line"><span>	DECLARE "employee_id" ASSIGN the value from call to get_integer_input() fn</span></span>
+<span class="line"><span>	DECLARE "clients_vector" ASSIGN the value returned from ClientHandler.get_clients_for_employee() fn call with param of (employee_id):</span></span>
+<span class="line"><span>	IF clients_vector is valid (the call returned Some / something)   {</span></span>
+<span class="line"><span>		PRINT "Clients for Employee ID: " and the employee_id</span></span>
+<span class="line"><span>		PRINT the header "ID# | Client's Name | Service Selected (1 = Brokerage, 2 = Retirement)"</span></span>
+<span class="line"><span>		PRINT separator "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>		FOR each client_id in the clients_vector    {</span></span>
+<span class="line"><span>			DECLARE client, ASSIGN the value from ClientHandler.get_client() fn call with client_id</span></span>
+<span class="line"><span>			IF client is something (Some(client))    {</span></span>
+<span class="line"><span>				PRINT "{}.  | {}   selected option {}" </span></span>
+<span class="line"><span>					with the first entry being client.client_id</span></span>
+<span class="line"><span>					the second being client.client_name</span></span>
+<span class="line"><span>					the third being client.client_service</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	} ELSE   {</span></span>
+<span class="line"><span>		PRINT the message "No clients found for:" then employee_id</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>// Authentication &#x26; Hashing</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE module "Authentication"    {</span></span>
+<span class="line"><span>	DECLARE struct Authenticator    {</span></span>
+<span class="line"><span>		DECLARE current_attempts of type i32 integer</span></span>
+<span class="line"><span>		DECLARE max_attempts of type i32 integer</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	IMPLEMENT Authenticator    {</span></span>
+<span class="line"><span>		DECLARE new constructor function with no parameters </span></span>
+<span class="line"><span>		RETURNS reference to self, Authenticator {</span></span>
+<span class="line"><span>				DECLARE attempts, assign the value 0</span></span>
+<span class="line"><span>				DECLARE max_attempts, assign the value 5</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>		DECLARE function "authenticate" with following parameters</span></span>
+<span class="line"><span>			self (mut reference),</span></span>
+<span class="line"><span>			database_manager (with reference to the type implementing the DatabaseManager trait),</span></span>
+<span class="line"><span>			employee_id of type i32 integer,</span></span>
+<span class="line"><span>			password of type string,</span></span>
+<span class="line"><span>		RETURNS Result type (boolean or error if fail) 		{</span></span>
+<span class="line"><span>			IF this/self.attempts is greater or equal to self.max_attempts			{</span></span>
+<span class="line"><span>				PRINT "Maximum attempts reached, exiting program."</span></span>
+<span class="line"><span>				EXIT the application</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>			</span></span>
+<span class="line"><span>			Increment self.attempts by +1</span></span>
+<span class="line"><span>			</span></span>
+<span class="line"><span>			Attempt to retrieve stored_hash from DbManager for the provided employee_id:</span></span>
+<span class="line"><span>				IF retrieval fails				{</span></span>
+<span class="line"><span>					RETURN the DbManager error </span></span>
+<span class="line"><span>				}</span></span>
+<span class="line"><span>				IF stored_hash found for employee_id				{</span></span>
+<span class="line"><span>					// https://docs.rs/rust-argon2/latest/argon2/</span></span>
+<span class="line"><span>					// handles encoding of salt within hash string</span></span>
+<span class="line"><span>					Using argon2's hash_validation/verification, attempt compare of pass to stored_hash</span></span>
+<span class="line"><span>						IF verification succeeds, passwords match	{</span></span>
+<span class="line"><span>							RETURN Result : Ok(true) </span></span>
+<span class="line"><span>						}</span></span>
+<span class="line"><span>						IF verification fails:						{</span></span>
+<span class="line"><span>							RETURN Result : Ok(false) </span></span>
+<span class="line"><span>						}</span></span>
+<span class="line"><span>					IF no matching store_hash found for provided employee_id: 					{</span></span>
+<span class="line"><span>						RETURN Result : Ok(false) </span></span>
+<span class="line"><span>					}</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>		DECLARE function hash_password with params:</span></span>
+<span class="line"><span>			password reference of type string,</span></span>
+<span class="line"><span>		RETURN string (hash &#x26; salt)		{</span></span>
+<span class="line"><span>			// https://docs.rs/argon2/latest/argon2/</span></span>
+<span class="line"><span>			// https://github.com/RustCrypto/password-hashes</span></span>
+<span class="line"><span>			DECLARE local var "argon_config", assign the value of default Argon2 config</span></span>
+<span class="line"><span>			</span></span>
+<span class="line"><span>			Attepmt to hash the string param password using argon2</span></span>
+<span class="line"><span>			{</span></span>
+<span class="line"><span>				Use argon_config, allow argon to create salt</span></span>
+<span class="line"><span>				Convert password into byte-array</span></span>
+<span class="line"><span>				RETURN the hashed password as a string (contains encoded salt/config)</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>		}	</span></span>
+<span class="line"><span>	}		</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span></code></pre>
+<h3 id="explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes">Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.</h3>
+<h4 id="identify-and-describe-the-specific-skills-you-will-demonstrate-that-align-with-the-course-outcome">Identify and describe the specific skills you will demonstrate that align with the course outcome</h4>
+<p>For category one, I will be translating each of the functions in my C++ application into the respective Rust equivalent. This will include input validation / sanitization, using rust’s equivalents of object oriented programming, as well as providing the set up for a password hash function. I have been studying rust in my free time since the new year. Prior to this project, I have yet to find time to dig deeply into writing an application in rust, as I have not had much free time to work on side projects while completing this degree. This will be my first full, hands-on experience with the Rust programming language where I am not just following along with someone else’s work. I plan to use this learning experience to demonstrate my proficiency, ability, and organization when learning new concepts / languages. Between this artifact and the third artifact, I will also be focusing on the security of my application, implementing both best practices, and the industry standards for both tools and styling.</p>
+<h4 id="select-one-or-more-of-the-course-outcomes-below-that-your-enhancement-will-align-with">Select one or more of the course outcomes below that your enhancement will align with.</h4>
+<p>The first artifact enhancement primarily aligns with two of the provided course outcomes.</p>
+<ul>
+<li>
+<p>The first course outcome that this conversion process aligns with is developing, “a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.” The reason for learning and using the rust language to rewrite this application is due to its built-in safety features, and the way in which it securely handles memory management. Using Rust in this application will allow me to mitigate many of the memory related security issues that arise from implementations using C++.</p>
+</li>
+<li>
+<p>The second outcome this enhancement aligns with is the, “ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.” Through the process of rewriting this application in a language that I am not yet comfortable with, I will showcase my capability to quickly adapt to new technologies while in challenging scenarios, and that I am able to deliver real value, all while meeting industry standards.</p>
+</li>
+</ul>
+<h2 id="category-two-algorithms-and-data-structures">Category Two: Algorithms and Data Structures</h2>
+<h3 id="select-an-artifact-that-is-aligned-with-the-algorithms-and-data-structures-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan">Select an artifact that is aligned with the algorithms and data structures category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan.</h3>
+<p>For the second artifact, I will again be using my final project from my CS410 reverse engineering course. In the original C++ code, the list of clients is handled with a singleton class “ClientList” which contains a private vector “clientList” that stores all of the individual clients. The list is accessed through a static accessor method that returns the clientList instead of a public constructor. A second class is used to create Client objects, and a client object can on into the respective Rust equivalent. This will include input validation / sanitization, using rust’s equivalents of object oriented programming, as well as providing tbe created by calling the addClient function in the ClientList class. This addClient function then calls the constructor for the Client class, and then pushes the new object instance into the vector of Client objects. For this application, I will plan to implement an AVL tree that stores client instances and balances itself by client id values. For source material, I will be building and basing this AVL tree on the implementation that I first created for my Data Structures and Algorithms final project.</p>
+<p><strong>Link to C++ source code for project:</strong><br>
+<a href="https://github.com/ddJProj/CSBS-reverse-engineering/tree/main/Project-2">My C++ source project for Artifact 1, 2, &#x26; 3:</a></p>
+<p><strong>Link to my original C++ AVL tree implementation:</strong>
+<a href="https://github.com/ddJProj/CSBS-data-struct-and-alg/tree/main/ABCU_Project-2">My AVL_tree C++ implementation:</a></p>
+<h3 id="describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-pseudocode-that-illustrates-the-planned-enhancement">Describe a practical, well-illustrated plan for enhancement in alignment with the category, including pseudocode that illustrates the planned enhancement.</h3>
+<h4 id="artifact-2--data-structures-and-algorithms---initial-planning">Artifact 2 – Data Structures and Algorithms - Initial Planning:</h4>
+<p>To apply my knowledge of data structures algorithms to this course, I will be using two data structures that I built familiarity with while taking CS300, Data structures and Algorithms. These two data structures are a HashMap, and a self-balancing Binary Search Tree (AVL tree).</p>
+<p>For my data structures and algorithms course, CS300, I created an AVL tree and used it to store and sort Course objects. I used generic data structure objects to build my tree, and from my preliminary research, it does appear that a similar implementation is feasible in Rust. I will plan on implementing an AVL tree (balanced BST) into Rust for storing client objects (structs) by client id, or by a generic int (id/key) value in the context of a generic data object. This approach worked well when I first used it in C++, and it provides a clean, modular data structure that is generalized enough to be reusable. This would also provide client operations within the system with a desirable, predictable time complexity of O (log n). If time permits, I also plan to implement a hashmap that utilizes employee ids for keys, and a vector of all clients associated with that specific employee for the values. The employee id could then be used to query what clients belong to an individual employee using the hash map. A combination of these two strategies will allow me to maximize on desirable runtime complexities. This strategy will also allow me to limit database actions / queries to only instances when data is being changed (added, updated, or removed).</p>
+<h4 id="artifact-2--data-structures-and-algorithms---enhancement-requirements">Artifact 2 – Data Structures and Algorithms - Enhancement Requirements :</h4>
+<ul>
+<li><strong>Enhancement 13:</strong> Develop an AVL tree data structure for storing and managing Client objects.
+<ul>
+<li><em>Sub Enhancement 1:</em> Include the following functions, is_empty(), height(), balance_factor(), return_balance(), right_rotate(), left_rotate(), find_value(), insert_value(), remove_node().</li>
+<li><em>Sub Enhancement 2:</em> Use template data types to allow later reusability of the AVL tree.</li>
+</ul>
+</li>
+<li><strong>Enhancement 14:</strong> Implement a hash map data structure for storing employee-client associations.</li>
+<li><strong>Enhancement 15:</strong> Create an authentication method using secure Rust crates and standards (using argon2).</li>
+<li><strong>Enhancement 16:</strong> Implement password hashing and comparison functionality for login authorization (using argon2).</li>
+<li><strong>Enhancement 17:</strong> Implement mechanism to handle invalid login attempts (too many / authentication state tracking).</li>
+</ul>
+<h4 id="artifact-2--data-structures-and-algorithms---pseudocode">Artifact 2 – Data Structures and Algorithms - Pseudocode:</h4>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>// Artifact 2:</span></span>
+<span class="line"><span>//      AVL tree / ETC:</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE struct ClientHandler {</span></span>
+<span class="line"><span>	DECLARE local_avl_tree of type avl_tree</span></span>
+<span class="line"><span>	DECLARE employee-client_pairs of type HashMap&#x3C;key = i32 int, value = vector&#x3C;i32 ints></span></span>
+<span class="line"><span>	DECLARE database of type box(smart ptr) to object of DatabaseManager (trait implementation)</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE struct avl_tree&#x3C;T> {</span></span>
+<span class="line"><span>	// optional ptr can be null, or something / containing a valid ptr</span></span>
+<span class="line"><span>	DECLARE "root" of type optional box(pointer) to avl_node,</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE struct avl_node&#x3C;T> {</span></span>
+<span class="line"><span>	// optional ptrs can be null, or something / containing a valid ptr</span></span>
+<span class="line"><span>	DECLARE "left" of type optional box(pointer) to avl_node,</span></span>
+<span class="line"><span>	DECLARE "right" of type optional box(pointer) to avl_node,</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	// data is generic, but will be a client object in this case</span></span>
+<span class="line"><span>	DECLARE "data" of type T,</span></span>
+<span class="line"><span>	DECLARE "height" of type i32 integer,</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// TODO: need to work on finishing/converting the inner functions</span></span>
+<span class="line"><span>// use C++ code for ref as well as this source:</span></span>
+<span class="line"><span>// https://francismurillo.github.io/2019-07-31-Understanding-Rust-Through-AVL-Trees/#orga1ff405</span></span>
+<span class="line"><span>IMPLEMENT avl_tree </span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>	DECLARE new constructor function with no params:</span></span>
+<span class="line"><span>	RETURNS reference to self.avl_tree	{</span></span>
+<span class="line"><span>		avl_tree {</span></span>
+<span class="line"><span>			root = none, // ptr initialized to none (null)</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE function "insert" with following parameters:</span></span>
+<span class="line"><span>		mutable self reference,</span></span>
+<span class="line"><span>		data object of type T,</span></span>
+<span class="line"><span>	RETURNS nothing		{</span></span>
+<span class="line"><span>		// if root is null, this root</span></span>
+<span class="line"><span>		ASSIGN self.root the value of calling insert_value </span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "search" with following parameters:</span></span>
+<span class="line"><span>			self reference,</span></span>
+<span class="line"><span>			key of type reference to T,</span></span>
+<span class="line"><span>		RETURNS optional reference to data object T		{</span></span>
+<span class="line"><span>			TODO: fill with the logic from AVL search</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE function "is_empty" with following parameters:</span></span>
+<span class="line"><span>			self reference,</span></span>
+<span class="line"><span>		RETURNS boolean result		{</span></span>
+<span class="line"><span>			TODO: fill with the logic from AVL is_empty</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "clear" with following parameters:</span></span>
+<span class="line"><span>			mutable self reference,</span></span>
+<span class="line"><span>		RETURNS nothing</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			ASSIGN self.root the value "None" // sets the root to nothing, allowing rusts mem management to remove tree</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "in_order" with following parameters:</span></span>
+<span class="line"><span>			self reference,</span></span>
+<span class="line"><span>		RETURNS nothing</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			IF root is something (not none) 	{</span></span>
+<span class="line"><span>				CALL traverse_in_order() with root node as argument</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "height" with following parameters:</span></span>
+<span class="line"><span>			node of type reference to optional box (ptr) to a data T avl_node,</span></span>
+<span class="line"><span>		RETURNS i32 integer</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			IF current_node is something (not none) 	{</span></span>
+<span class="line"><span>				RETURN current_node’s height value</span></span>
+<span class="line"><span> 			} ELSE  {</span></span>
+<span class="line"><span>				RETURN i32 integer value 0</span></span>
+<span class="line"><span>		 	}</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "return_balance" with following parameters:</span></span>
+<span class="line"><span>			node of type optional box (ptr) to a data T avl_node,</span></span>
+<span class="line"><span>		RETURNS i32 integer</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			DECLARE height_left as value returned from calling height(current_node.left) </span></span>
+<span class="line"><span> 			DECLARE height_right as value returned from calling height(current_node.right) </span></span>
+<span class="line"><span> 			RETURN value remaining after subtracting height_left from height_right </span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "right_rotate" with following parameters:</span></span>
+<span class="line"><span>			mutable "parent_node" of type box (ptr) to a data T avl_node,</span></span>
+<span class="line"><span>		RETURNS box (ptr) to a data T avl_node</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			DECLARE &#x26; ASSIGN “child_node” the value of parent_node’s left child</span></span>
+<span class="line"><span>			DECLARE &#x26; ASSIGN “temp_node” the value of child_node’s right child</span></span>
+<span class="line"><span>			ASSIGN value of parent_node’s left child the value of temp_node</span></span>
+<span class="line"><span>			ASSIGN value of child_node’s right child to parent_node</span></span>
+<span class="line"><span>			CALCULATE new height value for parent_node</span></span>
+<span class="line"><span>			CALCULATE new height value for child_node</span></span>
+<span class="line"><span>			RETURN child_node</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>	DECLARE function "left_rotate" with following parameters:</span></span>
+<span class="line"><span>			mutable "child_node" of type box (ptr) to a data T avl_node,</span></span>
+<span class="line"><span>		RETURNS box (ptr) to a data T avl_node</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			DECLARE &#x26; ASSIGN “parent_node” the value of child_node’s right child</span></span>
+<span class="line"><span>			DECLARE &#x26; ASSIGN “temp_node” the value of parent_node’s left child</span></span>
+<span class="line"><span>			ASSIGN value of child_node’s right child the value of temp_node</span></span>
+<span class="line"><span>			ASSIGN value of parent_node’s left child to child_node</span></span>
+<span class="line"><span>			CALCULATE new height value for child_node</span></span>
+<span class="line"><span>			CALCULATE new height value for parent_node</span></span>
+<span class="line"><span>			RETURN parent_node</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "insert_value" with following parameters:</span></span>
+<span class="line"><span>			"node" of type optional box (ptr) to a data T avl_node,</span></span>
+<span class="line"><span>			"data" object of type T,</span></span>
+<span class="line"><span>		RETURNS optional Box (smart ptr) to a data T avl_node,</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			IF node equals "None" {</span></span>
+<span class="line"><span>				RETURN new avl_node with "data" as object, left &#x26; right equal to none, height equal to 1</span></span>
+<span class="line"><span>			} ELSE {</span></span>
+<span class="line"><span>				DECLARE &#x26; ASSIGN current_node the value of "node"</span></span>
+<span class="line"><span>				IF "data" is less than current_node's data {</span></span>
+<span class="line"><span>					DECLARE left_child, ASSIGN value of left child node of current_node</span></span>
+<span class="line"><span>					ASSIGN left_child the return of CALL insert_value(), args left_child, "data"</span></span>
+<span class="line"><span>				} ELSE IF "data" is greater than current_node's data {</span></span>
+<span class="line"><span>					DECLARE right_child, ASSIGN value of right child node of current_node</span></span>
+<span class="line"><span>					ASSIGN right_child the return of CALL insert_value(), args right_child, "data"</span></span>
+<span class="line"><span>				} ELSE {</span></span>
+<span class="line"><span>					RETURN current_node</span></span>
+<span class="line"><span>				}</span></span>
+<span class="line"><span>				</span></span>
+<span class="line"><span>				CALCULATE height for current_node</span></span>
+<span class="line"><span>				DECLARE balance, ASSIGN it value from CALL to return_balance() with arg current_node</span></span>
+<span class="line"><span>				</span></span>
+<span class="line"><span>				IF balance is greater than 1{</span></span>
+<span class="line"><span>					IF data is less than current_node's left child node's data{</span></span>
+<span class="line"><span>						RETURN CALL to right_rotate() with arg current_node</span></span>
+<span class="line"><span>					} ELSE {</span></span>
+<span class="line"><span>						DECLARE left_child, ASSIGN the value of left child node of current_node</span></span>
+<span class="line"><span>						ASSIGN left_child the return from CALL left_rotate(), with arg left_child</span></span>
+<span class="line"><span>						RETURN value of CALL to right_rotate() with arg current_node</span></span>
+<span class="line"><span>					}</span></span>
+<span class="line"><span>					</span></span>
+<span class="line"><span>				IF balance is less than -1{</span></span>
+<span class="line"><span>					IF data is greater than current_node's right child node's data{</span></span>
+<span class="line"><span>						RETURN CALL to left_rotate() with arg current_node</span></span>
+<span class="line"><span>					} ELSE {</span></span>
+<span class="line"><span>						DECLARE right_child, ASSIGN value of right child node of current_node</span></span>
+<span class="line"><span>						ASSIGN right_child the return from CALL right_rotate(), with arg right_child</span></span>
+<span class="line"><span>						RETURN value of CALL to left_rotate() with arg current_node</span></span>
+<span class="line"><span>					}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>				}</span></span>
+<span class="line"><span>			</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>			</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	// this is the only function returning data objects, </span></span>
+<span class="line"><span>	// it needs to have the lifetime of the data object referenced as</span></span>
+<span class="line"><span>	// we don't want it to extend past the lifetime of local tree / data object</span></span>
+<span class="line"><span>	DECLARE function "search_value" with lifetime x and following parameters:</span></span>
+<span class="line"><span>			current_node of type reference with lifetime x to an optional box (ptr) to a data T avl_node,</span></span>
+<span class="line"><span>			key of type reference to data T</span></span>
+<span class="line"><span>		RETURNS optional reference with lifetime x to data T</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			IF current_node is not none/nothing {</span></span>
+<span class="line"><span>				IF key's data is equal to the value of current_node.data {</span></span>
+<span class="line"><span>					RETURN something(reference to current_node's data)</span></span>
+<span class="line"><span>				} ELSE IF key is less than current_node's data (key.client_id&#x3C;current_node.data.client_id) {</span></span>
+<span class="line"><span>					RETURN a CALL to search_value with args, ref to current_node's left child node, and key</span></span>
+<span class="line"><span>				} ELSE {</span></span>
+<span class="line"><span>					RETURN a CALL to search_value with args, ref to current_node's right child node, and key</span></span>
+<span class="line"><span>				}</span></span>
+<span class="line"><span>			} ELSE return "None"</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "traverse_in_order" with following parameters:</span></span>
+<span class="line"><span>			current_node of type reference to optional box (ptr) to a data T avl_node,</span></span>
+<span class="line"><span>		RETURNS nothing</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			IF node is not nothing{</span></span>
+<span class="line"><span>				CALL in_order_traverse() with left child node of current_node</span></span>
+<span class="line"><span>				PRINT node data</span></span>
+<span class="line"><span>				CALL in_order_traverse() with right child node of current_node</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function "search_value" with lifetime x and following parameters:</span></span>
+<span class="line"><span>			node of type reference with lifetime x to an optional box (ptr) to a data T avl_node,</span></span>
+<span class="line"><span>			key of type reference to data T</span></span>
+<span class="line"><span>		RETURNS optional reference with lifetime x to data T		{</span></span>
+<span class="line"><span>			TODO: fill with the logic from AVL search_value</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span></code></pre>
+<h3 id="explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes-1">Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.</h3>
+<h4 id="identify-and-describe-the-specific-skills-you-will-demonstrate-to-align-with-the-course-outcome">Identify and describe the specific skills you will demonstrate to align with the course outcome.</h4>
+<p>I will be focused on demonstrating my attention to detail in this second artifact. Much of the algorithmic design and implementation in this program will require me to very closely monitor my code for any syntax errors. Failing to properly implement a complex data structure such as an AVL tree can lead to significant, undesirable behaviors. I experienced these undesirable behaviors the first time I attempted to implement a self-balancing tree. Troubleshooting a complex program can be difficult, but I aim to show with this work that I am quite capable of maintaining project scope, all while still being able to move the project forward.</p>
+<h4 id="select-one-or-more-of-the-course-outcomes-listed-under-category-one-that-your-enhancement-will-align-with">Select one or more of the course outcomes listed under Category One that your enhancement will align with.</h4>
+<p>The planned enhancements for this artifact will focus on demonstrating two of the provided course outcomes.</p>
+<p>The first outcome for this artifact that I will be demonstrating is to, “Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices.” By implementing an AVL tree, I will demonstrate my understanding of the performance trade-offs of using various data structures. AVL trees are a form of binary search tree that is self-balancing. This self-balancing process allows the data structure to maintain a known time complexity for it’s operations of O(log n). Operations with this time complexity are highly desirable. Seeing as the client list may continue to grow, it is desirable to know that the performance of the system will not vary or degrade significantly performance, as can be seen in cases of O(n) and beyond. This was a determining factor in selecting this data structure for the system.</p>
+<p>The second outcome that I will demonstrate is, “an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.” I will demonstrate this outcome through my usage of clean, modular algorithms, and proper usage of included data structures. Through my implementations, I will provide a finished software application that is both functional, and that delivers on the expected values for a software application of this type, within its respective industry.</p>
+<h2 id="category-three-databases">Category Three: Databases</h2>
+<h3 id="select-an-artifact-that-is-aligned-with-the-databases-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan-you-may-choose-work-from-the-courses-listed-under-category-one">Select an artifact that is aligned with the databases category and explain its origin. Submit a file containing the code for the artifact you choose with your enhancement plan. You may choose work from the courses listed under Category One.</h3>
+<p>For the database artifact selection, I will again be selecting the client service management application that I rewrote and designed for my final project in CS410, Reverse Engineering. A core aspect of this application system relies on its authentication system. Currently the application only uses a single password hash and user account to validate user login to the system. This data is stored locally within the application, and hard coding credentials into an application, even when hashed, does not follow best, secure coding practices. I noted in my code comments when initially creating the program, that the next step for the application would be to provide a database system that stored user login names and their corresponding password hashes. As I am going to be converting this application to the Rust programming language over the course of completing my first artifact, I will also need to write this database implementation in Rust.</p>
+<p><strong>Link to C++ source code for project:</strong><br>
+<a href="https://github.com/ddJProj/CSBS-reverse-engineering/tree/main/Project-2">My C++ source project for Artifact 1, 2, &#x26; 3:</a></p>
+<h3 id="describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-a-pseudocode-or-flowchart-that-illustrates-the-planned-enhancement-1">Describe a practical, well-illustrated plan for enhancement in alignment with the category, including a pseudocode or flowchart that illustrates the planned enhancement.</h3>
+<h4 id="artifact-3--database--initial-planning">Artifact 3 – Database – Initial Planning:</h4>
+<p>The database implementation for this project will focus on storing data for the two core functions of the application, employee login / authentication, and retrieving/updating client data. The employee accounts (structs) will have a unique employeeId number, and will contain an employee name, and a password hash. The employee id and a hashed copy of their personally set password will be used to authenticate attempts to log in to the application. Each employee id and password should have a list of clients that is associated with their user account. The content of an individual instance of a client struct is client name, client id, client service selected, and the employee id that refers to the employee that client works with. A list of clients will need to be queried from the database and used to populate the Client AVL / BST that is assembled upon successful user authentication. The id values for both client objects (structs) and employee objects (structs) will be automatically generated and assigned by the database, and will be treated as unique primary keys for their respective tables.</p>
+<h4 id="artifact-3--database---enhancement-requirements-list">Artifact 3 – Database - Enhancement Requirements List:</h4>
+<ul>
+<li><strong>Enhancement 18:</strong> Create a database with separate tables for Client and Employee data.</li>
+<li><strong>Enhancement 19:</strong> Develop a database manager trait with needed CRUD operations for both Client and Employee tables.</li>
+<li><strong>Enhancement 20:</strong> Develop a client manager trait to handle client-related operations both locally and in the database.</li>
+<li><strong>Enhancement 21:</strong> Develop a employee manager trait to handle employee-related operations both locally and in the database.</li>
+<li><strong>Enhancement 22:</strong> Implement functionality to update employee-client pairings both in the database and local storage.</li>
+<li><strong>Enhancement 23:</strong> Add capability to update client service selections in both the database and local storage.</li>
+<li><strong>Enhancement 24:</strong> Implement methods to retrieve single client objects by client_id (pull from local AVL tree).</li>
+<li><strong>Enhancement 25:</strong> Develop functionality to retrieve client lists by employee_id (using the local hash map).</li>
+<li><strong>Enhancement 26:</strong> Create a method to retrieve all Clients (traverse_tree_inorder() method?).</li>
+<li><strong>Enhancement 27:</strong> Implement a transaction system to manage local and remote system operations. Utilize it to encapsulate client &#x26; employee operations to ensure that data remains consistent between remote &#x26; local storage.</li>
+</ul>
+<h4 id="artifact-3--database---pseudocode">Artifact 3 – Database - Pseudocode:</h4>
+<pre class="astro-code astro-code-themes catppuccin-mocha catppuccin-latte" style="background-color:#1e1e2e;--shiki-dark-bg:#eff1f5;color:#cdd6f4;--shiki-dark:#4c4f69; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span></span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>// Artifact 3:</span></span>
+<span class="line"><span>//      Database related functions:</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// This is how I currently think the database would be set up / how it is for my implementation</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span>// DATABASE SCHEMA </span></span>
+<span class="line"><span>employees table:</span></span>
+<span class="line"><span>(</span></span>
+<span class="line"><span>	employee_id - INT - PK (primary key) - auto/increment (to increment the values)</span></span>
+<span class="line"><span>	employee_name - VARCHAR(75) - Not null (required)</span></span>
+<span class="line"><span>	hashed_password - VARCHAR(150) - not null (required)</span></span>
+<span class="line"><span>);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>clients table:</span></span>
+<span class="line"><span>(</span></span>
+<span class="line"><span>	client_id - INT - PK (primary key)  - auto/increment (to increment the values)</span></span>
+<span class="line"><span>	client_name - VARCHAR(75) - Not null (required)</span></span>
+<span class="line"><span>	client_service - INT - Not null (required)</span></span>
+<span class="line"><span>	assigned_employee - INT - FK (foreign key) of employee id - REF(reference the table) employees(employee_id) </span></span>
+<span class="line"><span>);</span></span>
+<span class="line"><span>//---------------------------------------</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// mysql crate for rust seems to be the best approach for coding queries</span></span>
+<span class="line"><span>// https://outersky.github.io/r2d2-mysql/doc/v3.0.0/mysql/struct.Pool.html</span></span>
+<span class="line"><span>// https://docs.rs/mysql/latest/mysql/index.html</span></span>
+<span class="line"><span>DECLARE struct MySQL_Database</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>	// https://docs.rs/mysql/latest/mysql/struct.Pool.html</span></span>
+<span class="line"><span>	DECLARE "pool" of type Pool</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// https://outersky.github.io/r2d2-mysql/doc/v3.0.0/mysql/index.html</span></span>
+<span class="line"><span>IMPLEMENT MySQL_Database </span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>	DECLARE new constructor function with params:</span></span>
+<span class="line"><span>		// https://outersky.github.io/r2d2-mysql/doc/v3.0.0/url/index.html</span></span>
+<span class="line"><span>		url of type string reference</span></span>
+<span class="line"><span>	RETURNS self/result or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		DECLARE pool of type Pool with url as arg</span></span>
+<span class="line"><span>		IF pool created successfully</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			RETURN new database containing the pool and Result Ok </span></span>
+<span class="line"><span>		} ELSE {</span></span>
+<span class="line"><span>			RETURN error message failure to create pool</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// TODO: make sure all references to the hashmap of clients, are storing a vector of client_id's</span></span>
+<span class="line"><span>// instead of storing the whole client objects. Use vector of int client_ids stored in with</span></span>
+<span class="line"><span>// each paired employee_id to retrieve the client objects from the AVL tree of clients</span></span>
+<span class="line"><span>// currently am storing whole client objects</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>DECLARE trait DatabaseManager</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>	DECLARE get_clients function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>	RETURNS Result vector of Client or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function new_client with param</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		client of type Client reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE update_client function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		client of type Client reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE remove_client function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		client of type Client reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE get_employee_hash function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		employee_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS Result &#x26; optional string or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE new_employee function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		employee of type Employee reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE update_employee function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		employee of type Employee reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE remove_employee function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		employee_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>IMPLEMENT DatabaseManager for MySQL_Database </span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>	DECLARE get_clients function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>	RETURNS Result vector of Client or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		GET database connection from pool</span></span>
+<span class="line"><span>		EXECUTE SQL query to return all rows from client table</span></span>
+<span class="line"><span>		MAP the results of rows to instances of the Client struct</span></span>
+<span class="line"><span>		RETURN the result of operation as vector of Client objects</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function new_client with param</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		client of type Client reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		GET database connection from pool</span></span>
+<span class="line"><span>		EXECUTE SQL query to insert a new Client object instance into clients table</span></span>
+<span class="line"><span>		RETURN the result of operation	</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE update_client function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		client of type Client reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		GET database connection from pool</span></span>
+<span class="line"><span>		EXECUTE SQL query to clients table, UPDATE client/row WHERE client_id is match to param client</span></span>
+<span class="line"><span>		RETURN the result of operation</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE remove_client function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		client of type Client reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		GET database connection from pool</span></span>
+<span class="line"><span>		EXECUTE SQL query to  clients table, DELETE client rows WHERE client_id = client.client_id</span></span>
+<span class="line"><span>		RETURN the result of operation</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE get_employee_hash function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		employee_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS Result &#x26; optional string or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		GET database connection from pool</span></span>
+<span class="line"><span>		EXECUTE SQL query to employees table, SELECT hashed_password WHERE employee id= param id</span></span>
+<span class="line"><span>		RETURN the result of operation, and string hashed_password if match found</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE new_employee function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		employee of type Employee reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		GET database connection from pool</span></span>
+<span class="line"><span>		EXECUTE SQL query to employees table, INSERT values of param employee object to new row</span></span>
+<span class="line"><span>		RETURN the result of operation</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE update_employee function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		employee of type Employee reference</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		GET database connection from pool</span></span>
+<span class="line"><span>		EXECUTE SQL query to employees table, UPDATE existing employee row with param object values</span></span>
+<span class="line"><span>		RETURN the result of operation </span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE remove_employee function with params:</span></span>
+<span class="line"><span>		reference to self</span></span>
+<span class="line"><span>		employee_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS Result of operations or box ptr to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		GET database connection from pool</span></span>
+<span class="line"><span>		EXECUTE SQL query to employees table, DELETE employee row WHERE employee_id's match</span></span>
+<span class="line"><span>		RETURN the result of operation</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>	}	</span></span>
+<span class="line"><span>}	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>IMPLEMENT ClientHandler</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>	DECLARE new constructor function params:</span></span>
+<span class="line"><span>		database of type box ptr to implementation of trait DatabaseManager</span></span>
+<span class="line"><span>	RETURNS reference to self</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		DECLARE mutable client_handler </span></span>
+<span class="line"><span>		ASSIGN client_handler value of ClientHandler {</span></span>
+<span class="line"><span>			local_avl_tree of type NEW avl_tree</span></span>
+<span class="line"><span>			database equal to constructor parameter </span></span>
+<span class="line"><span>			employee_client_pairs of type NEW HashMap</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>		CALL fn get_db_clients() on client_handler</span></span>
+<span class="line"><span>		RETURN client_handler</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE function get_db_clients with params:</span></span>
+<span class="line"><span>		reference to mutable self</span></span>
+<span class="line"><span>	RETURNS nothing</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		DECLARE clients_list </span></span>
+<span class="line"><span>		IF ASSIGN clients_list the value from calling get_clients on database is success</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			FOR client in clients_list</span></span>
+<span class="line"><span>			{</span></span>
+<span class="line"><span>				CALL insert on local_avl_tree with argument, clone of current client</span></span>
+<span class="line"><span>				CALL update_employee_client_pair with args: </span></span>
+<span class="line"><span>				(</span></span>
+<span class="line"><span>					asn_employee_id(assigned emp. id) of this client,</span></span>
+<span class="line"><span>					client_id of this client,</span></span>
+<span class="line"><span>				)	</span></span>
+<span class="line"><span>			}				</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	// updates / adds client_ids to their assigned employee in hashmap value vector</span></span>
+<span class="line"><span>	DECLARE function update_employee_client_pair with params:</span></span>
+<span class="line"><span>		reference to mutable self</span></span>
+<span class="line"><span>		employee_id of type i32 integer</span></span>
+<span class="line"><span>		client_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS nothing</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		IF client_id does not exist in employee_client_pairs hashmap</span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			PUSH the client_id into their assigned employee_id's value vector</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function add_client with params:</span></span>
+<span class="line"><span>		reference to mutable self</span></span>
+<span class="line"><span>		client of type Client</span></span>
+<span class="line"><span>	RETURNS Result, or box pointer to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		DECLARE new_id</span></span>
+<span class="line"><span>		ASSIGN new_id the value of calling new_client() on database, with arg client ref</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function update_client_service with params:</span></span>
+<span class="line"><span>		reference to mutable self</span></span>
+<span class="line"><span>		client_id of type i32 integer</span></span>
+<span class="line"><span>		new_service_value of type i32 integer</span></span>
+<span class="line"><span>	RETURNS Result, or box pointer to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		IF calling find() on local_avl_tree with arg client_id returns a client </span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			CALL client_change_service() with arg new_service_value on the returned client</span></span>
+<span class="line"><span>			CALL update_client() with arg client on the database</span></span>
+<span class="line"><span>			RETURN Ok if success</span></span>
+<span class="line"><span>		} ELSE {</span></span>
+<span class="line"><span>			RETURN Error "client not found"</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>	DECLARE function get_client with params:</span></span>
+<span class="line"><span>		reference to mutable self</span></span>
+<span class="line"><span>		client_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS optional reference to value of type Client</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		CALL find() with arg client_id on local_avl_tree</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE function modify_client_asn_employee with params:</span></span>
+<span class="line"><span>		reference to mutable self</span></span>
+<span class="line"><span>		client_id of type i32 integer</span></span>
+<span class="line"><span>		new_employee_id of type i32 integer</span></span>
+<span class="line"><span>	RETURNS Result, or box pointer to error</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		IF calling find with arg client_id on local_avl_tree is successful </span></span>
+<span class="line"><span>		{</span></span>
+<span class="line"><span>			DECLARE prev_employee_id of type i32 integer</span></span>
+<span class="line"><span>			ASSIGN prev_employee_id the value of this client's asn_employee_id</span></span>
+<span class="line"><span>			CALL set_employee_id() with arg new_employee_id on this client</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span>			CALL update_client() with arg client on this database</span></span>
+<span class="line"><span>			</span></span>
+<span class="line"><span>			IF calling get_mutable() with arg prev_employee_id on employee_client_pairs is success</span></span>
+<span class="line"><span>			{</span></span>
+<span class="line"><span>				ITERATE through the employee_client_pairs vector at matching employee_id</span></span>
+<span class="line"><span>				remove any value equal to the client's client_id</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>			CALL update_employee_client_pair with args new_employee_id, and client_id</span></span>
+<span class="line"><span>			RETURN result Ok</span></span>
+<span class="line"><span>		} ELSE {</span></span>
+<span class="line"><span>			RETURN error "No client found"</span></span>
+<span class="line"><span>		}</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	</span></span>
+<span class="line"><span>	DECLARE function get_employee_client_pair with params:</span></span>
+<span class="line"><span>		reference to mutable self</span></span>
+<span class="line"><span>		employee of type i32 integer</span></span>
+<span class="line"><span>	RETURNS optional reference to Vector of i32 integers</span></span>
+<span class="line"><span>	{</span></span>
+<span class="line"><span>		CALL get() with arg reference to employee_id on employee_client_pairs</span></span>
+<span class="line"><span>		ASSIGN new_id the value of calling new_client on database, with arg client ref</span></span>
+<span class="line"><span>	}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span></code></pre>
+<h3 id="explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes-2">Explain how the planned enhancement will demonstrate specific skills and align with course outcomes.</h3>
+<h4 id="identify-and-describe-the-specific-skills-you-will-demonstrate-that-align-with-the-course-outcome-1">Identify and describe the specific skills you will demonstrate that align with the course outcome.</h4>
+<p>The specific skills that I am demonstrating with this third artifact are my willingness to dig into research topics until I am satisfied that I have determined the best way to approach a problem. With this database implementation specifically, I have searched through the rust foundation documents, through at least a dozen different stack overflow posts reading how others approached their problem that I could relate to, and several tutorials or other descriptive guides for how to implement a SQL relational database in Rust.</p>
+<p>My goal and hope is to demonstrate that I am resourceful. Additionally, I enjoy the work that I am doing. I enjoy the challenge, and I very much want to deliver on the best possible product that I can, every time. I am dedicated to maintaining a strong work ethic, and I hope that it is apparent in the product that I deliver on. I feel that these align with my stated outcome for this artifact, in so far as, I do my best to apply the tools that I feel will create a strong, reliable product. I am not omniscient, but I am willing to put the time and effort into attempting to make things work, and to do so the “right” way (Or at least using the current best industry standards). I will take the time to consider why I might choose one implementation over another, and to consider as many edge cases as I am able to. Because I do believe that the effort matters.</p>
+<h4 id="select-one-or-more-of-the-course-outcomes-listed-under-category-one-that-your-enhancement-will-align-with-1">Select one or more of the course outcomes listed under Category One that your enhancement will align with.</h4>
+<p>My database implementation for the third artifact selection will demonstrate primarily the following course outcome, “an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.”</p>
+<p>With my tool implementations and styling, I will also look to meet the secondary outcome of, “a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.”</p>
+<p>I am aiming to provide a database implementation that provides stable performance, and that meets the standards of industry best practices. I see this artifact enhancement as an opportunity to meet the same standards that I would be held to if I were a senior engineer doing this job. I don’t yet have the experience of a senior engineer, but I am more than willing to put in the time and work to get there.</p>
+<p>Prior to this project, my only real experience implementing databases was with MongoDB for myClient Server Development, and Full-stack Development courses. Client Server Development was focused on performing queries and uploading data to the database, and Full-stack Development primarily focused on building an angular / express js web-application.</p>
+<p>I have not yet had the opportunity to thoroughly dig into MySQL, but I have read that it is very valuable to have experience with. I have looked through the available database frameworks to find what would be the industry standard, as well as what is most marketable. I noticed that much of FAANG uses MySQL, and that was something I factored into my decision on MySQL. For this database implementation I hoped to build some experience with it, so I would like to use MySQL to handle my database and application’s queries. In doing so, I will further demonstrate that I am capable of picking up, and gaining proficiency in new technologies. I will implement an SQL relational database that will track client data in the first table, and handle employee user login authentication / validation attempts with a second table.</p>
+<p>To meet the secondary outcome, I will ensure that the methods that I implement in my application follow the best known security standards for the technologies / language of my choice. I have already researched into what the best approaches are when it comes to encryption and hashing, including using a secure, updated version of MySQL, and using the relevant, up to date Argon2 crate.</p>
+<p><br><br></p>
+<h2 id="course--project-goals--outcomes">Course &#x26; Project goals / outcomes:</h2>
+<ol>
+<li><em>Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science.</em></li>
+<li><em>Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.</em></li>
+<li><em>Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices.</em></li>
+<li><em>Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.</em></li>
+<li><em>Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.</em></li>
+</ol>
+<br>
+<h2 id="discuss-the-specific-skills-you-aim-to-demonstrate-through-your-enhancements-to-reach-each-of-the-course-outcomes">Discuss the specific skills you aim to demonstrate through your enhancements to reach each of the course outcomes.</h2>
+<p>For this course, I focused on demonstrating my skills in organization, in designing back-end implementations for secure software applications, as well as quickly adapting to, and then become proficient in new technologies. I  primarily focused on rewriting the C++ client handling application that I turned in for my reverse engineering course.</p>
+<p>I sought to clearly demonstrate that I am capable of independently researching, learning, and then implementing new development strategies. This assessment was broken into three enhancement segments:</p>
+<ul>
+<li><strong>Software Engineering and Design</strong>,</li>
+<li><strong>Data Structures and Algorithms</strong>,</li>
+<li><strong>database implementation</strong>.</li>
+</ul>
+<p>To meet the desired software engineering and design aspects, I will be focused on providing clean code that meets the standards of industry best secure coding practices.</p>
+<p>For data structures and algorithms, I focused on both designing, then implementing modular, reusable code, and when necessary implemented appropriate data structures to handle operations within the application. This was done while considering the time-complexity of various implementations.</p>
+<p>For the database component I designed, then implemented a database integration for my application. It was one that handles application authentication, as well as managing client data. I aimed to demonstrate that the database integration focused on providing secure communications / authentication, and again followed best practices.</p>
+<h2 id="how-do-the-specific-skills-you-will-demonstrate-align-with-your-career-plans-related-to-your-degree">How do the specific skills you will demonstrate align with your career plans related to your degree?</h2>
+<p>The skills I have mentioned are critical to the work and research of my intended career path. Learning to carefully apply them is what will allow me to develop practical solutions to any problems that I face, whether it be software based, or in solving chemical / material based computations. My career goal is to end up working as computational scientist. This project is significant to me because it allowed me to demonstrate how well I have been able to refine my problem solving capabilities. In this context, this was done through the design and implementation of a program that seek to generate solutions to complex problems.</p>
+<p>To reach my career aspirations, I both want, and need to be accustomed working in environments that are challenging, and that may be lacking in guidance. I feel that this project will serve as a valuable contribution towards demonstrating that I am quite capable of thriving under these conditions.</p>
+<h2 id="how-does-this-contribute-to-the-specialization-you-are-targeting-for-your-career">How does this contribute to the specialization you are targeting for your career?</h2>
+<p>I plan to apply for internships and employment positions related to computational programming, low level software engineering, embedded systems, and machine learning. With my background in biochemistry, I also plan to begin applying to masters programs for computational science or data science and computation.</p>
+<p>The career that I am hoping to work in would require me to work with, and design machine learning models that are capable of generally processing experimental data. The models would then be used to help produce generalized applications of that data that could accurately predict experimental outcomes.</p>
+<p>With this capstone project, I hope to be able to demonstrate that I am capable of identifying complex problems, breaking down those problems into manageable components, then both designing and implementing targeted solutions to those problems. I aim to show that I am capable of maintaining project scope, and that I can deliver on a functioning application within a designated time-frame via responsible time management.</p>
+<h2 id="skills-and-outcomes-planned-to-be-illustrated-in-the-code-review">Skills and outcomes planned to be illustrated in the code review</h2>
+<p>My selection of a language that I am not as familiar with as others does complicate the code review somewhat. With the code review, I would typically look to demonstrate my knowledge of the language, and it’s various implementations. As I am not as well versed in rust yet, my focus will be more on providing functional equivalence to the original C++ code. I will still obviously aim to use industry best standards in regards to the rust implementations that I select for use in my application. I will detail the functionality of choices that I have made in my conversion and code review, and I will also explain why I selected the choices that I did. Showing that I am still capable of producing quality work, even when using a language I am not yet familiar with I feel would be a strong indicator of my skill in adapting to new situations, and to new tools.</p>
+<h2 id="skills-and-outcomes-planned-to-be-illustrated-in-the-narratives">Skills and outcomes planned to be illustrated in the narratives</h2>
+<p>The primary skill that I plan to highlight in my narrative essays, is my ability to use language to effectively communicate with others. Being able to effectively communicate complex topics is something that I have been told that I am exceptional at. In a past life, I was a teaching assistant for my college chemistry professor. I am well aware how important it is to synthesize your knowledge into digestible, bite size pieces, especially when dealing with non-technical audiences. In my narratives, I will plan to highlight the reasoning behind my algorithm choices, as well as how I approach problem solving in general. There wasn’t a great deal of space for collaborative exercises, or teamwork as far as this degree program goes. That won’t likely be the case for most careers. I was employed at different times with both FedEx and UPS in management positions, so I do understand the value and necessity of both working on, and leading a team. I will plan to show how my organization, and work ethic helps me to be an effective leader, even when not filling an active leadership role.</p>
+<h2 id="skills-and-outcomes-planned-to-be-illustrated-in-the-professional-self-assessment">Skills and outcomes planned to be illustrated in the professional self-assessment</h2>
+<p>I will use the professional assessment of this project to cover following three skill groupings points. These three points are core to understanding who I am, and how I work in. These are the core points that I also would like to demonstrate through my work on this project.</p>
+<h2 id="my-own-self-awareness-and-focus-on-growth-state">My own self-awareness, and focus on growth state:</h2>
+<p>The first is my views of the importance of constant personal growth in relation to this. I often find myself hyper-aware of the faults in my work. This is a definite strength I’ve found, as it allows me to catch many faults before they become issues, but for a long time it was also problematic for me. I have since grown to become more comfortable with the concept of “good enough”. It is not something that I am particularly fond of, but it is something that absolutely is necessary at times if we ever hope to reach a conclusion with our work / projects.</p>
+<h2 id="iterative-work-planning-and-improvement">Iterative work, planning, and improvement:</h2>
+<ul>
+<li>
+<p>I will talk briefly cover how my planning and organization strategies allow me to quickly iterate on the work I produce. This skill provides me with the opportunity to quickly get my work to an acceptable level, and then to progressively sharpen it with additional reviews, critiques, and refactoring. The ability to productively iterate on your work I believe, is an exceptionally useful skill to have in a software development role. It allows the boulder that is our work progress to continue moving forward, and I have found provides the breathing room necessary to make adjustments when needed.</p>
+</li>
+<li>
+<p>I am always looking for ways to improve myself, the work I produce, and my surroundings. I believe it is this quality that has led to me quickly picking up positions of responsibility in the jobs that I have held.</p>
+</li>
+</ul>
+<h2 id="radical-acceptance-and-adaptability">Radical acceptance, and adaptability:</h2>
+<ul>
+<li>
+<p>In my artifact outcome statements I mentioned that my openness allows me to rapidly adapt to new technologies, but it is also a trait that I possess socially. All of my adult life, I have found it quite easy to socially adapt to the trends and needs of my environment. I am generally happy to embrace changes, especially when they are adaptations that will improved a former process.</p>
+</li>
+<li>
+<p>I have been told a number of times that I am a strong listener who is very receptive to feedback. I have also been told that I am very easy to get along with. I have received similar comments from peers, colleagues and supervisors. I feel that this is generally due to my own openness and awareness of my surroundings in the first case. And having a large capacity for empathy in the second case. I genuinely enjoy seeing my peers succeed, it makes me happy, especially when I have been there to watch their progress.</p>
+</li>
+</ul>
+<h2 id="moving-forward">Moving forward:</h2>
+<ul>
+<li>
+<p>Looking forward into the future I plan to continue expanding my base of tools of which I am proficient with. I will continue to work on becoming a better software engineer, and I hope to be able to likewise also advance my education.</p>
+</li>
+</ul>
+<h2 id="if-you-fulfill-your-enhancement-plans-what-specific-skills-or-knowledge-will-your-work-demonstrate">If you fulfill your enhancement plans, what specific skills or knowledge will your work demonstrate?</h2>
+<p>There are several core skills that I hope to demonstrate with my enhancement work this semester. The first of these skills is in my work ethic, and my motivation to provide the best quality of product that I can in any given time-frame. The next set of skills I hope my work demonstrates are both my attention to detail, and level of detail in my work provided. As I have previously mentioned, I always aim to deliver the highest quality of work, even with code that I expect no one else will ever see. I am a perfectionist that understands that there is no such thing as perfection. What this means, is I am fully aware that the code I write, and work I provide can never be “perfect”, but I don’t think that should ever stop us from always looking for the next improvement that we can make, both in ourselves, and in our work. Going through the process of analyzing your work from different perspectives is how we progress and become better over time, and I plan to continue doing so as long as I am able.</p>
+<p>As far as additional skills go, one of my main goals with this project was to demonstrate that I am very capable of adapting to new technologies or frameworks. The quality of my work obviously won’t be on the same level as an expert would be with those technologies, but it won’t take me long to become very competent with a new skill-set. I believe that this ties back into my attention to detail, and my ability to recognize patterns. It allows me to be able to competently, and quickly become proficient with new skills.</p>
+<h2 id="are-there-any-gaps-relative-to-the-course-outcomes">Are there any gaps relative to the course outcomes?</h2>
+<p>There are gaps relative to the course outcomes primarily in the first two outcomes from the list. The first of the two course outcomes for which my work contains gaps, is to “employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science”. My focus in completing this project, and in displaying my work through my ePortfolio, is to provide display the quality of work that I am capable of delivering. In the past, I have excelled at team related collaboration, both for education related projects, and in my employment. I am a very capable, team player, and while I may not be displaying the fact that I am inclusive of diverse groups in this specific project, I do hope to show that I am very well organized.</p>
+<p>The second of these gaps stems can be found in the course outcome, “Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.” As my work for this project is primarily in the form of code, those forms of communication would not meet the oral or visual communications requirements. I will be providing brief but descriptive documentation in the form of inline and function comments where possible. I will also be providing my written statements in regards to what I am looking to demonstrate with my work on this project. If the opportunity presents itself, I would have no problem providing oral or visual communications, but in the context of this project I am unsure of where those would be included.</p>
+<p>I did not have plans to specifically address the outcome initially, that I have been able to meet the outcome, “Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.” But I ended up being able to meet thing outcome with the conclusion of my project enhancements. I do feel that through providing my detailed documentation write-ups, as well as the recorded code walk-through videos I have been able to meet this outcome.</p>
+<h2 id="are-there-remaining-limitations-or-weaknesses-you-may-need-to-address">Are there remaining limitations or weaknesses you may need to address?</h2>
+<p>Most of my remaining limitations or weaknesses that I am aware of at least, stem from my lack of experience. The fact that I haven’t had nearly as much time as I would like to write code outside of my coursework, to me at least, feels apparent. I finished my four year CS program in a half the expected time, but I still have a great deal of practical learning that I know I need to continue to work on. I do have a background in computer science related fields, both through work experience, and through prior courses taken earlier in my life. I am able to come to strong conclusions, and I approach problems using the best methods that I can find, but still I often find myself discovering new approaches after I have finished working on something. I would very much like to have the opportunity to both gain exposure to other’s code, and to write more code in general. I do feel that with more time spent coding, I will learn to smooth out the initial hurdle I often face when trying to determine the best approach to a specific problem. I also would like to spend more time analyzing and reading through the existing systems built by other developers so that I can perhaps discover approaches and conclusions that I may not have come to myself.</p>  </div> </section>   <aside data-astro-cid-uogrpsp5> <div class="flex flex-col space-y-4" data-astro-cid-uogrpsp5> <h2 class="font-semibold text-lg text-textColor" data-astro-cid-uogrpsp5>E. Johnson</h2> <p data-astro-cid-uogrpsp5>Projects &amp; Blog</p> <div class="flex flex-wrap items-end gap-x-4"> <ul class="flex flex-wrap flex-1 items-center gap-x-2 sm:flex-initial"> <li class="flex"> <a class="inline-block p-1 sm:hover:text-accent" href="https://github.com/ddJProj" target="_blank" rel="noopener noreferrer" title="Github"> <svg width="1em" height="1em" class="h-5 w-5" aria-hidden="true" focusable="false" data-icon="mdi:github">   <symbol id="ai:mdi:github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></symbol><use href="#ai:mdi:github"></use>  </svg> <span class="sr-only">Github</span> </a> </li><li class="flex"> <a class="inline-block p-1 sm:hover:text-accent" href="https://www.linkedin.com/in/edward-johnson-4482a1279/" target="_blank" rel="noopener noreferrer" title="LinkedIn"> <svg width="1em" height="1em" class="h-5 w-5" aria-hidden="true" focusable="false" data-icon="mdi:linkedin">   <symbol id="ai:mdi:linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></symbol><use href="#ai:mdi:linkedin"></use>  </svg> <span class="sr-only">LinkedIn</span> </a> </li><li class="flex"> <a class="inline-block p-1 sm:hover:text-accent" href="mailto:edd.f.johnson.work@gmail.com" target="_blank" rel="noopener noreferrer" title="email"> <svg width="1em" height="1em" class="h-5 w-5" aria-hidden="true" focusable="false" data-icon="mdi:email">   <symbol id="ai:mdi:email" viewBox="0 0 24 24"><path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></symbol><use href="#ai:mdi:email"></use>  </svg> <span class="sr-only">email</span> </a> </li> </ul> </div> <span class="!my-4 text-accent" aria-hidden data-astro-cid-uogrpsp5>---</span> <p data-astro-cid-uogrpsp5> Planning the Rust based TUI Client Management Application. For a Financial Investment Firm. </p> </div> <nav class="toc-nav sticky top-20 max-h-[calc(100vh-5rem)] overflow-y-auto overflow-x-hidden" data-astro-cid-xvrfupwn><hr data-astro-cid-xvrfupwn><h2 class="font-bold text-base" data-astro-cid-xvrfupwn>Table of Contents</h2><ul class="text-sm" id="toc" data-astro-cid-xvrfupwn><li class="toc-item depth-1" data-astro-cid-zekvapgs> <a href="#computer-science-capstone-project-plan" id="toc-computer-science-capstone-project-plan" title="Computer Science Capstone..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>•</span> <span class="toc-number" data-astro-cid-zekvapgs>1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Computer Science Capstone...</span> </a>  </li> <li class="toc-item depth-1" data-astro-cid-zekvapgs> <a href="#enhancement-plan" id="toc-enhancement-plan" title="Enhancement Plan:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>•</span> <span class="toc-number" data-astro-cid-zekvapgs>2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Enhancement Plan:</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#category-one-software-engineering-and-design" id="toc-category-one-software-engineering-and-design" title="Category One: Software En..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Category One: Software En...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#select-an-artifact-that-is-aligned-with-the-software-engineering-and-design-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan" id="toc-select-an-artifact-that-is-aligned-with-the-software-engineering-and-design-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan" title="Select an artifact that i..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Select an artifact that i...</span> </a>  </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-a-pseudocode-or-flowchart-that-illustrates-the-planned-enhancement" id="toc-describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-a-pseudocode-or-flowchart-that-illustrates-the-planned-enhancement" title="Describe a practical, wel..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Describe a practical, wel...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-1--software-engineering---initial-planning" id="toc-artifact-1--software-engineering---initial-planning" title="Artifact 1 – Software Eng..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.2.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 1 – Software Eng...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-1--software-engineering--enhancement-requirements-list" id="toc-artifact-1--software-engineering--enhancement-requirements-list" title="Artifact 1 – Software Eng..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.2.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 1 – Software Eng...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-1--software-engineering---pseudocode" id="toc-artifact-1--software-engineering---pseudocode" title="Artifact 1 – Software Eng..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.2.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 1 – Software Eng...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes" id="toc-explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes" title="Explain how the planned e..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>Explain how the planned e...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#identify-and-describe-the-specific-skills-you-will-demonstrate-that-align-with-the-course-outcome" id="toc-identify-and-describe-the-specific-skills-you-will-demonstrate-that-align-with-the-course-outcome" title="Identify and describe the..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.3.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Identify and describe the...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#select-one-or-more-of-the-course-outcomes-below-that-your-enhancement-will-align-with" id="toc-select-one-or-more-of-the-course-outcomes-below-that-your-enhancement-will-align-with" title="Select one or more of the..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.1.3.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Select one or more of the...</span> </a>  </li>  </ul> </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#category-two-algorithms-and-data-structures" id="toc-category-two-algorithms-and-data-structures" title="Category Two: Algorithms ..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Category Two: Algorithms ...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#select-an-artifact-that-is-aligned-with-the-algorithms-and-data-structures-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan" id="toc-select-an-artifact-that-is-aligned-with-the-algorithms-and-data-structures-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan" title="Select an artifact that i..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Select an artifact that i...</span> </a>  </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-pseudocode-that-illustrates-the-planned-enhancement" id="toc-describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-pseudocode-that-illustrates-the-planned-enhancement" title="Describe a practical, wel..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Describe a practical, wel...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-2--data-structures-and-algorithms---initial-planning" id="toc-artifact-2--data-structures-and-algorithms---initial-planning" title="Artifact 2 – Data Structu..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.2.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 2 – Data Structu...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-2--data-structures-and-algorithms---enhancement-requirements" id="toc-artifact-2--data-structures-and-algorithms---enhancement-requirements" title="Artifact 2 – Data Structu..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.2.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 2 – Data Structu...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-2--data-structures-and-algorithms---pseudocode" id="toc-artifact-2--data-structures-and-algorithms---pseudocode" title="Artifact 2 – Data Structu..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.2.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 2 – Data Structu...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes-1" id="toc-explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes-1" title="Explain how the planned e..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>Explain how the planned e...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#identify-and-describe-the-specific-skills-you-will-demonstrate-to-align-with-the-course-outcome" id="toc-identify-and-describe-the-specific-skills-you-will-demonstrate-to-align-with-the-course-outcome" title="Identify and describe the..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.3.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Identify and describe the...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#select-one-or-more-of-the-course-outcomes-listed-under-category-one-that-your-enhancement-will-align-with" id="toc-select-one-or-more-of-the-course-outcomes-listed-under-category-one-that-your-enhancement-will-align-with" title="Select one or more of the..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.2.3.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Select one or more of the...</span> </a>  </li>  </ul> </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#category-three-databases" id="toc-category-three-databases" title="Category Three: Databases" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>Category Three: Databases</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#select-an-artifact-that-is-aligned-with-the-databases-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan-you-may-choose-work-from-the-courses-listed-under-category-one" id="toc-select-an-artifact-that-is-aligned-with-the-databases-category-and-explain-its-origin-submit-a-file-containing-the-code-for-the-artifact-you-choose-with-your-enhancement-plan-you-may-choose-work-from-the-courses-listed-under-category-one" title="Select an artifact that i..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Select an artifact that i...</span> </a>  </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-a-pseudocode-or-flowchart-that-illustrates-the-planned-enhancement-1" id="toc-describe-a-practical-well-illustrated-plan-for-enhancement-in-alignment-with-the-category-including-a-pseudocode-or-flowchart-that-illustrates-the-planned-enhancement-1" title="Describe a practical, wel..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Describe a practical, wel...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-3--database--initial-planning" id="toc-artifact-3--database--initial-planning" title="Artifact 3 – Database – I..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.2.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 3 – Database – I...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-3--database---enhancement-requirements-list" id="toc-artifact-3--database---enhancement-requirements-list" title="Artifact 3 – Database - E..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.2.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 3 – Database - E...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#artifact-3--database---pseudocode" id="toc-artifact-3--database---pseudocode" title="Artifact 3 – Database - P..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.2.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>Artifact 3 – Database - P...</span> </a>  </li>  </ul> </li> <li class="toc-item depth-3" data-astro-cid-zekvapgs> <a href="#explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes-2" id="toc-explain-how-the-planned-enhancement-will-demonstrate-specific-skills-and-align-with-course-outcomes-2" title="Explain how the planned e..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>    •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.3.</span> <span class="toc-text" data-astro-cid-zekvapgs>Explain how the planned e...</span> </a> <ul class="ml-2" data-astro-cid-zekvapgs> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#identify-and-describe-the-specific-skills-you-will-demonstrate-that-align-with-the-course-outcome-1" id="toc-identify-and-describe-the-specific-skills-you-will-demonstrate-that-align-with-the-course-outcome-1" title="Identify and describe the..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.3.1.</span> <span class="toc-text" data-astro-cid-zekvapgs>Identify and describe the...</span> </a>  </li> <li class="toc-item depth-4" data-astro-cid-zekvapgs> <a href="#select-one-or-more-of-the-course-outcomes-listed-under-category-one-that-your-enhancement-will-align-with-1" id="toc-select-one-or-more-of-the-course-outcomes-listed-under-category-one-that-your-enhancement-will-align-with-1" title="Select one or more of the..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>      •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.3.3.2.</span> <span class="toc-text" data-astro-cid-zekvapgs>Select one or more of the...</span> </a>  </li>  </ul> </li>  </ul> </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#course--project-goals--outcomes" id="toc-course--project-goals--outcomes" title="Course &#38; Project goals / ..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.4.</span> <span class="toc-text" data-astro-cid-zekvapgs>Course &amp; Project goals / ...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#discuss-the-specific-skills-you-aim-to-demonstrate-through-your-enhancements-to-reach-each-of-the-course-outcomes" id="toc-discuss-the-specific-skills-you-aim-to-demonstrate-through-your-enhancements-to-reach-each-of-the-course-outcomes" title="Discuss the specific skil..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.5.</span> <span class="toc-text" data-astro-cid-zekvapgs>Discuss the specific skil...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#how-do-the-specific-skills-you-will-demonstrate-align-with-your-career-plans-related-to-your-degree" id="toc-how-do-the-specific-skills-you-will-demonstrate-align-with-your-career-plans-related-to-your-degree" title="How do the specific skill..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.6.</span> <span class="toc-text" data-astro-cid-zekvapgs>How do the specific skill...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#how-does-this-contribute-to-the-specialization-you-are-targeting-for-your-career" id="toc-how-does-this-contribute-to-the-specialization-you-are-targeting-for-your-career" title="How does this contribute ..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.7.</span> <span class="toc-text" data-astro-cid-zekvapgs>How does this contribute ...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#skills-and-outcomes-planned-to-be-illustrated-in-the-code-review" id="toc-skills-and-outcomes-planned-to-be-illustrated-in-the-code-review" title="Skills and outcomes plann..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.8.</span> <span class="toc-text" data-astro-cid-zekvapgs>Skills and outcomes plann...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#skills-and-outcomes-planned-to-be-illustrated-in-the-narratives" id="toc-skills-and-outcomes-planned-to-be-illustrated-in-the-narratives" title="Skills and outcomes plann..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.9.</span> <span class="toc-text" data-astro-cid-zekvapgs>Skills and outcomes plann...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#skills-and-outcomes-planned-to-be-illustrated-in-the-professional-self-assessment" id="toc-skills-and-outcomes-planned-to-be-illustrated-in-the-professional-self-assessment" title="Skills and outcomes plann..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.10.</span> <span class="toc-text" data-astro-cid-zekvapgs>Skills and outcomes plann...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#my-own-self-awareness-and-focus-on-growth-state" id="toc-my-own-self-awareness-and-focus-on-growth-state" title="My own self-awareness, an..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.11.</span> <span class="toc-text" data-astro-cid-zekvapgs>My own self-awareness, an...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#iterative-work-planning-and-improvement" id="toc-iterative-work-planning-and-improvement" title="Iterative work, planning,..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.12.</span> <span class="toc-text" data-astro-cid-zekvapgs>Iterative work, planning,...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#radical-acceptance-and-adaptability" id="toc-radical-acceptance-and-adaptability" title="Radical acceptance, and a..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.13.</span> <span class="toc-text" data-astro-cid-zekvapgs>Radical acceptance, and a...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#moving-forward" id="toc-moving-forward" title="Moving forward:" data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.14.</span> <span class="toc-text" data-astro-cid-zekvapgs>Moving forward:</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#if-you-fulfill-your-enhancement-plans-what-specific-skills-or-knowledge-will-your-work-demonstrate" id="toc-if-you-fulfill-your-enhancement-plans-what-specific-skills-or-knowledge-will-your-work-demonstrate" title="If you fulfill your enhan..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.15.</span> <span class="toc-text" data-astro-cid-zekvapgs>If you fulfill your enhan...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#are-there-any-gaps-relative-to-the-course-outcomes" id="toc-are-there-any-gaps-relative-to-the-course-outcomes" title="Are there any gaps relati..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.16.</span> <span class="toc-text" data-astro-cid-zekvapgs>Are there any gaps relati...</span> </a>  </li> <li class="toc-item depth-2" data-astro-cid-zekvapgs> <a href="#are-there-remaining-limitations-or-weaknesses-you-may-need-to-address" id="toc-are-there-remaining-limitations-or-weaknesses-you-may-need-to-address" title="Are there remaining limit..." data-astro-cid-zekvapgs> <span class="toc-prefix" data-astro-cid-zekvapgs>  •</span> <span class="toc-number" data-astro-cid-zekvapgs>2.17.</span> <span class="toc-text" data-astro-cid-zekvapgs>Are there remaining limit...</span> </a>  </li>  </ul> </li> </ul></nav><script type="module">const c=document.getElementById("toc");c&&c.addEventListener("click",t=>{const n=window.location.hash.slice(1),e=document.getElementById(`toc-${n}`);e instanceof HTMLElement&&e.classList.remove("active-toc"),t.target instanceof HTMLElement&&t.target.classList.add("active-toc")});</script> </aside> </main> <footer class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pb-4 pt-20 text-center align-top font-semibold sm:flex-row sm:justify-between sm:text-xs text-textColor mb-8"> <div class="mr-2 sm:mr-0">
+Copyright &copy; 2025  E. Johnson </div> <nav aria-label="More on this site" class="gap-x-0 sm:gap-x-2 sm:flex sm:divide-x sm:divide-accent"> <a href="/" class="px-2 py-0 hover:text-textColor hover:underline sm:px-4 sm:py-2"> Home </a><a href="/about" class="px-2 py-0 hover:text-textColor hover:underline sm:px-4 sm:py-2"> About Me </a><a href="/blog" class="px-2 py-0 hover:text-textColor hover:underline sm:px-4 sm:py-2"> Blog </a><a href="/projects" class="px-2 py-0 hover:text-textColor hover:underline sm:px-4 sm:py-2"> Projects </a> </nav> </footer>
+</html</body></html> 
